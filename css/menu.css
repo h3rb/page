@@ -1,0 +1,40 @@
+
+.header-menu {
+ z-index: 10000;
+ position: absolute;
+ left: 135px;
+ top:16px;
+ border:0px solid;
+ border-radius:16px;
+ text-decoration:none;
+ font-size:12px;
+}
+
+.header-menu ul {
+ width:160px;
+}
+
+.header-menu li {
+/* width:120px; */
+}
+
+
+.menu-fa {
+ padding-right:10px;
+ width:15px;
+ text-align:center;
+}
+
+.menu-fa-alt {
+ padding-left:10px;
+ width:25px;
+ position:relative;
+ left:0;
+}
+
+ui-menu-widen-link {
+ width:150px;
+ text-align:left;
+ overflow:visible;
+ display: block;
+}

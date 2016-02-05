@@ -1,0 +1,6 @@
+#!/bin/bash
+cd /var/www/
+chown root:root cache/logs/last*.txt
+chmod a+rwx cache/logs/last*.txt
+rm -rf cache/logs/last-last-log.txt
+mv cache/logs/last-log.txt cache/logs/last-last-log.txt

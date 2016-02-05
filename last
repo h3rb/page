@@ -1,0 +1,3 @@
+#!/bin/bash
+cd /var/www/
+cat cache/logs/last-log.txt

@@ -1,0 +1,20 @@
+1) Access Control Levels (ACLs):
+
+By default, non-superuser accounts (there is only superuser which is a special account used by automation and development) will have read-only access to the database. 
+
+Admin accounts specifically mean accounts where the user can: a) reset someone's password b) modify access levels of themselves and others c) create a new account.  So far I've only planned to give an account like this to Alejandro and to me.   By default, an admin flag alone means the account user only has read-only access to anything other than user modification.
+
+There are some notable exceptions to read-only access: 1) anyone may create a new record or duplicate something.  More of a side-effect rather than a feature, the goal of read-only was to stop certain users from modifying things outside their scope and interfering with or working beyond their scope unintentionally.
+
+Another type of ACL is locked which locks the account from logging in.
+
+Administrators can dole out table-specific or table-field-specific edit rights.  For instance an engineer might have edit-Item-ConfigOverride access but not edit-Item general access.  A designer might have edit-ParallaxLayer and edit-Parallax access, but not edit-Item access, etc.
+
+2) User locks and "row locks" and preventing unwanted edits
+
+A single record (Item, Category, Part, etc) is called a "row" in the database.  To prevent "edit sniping", there are now two locking methods deployed that help prevent unwanted or unintentional edits from interfering with intentional edits.
+
+a) You may click the Edit Lock Icon found on any of the edit pages to set a "Soft Lock" on something.  This "soft" Edit Lock can be unlocked by any user with write access to that table, simply by clicking the Edit Lock Icon.  What this does is prevent users from just browsing to the item and making changes.  It helps us lock down specific things (Items, Parts, Categories, etc) that we don't plan on changing for a while.  This prevents you or others from accidentally coming in and making changes to something.  You can make a habit out of locking and unlocking a particular item as a preventative measure against unintended modification.
+
+b) Users who do have access to edit something have "mutual exclusion locks" which help prevent two users from accidentally overwriting each other's work on the same thing (Item, Category, etc) ... In the lower right-hand corner near the Edit Lock Icon is a message which will read "You have edit control" when you are the person with access to edit the thing.  If someone else is also on the same thing (Item, Category etc), the message would be something like "drew has edit control" or "pam has edit control" -- you will retain this 'temporary lock' until either your account times out or you browse away from the edit page.  So, it's best not to leave the Catalog Maker open to a specific item because it will prevent other users from editing it.  When the lock goes away, the page will automatically refresh with the latest changes and the notice that you are allowed to lock.
+

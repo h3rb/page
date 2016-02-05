@@ -1,0 +1,3 @@
+id=one|color=#000000|size=72|font=verdana|This is the text &amp; html codes!
+id=two|color=#FF0000|size=36|font=verdana|This is the text &amp; html codes!<br>Newline is br!
+id=SpriteID|color=#0000FF|size=24|font=visitor|Woooooot.

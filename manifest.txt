@@ -1,0 +1,3860 @@
+Site Root
+---------
+
+.:
+total 448
+drwxr-xr-x 23 main main   4096 Feb  4 22:49 .
+drwxr-xr-x  3 main main   4096 Feb  4 21:56 ..
+drwxr-xr-x  8 main main   4096 Feb  4 21:56 .git
+-rw-r--r--  1 main main     80 Feb  4 21:56 .htaccess
+-rw-r--r--  1 main main   5542 Feb  4 22:48 README.md
+-rw-r--r--  1 main main   1618 Feb  4 21:57 account.php
+-rw-r--r--  1 main main    219 Sep 29 18:32 admin.php
+-rw-r--r--  1 main main   1472 Sep 29 00:24 ajax.auto.skeleton.key.php
+-rw-r--r--  1 main main   1310 Jul  7  2015 ajax.bound.json.php
+-rw-r--r--  1 main main   1085 Jul  7  2015 ajax.bound.list.php
+-rw-r--r--  1 main main   1159 Feb  3 17:42 ajax.bound.php
+-rw-r--r--  1 main main    667 Feb  4 18:23 ajax.html.stat.php
+-rw-r--r--  1 main main   1343 Feb  4 18:25 ajax.json.list.php
+-rw-r--r--  1 main main   2694 Feb  4 22:31 ajax.json.php
+-rw-r--r--  1 main main    617 Feb  4 21:50 ajax.json.stat.php
+-rw-r--r--  1 main main   1857 Feb  4 18:21 ajax.logins.php
+-rw-r--r--  1 main main   1705 Jul  7  2015 ajax.post.php
+-rw-r--r--  1 main main    540 Feb  4 18:29 ajax.ptree.php
+-rw-r--r--  1 main main    980 Jul  7  2015 ajax.skeleton.key.php
+-rw-r--r--  1 main main   1014 Dec 23 16:55 ajax.table.php
+drwxr-xr-x  4 main main   4096 Feb  4 18:16 automation
+drwxr-xr-x  6 main main   4096 Feb  4 18:17 cache
+-rw-r--r--  1 main main    193 Oct 28 01:39 clear
+drwxr-xr-x  4 main main   4096 Feb  4 18:17 core
+drwxr-xr-x  6 main main   4096 Feb  4 18:17 css
+-rw-r--r--  1 main main   2065 Feb  4 21:49 dash.php
+drwxr-xr-x  2 main main   4096 Feb  4 21:24 docs
+-rw-r--r--  1 main main   2120 Feb  4 21:49 edit.log.php
+drwxr-xr-x  4 main main   4096 Feb  4 18:17 engines
+drwxr-xr-x  2 main main   4096 Feb  4 18:17 examples
+-rw-r--r--  1 main main   9662 Dec  2 12:44 favicon.ico
+-rw-r--r--  1 main main 189248 Feb  4 22:48 folders.txt
+-rw-r--r--  1 main main      9 Jul  7  2015 forgot.php
+drwxr-xr-x  2 main main   4096 Feb  4 18:17 forms
+drwxr-xr-x  2 main main   4096 Feb  4 18:17 global
+drwxr-xr-x  2 main main   4096 Feb  4 18:17 html
+drwxr-xr-x  3 main main   4096 Feb  4 21:22 i
+-rw-r--r--  1 main main    118 Oct 28 01:31 index.php
+drwxr-xr-x 15 main main   4096 Feb  4 18:22 js
+-rw-r--r--  1 main main     59 Oct 28 01:39 last
+-rw-r--r--  1 main main    527 Jul  7  2015 login.php
+-rw-r--r--  1 main main    201 Jul  7  2015 logout.php
+-rw-r--r--  1 main main      0 Feb  4 22:49 manifest.txt
+drwxr-xr-x  2 main main   4096 Feb  4 21:00 model
+drwxr-xr-x  2 main main   4096 Feb  4 21:05 modules
+-rw-r--r--  1 main main     22 Dec 17 20:40 nfo.php0
+-rw-r--r--  1 main main    460 Jul  7  2015 password.php
+drwxr-xr-x  2 main main   4096 Feb  4 18:23 phtml
+-rw-r--r--  1 main main     56 Jul  7  2015 plog
+-rw-r--r--  1 main main   2699 Feb  4 21:49 profile.edit.php
+-rw-r--r--  1 main main    523 Sep 29 00:34 profile.new.php
+-rw-r--r--  1 main main   2315 Feb  4 21:49 profiles.php
+-rw-r--r--  1 main main   4502 Feb  4 21:49 ranged.csv.php
+-rw-r--r--  1 main main   3965 Feb  4 21:49 ranged.table.php
+-rw-r--r--  1 main main    845 Sep 29 18:32 request_login.php
+drwxr-xr-x  2 main main   4096 Feb  4 18:23 schemas
+drwxr-xr-x  2 main main   4096 Feb  4 18:23 settings
+drwxr-xr-x  2 main main   4096 Feb  4 21:02 shreds
+-rw-r--r--  1 main main    199 Jul  7  2015 signup.php
+-rw-r--r--  1 main main    703 Jul  7  2015 thumb.php
+drwxr-xr-x  2 main main   4096 Feb  4 18:23 ui
+drwxr-xr-x  2 main main   4096 Feb  4 18:15 view
+
+Offline Automation (can be moved to /offline folder)
+----------------------------------------------------
+
+./automation:
+total 20
+drwxr-xr-x  4 main main 4096 Feb  4 18:16 .
+drwxr-xr-x 23 main main 4096 Feb  4 22:49 ..
+-rw-r--r--  1 main main  896 Jul  7  2015 .htaccess
+drwxr-xr-x  2 main main 4096 Feb  4 21:05 iterative
+drwxr-xr-x  2 main main 4096 Feb  4 21:06 util
+
+./automation/iterative:
+total 8
+drwxr-xr-x 2 main main 4096 Feb  4 21:05 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:16 ..
+
+./automation/util:
+total 12
+drwxr-xr-x 2 main main 4096 Feb  4 21:06 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:16 ..
+-rw-r--r-- 1 main main  633 Feb  4 21:07 enumerator.php
+
+File Cache (like Wordpress!)
+----------------------------
+
+./cache:
+total 28
+drwxr-xr-x  6 main main 4096 Feb  4 18:17 .
+drwxr-xr-x 23 main main 4096 Feb  4 22:49 ..
+-rw-r--r--  1 main main  896 Jul  7  2015 .htaccess
+drwxr-xr-x  2 main main 4096 Feb  4 18:17 FontLawyer
+drwxr-xr-x  2 main main 4096 Feb  4 18:17 exports
+drwxr-xr-x  2 main main 4096 Feb  4 18:17 files
+drwxr-xr-x  2 main main 4096 Feb  4 18:17 logs
+
+::: Font Lawyer plugin cache
+
+./cache/FontLawyer:
+total 8
+drwxr-xr-x 2 main main 4096 Feb  4 18:17 .
+drwxr-xr-x 6 main main 4096 Feb  4 18:17 ..
+-rw-r--r-- 1 main main    0 Jul  7  2015 SheetID.css
+
+./cache/exports:
+total 12
+drwxr-xr-x 2 main main 4096 Feb  4 18:17 .
+drwxr-xr-x 6 main main 4096 Feb  4 18:17 ..
+-rw-r--r-- 1 main main   25 Jul  7  2015 .gitignore
+
+::: Uploaded files go here
+
+./cache/files:
+total 16
+drwxr-xr-x 2 main main 4096 Feb  4 18:17 .
+drwxr-xr-x 6 main main 4096 Feb  4 18:17 ..
+-rw-r--r-- 1 main main   25 Jul  7  2015 .gitignore
+-rw-r--r-- 1 main main  896 Jul  7  2015 .htaccess
+
+::: Log files are written here.
+
+./cache/logs:
+total 3528
+drwxr-xr-x 2 main main    4096 Feb  4 18:17 .
+drwxr-xr-x 6 main main    4096 Feb  4 18:17 ..
+-rw-r--r-- 1 main main      25 Jul  8  2015 .gitignore
+-rw-r--r-- 1 main main      55 Jul  7  2015 .htaccess
+
+::: Page Framework Core
+
+./core:
+total 124
+drwxr-xr-x  4 main main  4096 Feb  4 18:17 .
+drwxr-xr-x 23 main main  4096 Feb  4 22:49 ..
+-rw-r--r--  1 main main    55 Jul  7  2015 .htaccess
+-rw-r--r--  1 main main  1573 Feb  4 18:18 Auth.php
+-rw-r--r--  1 main main   124 Jul  7  2015 Database.php
+drwxr-xr-x  2 main main  4096 Feb  4 18:17 PDO
+-rw-r--r--  1 main main 27733 Oct 28 02:40 Page.php
+-rw-r--r--  1 main main  2207 Nov  3 20:17 automation.php
+-rw-r--r--  1 main main   128 Jul  7  2015 engines.php
+-rw-r--r--  1 main main  1748 Sep 29 01:27 errors.php
+drwxr-xr-x  2 main main  4096 Feb  4 18:17 lib
+-rw-r--r--  1 main main    47 Oct 28 01:43 path.php
+-rw-r--r--  1 main main   955 Jul  7  2015 root.php
+-rw-r--r--  1 main main  2237 Jul  7  2015 ui.php
+-rw-r--r--  1 main main   353 Jul  7  2015 unique.php
+-rw-r--r--  1 main main 40072 Dec 23 16:43 utility.php
+
+::: Page Framework PDO and Model
+
+./core/PDO:
+total 44
+drwxr-xr-x 2 main main 4096 Feb  4 18:17 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:17 ..
+-rw-r--r-- 1 main main  157 Jul  7  2015 common.php
+-rw-r--r-- 1 main main 8297 Dec  4 11:21 database.php
+-rw-r--r-- 1 main main 3651 Jul  7  2015 enumerations.php
+-rw-r--r-- 1 main main 6759 Dec 23 10:26 model.php
+-rw-r--r-- 1 main main  788 Jul  7  2015 settings.php
+-rw-r--r-- 1 main main 2341 Jul  7  2015 utility.php
+
+::: GeoIP Location Library used by Auth (may be turned off to decrease traffic)
+
+./core/lib:
+total 12
+drwxr-xr-x 2 main main 4096 Feb  4 18:17 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:17 ..
+-rw-r--r-- 1 main main  718 Jul  7  2015 lib_locate_ip.php
+
+::: Where to put your CSS files.
+
+./css:
+total 1120
+drwxr-xr-x  6 main main   4096 Feb  4 18:17 .
+drwxr-xr-x 23 main main   4096 Feb  4 22:49 ..
+-rw-r--r--  1 main main     41 Jul  7  2015 .htaccess
+-rw-r--r--  1 main main  19963 Jul  7  2015 bootstrap-theme.min.css
+-rw-r--r--  1 main main    538 Jul  7  2015 chosen-sprite.png
+-rw-r--r--  1 main main    738 Jul  7  2015 chosen-sprite@2x.png
+-rw-r--r--  1 main main  13366 Jul  7  2015 chosen.css
+drwxr-xr-x  3 main main   4096 Feb  4 18:17 external
+-rw-r--r--  1 main main  26693 Sep 28 04:49 font-awesome.min.css
+drwxr-xr-x  2 main main   4096 Feb  4 18:17 fonts
+-rw-r--r--  1 main main   8252 Dec 17 16:33 glDatePicker.darkneon.css
+-rw-r--r--  1 main main   8010 Dec 17 16:33 glDatePicker.default.css
+-rw-r--r--  1 main main   2291 Dec 17 16:33 glDatePicker.flatwhite.css
+-rw-r--r--  1 main main   4083 Jul  7  2015 htree.css
+-rw-r--r--  1 main main   1066 Jul  7  2015 image-picker.css
+drwxr-xr-x  2 main main   4096 Feb  4 18:17 images
+-rw-r--r--  1 main main  31712 Sep 28 15:13 index.html
+-rw-r--r--  1 main main  35496 Sep 28 15:27 jquery-ui.css
+-rw-r--r--  1 main main 470596 Sep 28 15:13 jquery-ui.js
+-rw-r--r--  1 main main  30281 Sep 28 15:13 jquery-ui.min.css
+-rw-r--r--  1 main main 240427 Sep 28 15:13 jquery-ui.min.js
+-rw-r--r--  1 main main  18016 Sep 28 15:13 jquery-ui.structure.css
+-rw-r--r--  1 main main  14769 Sep 28 15:13 jquery-ui.structure.min.css
+-rw-r--r--  1 main main  17559 Sep 28 15:24 jquery-ui.theme.css
+-rw-r--r--  1 main main  13885 Sep 28 15:13 jquery-ui.theme.min.css
+-rw-r--r--  1 main main   1102 Jul  7  2015 jquery.fileupload-ui.css
+-rw-r--r--  1 main main    655 Jul  7  2015 jquery.fileupload.css
+-rw-r--r--  1 main main    909 Jul  7  2015 jquery.tagsinput.css
+-rw-r--r--  1 main main  39050 Dec 26 20:55 main.css
+-rw-r--r--  1 main main    477 Sep 28 14:54 menu.css
+-rw-r--r--  1 main main   1093 Jul  7  2015 reset.css
+-rw-r--r--  1 main main    490 Jul 31  2015 responsiveslides.css
+-rw-r--r--  1 main main  14921 Jul  7  2015 spectrum.css
+-rw-r--r--  1 main main   1062 Jul  7  2015 sticky.min.css
+-rw-r--r--  1 main main    107 Jul  7  2015 stree.css
+-rw-r--r--  1 main main   1627 Jul  7  2015 stree.php
+drwxr-xr-x  2 main main   4096 Feb  4 18:17 themes
+-rw-r--r--  1 main main   9043 Jul  7  2015 tooltipster.css
+-rw-r--r--  1 main main   7104 Jul  7  2015 widearea.min.css
+
+./css/external:
+total 12
+drwxr-xr-x 3 main main 4096 Feb  4 18:17 .
+drwxr-xr-x 6 main main 4096 Feb  4 18:17 ..
+drwxr-xr-x 2 main main 4096 Feb  4 18:17 jquery
+
+./css/external/jquery:
+total 280
+drwxr-xr-x 2 main main   4096 Feb  4 18:17 .
+drwxr-xr-x 3 main main   4096 Feb  4 18:17 ..
+-rw-r--r-- 1 main main 273199 Sep 28 15:13 jquery.js
+
+./css/fonts:
+total 832
+drwxr-xr-x 2 main main   4096 Feb  4 18:17 .
+drwxr-xr-x 6 main main   4096 Feb  4 18:17 ..
+-rw-r--r-- 1 main main 106260 Sep 13 23:04 FontAwesome.otf
+-rw-r--r-- 1 main main  68875 Sep 13 23:04 fontawesome-webfont.eot
+-rw-r--r-- 1 main main 355981 Sep 13 23:04 fontawesome-webfont.svg
+-rw-r--r-- 1 main main 138204 Sep 13 23:04 fontawesome-webfont.ttf
+-rw-r--r-- 1 main main  81284 Sep 13 23:04 fontawesome-webfont.woff
+-rw-r--r-- 1 main main  64464 Sep 13 23:04 fontawesome-webfont.woff2
+
+./css/images:
+total 252
+drwxr-xr-x 2 main main  4096 Feb  4 18:17 .
+drwxr-xr-x 6 main main  4096 Feb  4 18:17 ..
+-rw-r--r-- 1 main main   416 Sep 28 15:13 ui-bg_diagonals-thick_12_b81900_40x40.png
+-rw-r--r-- 1 main main   218 Sep 28 15:13 ui-bg_dots-small_50_f57d00_2x2.png
+-rw-r--r-- 1 main main   206 Jul  7  2015 ui-bg_flat_0_188d18_40x100.png
+-rw-r--r-- 1 main main   212 Jul  7  2015 ui-bg_flat_0_aaaaaa_40x100.png
+-rw-r--r-- 1 main main   205 Sep 28 15:13 ui-bg_flat_10_000000_40x100.png
+-rw-r--r-- 1 main main   206 Jul  7  2015 ui-bg_flat_65_275acb_40x100.png
+-rw-r--r-- 1 main main   206 Jul  7  2015 ui-bg_flat_75_e1ded8_40x100.png
+-rw-r--r-- 1 main main   348 Sep 28 15:13 ui-bg_glass_100_fdf5ce_1x400.png
+-rw-r--r-- 1 main main   332 Jul  7  2015 ui-bg_glass_95_fef1ec_1x400.png
+-rw-r--r-- 1 main main  5748 Sep 28 15:13 ui-bg_gloss-wave_35_fb6000_500x100.png
+-rw-r--r-- 1 main main 72842 Jul  7  2015 ui-bg_glow-ball_55_fbb310_600x600.png
+-rw-r--r-- 1 main main   388 Sep 28 15:13 ui-bg_hexagon_20_100f45_12x10.png
+-rw-r--r-- 1 main main   278 Sep 28 15:13 ui-bg_highlight-soft_100_eeeeee_1x100.png
+-rw-r--r-- 1 main main   386 Sep 28 15:13 ui-bg_highlight-soft_65_f1e5d5_1x100.png
+-rw-r--r-- 1 main main   352 Jul  7  2015 ui-bg_highlight-soft_75_1068d2_1x100.png
+-rw-r--r-- 1 main main   363 Jul  7  2015 ui-bg_highlight-soft_75_a6b6df_1x100.png
+-rw-r--r-- 1 main main   359 Jul  7  2015 ui-bg_highlight-soft_75_d1d6e3_1x100.png
+-rw-r--r-- 1 main main   323 Sep 28 15:13 ui-bg_inset-hard_100_dad2cd_1x100.png
+-rw-r--r-- 1 main main  4549 Jul  7  2015 ui-icons_113a85_256x240.png
+-rw-r--r-- 1 main main  6922 Sep 28 15:13 ui-icons_222222_256x240.png
+-rw-r--r-- 1 main main  4549 Sep 28 15:13 ui-icons_228ef1_256x240.png
+-rw-r--r-- 1 main main  4549 Jul  7  2015 ui-icons_2975ec_256x240.png
+-rw-r--r-- 1 main main  4549 Jul  7  2015 ui-icons_2e83ff_256x240.png
+-rw-r--r-- 1 main main  4549 Jul  7  2015 ui-icons_cd0a0a_256x240.png
+-rw-r--r-- 1 main main  4549 Sep 28 15:13 ui-icons_ef8c08_256x240.png
+-rw-r--r-- 1 main main  4549 Jul  7  2015 ui-icons_f1cc10_256x240.png
+-rw-r--r-- 1 main main  4549 Sep 28 15:13 ui-icons_fb6000_256x240.png
+-rw-r--r-- 1 main main  4549 Jul  7  2015 ui-icons_ff6f02_256x240.png
+-rw-r--r-- 1 main main  4549 Sep 28 15:13 ui-icons_ffd27a_256x240.png
+-rw-r--r-- 1 main main  6299 Sep 28 15:13 ui-icons_ffffff_256x240.png
+
+./css/themes:
+total 28
+drwxr-xr-x 2 main main 4096 Feb  4 18:17 .
+drwxr-xr-x 6 main main 4096 Feb  4 18:17 ..
+-rw-r--r-- 1 main main 1855 Jul  7  2015 sp-dark.css
+-rw-r--r-- 1 main main  246 Jul  7  2015 tooltipster-light.css
+-rw-r--r-- 1 main main  240 Jul  7  2015 tooltipster-noir.css
+-rw-r--r-- 1 main main  251 Jul  7  2015 tooltipster-punk.css
+-rw-r--r-- 1 main main  261 Jul  7  2015 tooltipster-shadow.css
+
+::: Where to put your custom docs.
+
+./docs:
+total 80
+drwxr-xr-x  2 main main  4096 Feb  4 21:24 .
+drwxr-xr-x 23 main main  4096 Feb  4 22:49 ..
+-rw-r--r--  1 main main    44 Jul  7  2015 .htaccess
+-rw-r--r--  1 main main 60819 Feb  4 21:11 Page_AuthDB.sql
+-rw-r--r--  1 main main  3073 Jul  7  2015 access.html
+
+::: Where to put libraries and engines you want available globally
+
+./engines:
+total 80
+drwxr-xr-x  4 main main  4096 Feb  4 18:17 .
+drwxr-xr-x 23 main main  4096 Feb  4 22:49 ..
+-rw-r--r--  1 main main    55 Jul  7  2015 .htaccess
+drwxr-xr-x  3 main main  4096 Feb  4 18:17 FontLawyer
+-rw-r--r--  1 main main 18349 Jul 18  2015 HData.php
+-rw-r--r--  1 main main 37171 Jul  7  2015 Parsedown.php
+drwxr-xr-x  6 main main  4096 Feb  4 18:17 jbbcode-1.2.0
+
+::: The FontLawyer plugin for using Imagick to generate content to avoid licensing problems with Font Foundries
+
+./engines/FontLawyer:
+total 52
+drwxr-xr-x 3 main main 4096 Feb  4 18:17 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:17 ..
+-rw-r--r-- 1 main main 7278 Jul  7  2015 FontSpriter.php
+-rw-r--r-- 1 main main  672 Jul  7  2015 RectPackSimple.php
+-rw-r--r-- 1 main main 4380 Jul  7  2015 Render.php
+drwxr-xr-x 2 main main 4096 Feb  4 18:17 cache
+-rw-r--r-- 1 main main 3706 Jul  7  2015 settings.old
+-rw-r--r-- 1 main main 3596 Jul  7  2015 settings.php
+-rw-r--r-- 1 main main  464 Jul  7  2015 test.php
+-rw-r--r-- 1 main main 4548 Jul  7  2015 utility.php
+
+./engines/FontLawyer/cache:
+total 12
+drwxr-xr-x 2 main main 4096 Feb  4 18:17 .
+drwxr-xr-x 3 main main 4096 Feb  4 18:17 ..
+-rw-r--r-- 1 main main  229 Jul  7  2015 SheetID.txt
+
+
+::: Javascript BBCode plugin library
+
+./engines/jbbcode-1.2.0:
+total 128
+drwxr-xr-x 6 main main  4096 Feb  4 18:17 .
+drwxr-xr-x 4 main main  4096 Feb  4 18:17 ..
+-rw-r--r-- 1 main main 12292 Jul  7  2015 .DS_Store
+-rw-r--r-- 1 main main    21 Jul  7  2015 .gitignore
+-rw-r--r-- 1 main main  8631 Jul  7  2015 CodeDefinition.php
+-rw-r--r-- 1 main main  4383 Jul  7  2015 CodeDefinitionBuilder.php
+-rw-r--r-- 1 main main   325 Jul  7  2015 CodeDefinitionSet.php
+-rw-r--r-- 1 main main  2633 Jul  7  2015 DefaultCodeDefinitionSet.php
+-rw-r--r-- 1 main main  1482 Jul  7  2015 DocumentElement.php
+-rw-r--r-- 1 main main  5778 Jul  7  2015 ElementNode.php
+-rw-r--r-- 1 main main   314 Jul  7  2015 InputValidator.php
+-rw-r--r-- 1 main main  2266 Jul  7  2015 Node.php
+-rw-r--r-- 1 main main   371 Jul  7  2015 NodeVisitor.php
+-rw-r--r-- 1 main main 16322 Jul  7  2015 Parser.php
+-rw-r--r-- 1 main main  2754 Jul  7  2015 README.md
+-rw-r--r-- 1 main main  1936 Jul  7  2015 TextNode.php
+-rw-r--r-- 1 main main  2596 Jul  7  2015 Tokenizer.php
+-rw-r--r-- 1 main main   732 Jul  7  2015 composer.json
+drwxr-xr-x 2 main main  4096 Feb  4 18:17 examples
+drwxr-xr-x 2 main main  4096 Feb  4 18:17 tests
+drwxr-xr-x 2 main main  4096 Feb  4 18:17 validators
+drwxr-xr-x 2 main main  4096 Feb  4 18:17 visitors
+
+./engines/jbbcode-1.2.0/examples:
+total 32
+drwxr-xr-x 2 main main 4096 Feb  4 18:17 .
+drwxr-xr-x 6 main main 4096 Feb  4 18:17 ..
+-rw-r--r-- 1 main main  381 Jul  7  2015 1-GettingStarted.php
+-rw-r--r-- 1 main main  259 Jul  7  2015 2-ClosingUnclosedTags.php
+-rw-r--r-- 1 main main  369 Jul  7  2015 3-MarkuplessText.php
+-rw-r--r-- 1 main main  229 Jul  7  2015 4-CreatingNewCodes.php
+-rw-r--r-- 1 main main  475 Jul  7  2015 SmileyVisitorTest.php
+-rw-r--r-- 1 main main  559 Jul  7  2015 TagCountingVisitorTest.php
+
+./engines/jbbcode-1.2.0/tests:
+total 48
+drwxr-xr-x 2 main main 4096 Feb  4 18:17 .
+drwxr-xr-x 6 main main 4096 Feb  4 18:17 ..
+-rw-r--r-- 1 main main 2710 Jul  7  2015 BBCodeToBBCodeTest.php
+-rw-r--r-- 1 main main 2314 Jul  7  2015 BBCodeToTextTest.php
+-rw-r--r-- 1 main main 1594 Jul  7  2015 DefaultCodesTest.php
+-rw-r--r-- 1 main main 1719 Jul  7  2015 NestLimitTest.php
+-rw-r--r-- 1 main main 3412 Jul  7  2015 ParseContentTest.php
+-rw-r--r-- 1 main main 3294 Jul  7  2015 ParsingEdgeCaseTest.php
+-rw-r--r-- 1 main main 2715 Jul  7  2015 SimpleEvaluationTest.php
+-rw-r--r-- 1 main main 2727 Jul  7  2015 TokenizerTest.php
+-rw-r--r-- 1 main main 5339 Jul  7  2015 ValidatorTest.php
+
+./engines/jbbcode-1.2.0/validators:
+total 16
+drwxr-xr-x 2 main main 4096 Feb  4 18:17 .
+drwxr-xr-x 6 main main 4096 Feb  4 18:17 ..
+-rw-r--r-- 1 main main  736 Jul  7  2015 CssColorValidator.php
+-rw-r--r-- 1 main main  559 Jul  7  2015 UrlValidator.php
+
+./engines/jbbcode-1.2.0/visitors:
+total 20
+drwxr-xr-x 2 main main 4096 Feb  4 18:17 .
+drwxr-xr-x 6 main main 4096 Feb  4 18:17 ..
+-rw-r--r-- 1 main main 2327 Jul  7  2015 NestLimitVisitor.php
+-rw-r--r-- 1 main main 1217 Jul  7  2015 SmileyVisitor.php
+-rw-r--r-- 1 main main 1473 Jul  7  2015 TagCountingVisitor.php
+
+::: Just some examples of how to use various Page class functions.
+::: (Browse here to view the examples)
+
+./examples:
+total 40
+drwxr-xr-x  2 main main 4096 Feb  4 18:17 .
+drwxr-xr-x 23 main main 4096 Feb  4 22:49 ..
+-rw-r--r--  1 main main   42 Jul  7  2015 .htaccess
+-rw-r--r--  1 main main  178 Jul  7  2015 ajax_form.php
+-rw-r--r--  1 main main  748 Jul  7  2015 auth.php
+-rw-r--r--  1 main main  147 Jul  7  2015 ciphertest.php
+-rw-r--r--  1 main main  920 Jul  7  2015 enums.php
+-rw-r--r--  1 main main 1258 Jul  7  2015 form_test.php
+-rw-r--r--  1 main main 2180 Jul  7  2015 grid.php
+-rw-r--r--  1 main main  159 Jul  7  2015 index.php
+
+::: Forms used by the DataForm object.
+
+./forms:
+total 20
+drwxr-xr-x  2 main main 4096 Feb  4 18:17 .
+drwxr-xr-x 23 main main 4096 Feb  4 22:49 ..
+-rw-r--r--  1 main main   55 Jul  7  2015 .htaccess
+-rw-r--r--  1 main main  917 Jul  7  2015 README.md
+-rw-r--r--  1 main main  415 Jul  7  2015 changeMyPassword.txt
+
+::: PHP files you want globally loaded.
+
+./global:
+total 68
+drwxr-xr-x  2 main main  4096 Feb  4 18:17 .
+drwxr-xr-x 23 main main  4096 Feb  4 22:49 ..
+-rw-r--r--  1 main main    55 Jul  7  2015 .htaccess
+-rw-r--r--  1 main main 16115 Oct 28 02:49 cdn.php
+-rw-r--r--  1 main main 39984 Jul  7  2015 mdetect.php
+
+::: HTML snippets and fragments
+
+./html:
+total 36
+drwxr-xr-x  2 main main 4096 Feb  4 18:17 .
+drwxr-xr-x 23 main main 4096 Feb  4 22:49 ..
+-rw-r--r--  1 main main   55 Jul  7  2015 .htaccess
+-rw-r--r--  1 main main  814 Feb  4 21:08 footer.html
+-rw-r--r--  1 main main   48 Feb  4 21:08 groundrules.html
+-rw-r--r--  1 main main  655 Sep 28 14:53 header.html
+-rw-r--r--  1 main main  912 Sep 30 17:23 login_form.html
+-rw-r--r--  1 main main   97 Jul  7  2015 login_m1.html
+-rw-r--r--  1 main main   85 Jul  7  2015 login_m2.html
+
+::: Images.
+
+./i:
+total 1800
+drwxr-xr-x  3 main main   4096 Feb  4 21:22 .
+drwxr-xr-x 23 main main   4096 Feb  4 22:49 ..
+-rw-r--r--  1 main main     41 Jul  7  2015 .htaccess
+-rw-r--r--  1 main main 968769 Jul  7  2015 403.gif
+-rw-r--r--  1 main main 695373 Jul  7  2015 404.gif
+-rw-r--r--  1 main main   4301 Feb  4 21:05 Hello.png
+-rw-r--r--  1 main main  35913 Jul  7  2015 LOAD.GIF
+-rw-r--r--  1 main main   3422 Feb  4 21:01 Logo-trans.png
+-rw-r--r--  1 main main   3396 Feb  4 21:02 M-top-small.png
+-rw-r--r--  1 main main  25664 Jul  7  2015 MG_Icons.ttf
+-rw-r--r--  1 main main  25740 Jul  7  2015 MG_Icons.woff
+-rw-r--r--  1 main main   1353 Jul  7  2015 border-image.png
+-rw-r--r--  1 main main   7002 Jul 23  2015 dullchrome.jpg
+drwxr-xr-x  2 main main   4096 Feb  4 18:17 htree
+-rw-r--r--  1 main main   1393 Jul  7  2015 icons.png
+-rw-r--r--  1 main main   2792 Jul  7  2015 invis.png
+-rw-r--r--  1 main main   6462 Jul  7  2015 none.png
+-rw-r--r--  1 main main   3002 Jul  7  2015 none100.png
+-rw-r--r--  1 main main   2063 Jul  7  2015 none64.png
+-rw-r--r--  1 main main   1185 Jul  7  2015 q64.png
+
+
+::: All of your jQuery objects and local Javascript not loaded from a CDN.
+
+./js:
+total 3948
+drwxr-xr-x 15 main main   4096 Feb  4 18:22 .
+drwxr-xr-x 23 main main   4096 Feb  4 22:49 ..
+-rw-r--r--  1 main main     41 Jul  7  2015 .htaccess
+-rw-r--r--  1 main main 399624 Dec 17 16:30 3.5.6.zip
+drwxr-xr-x  5 main main   4096 Feb  4 18:17 Chart.js
+-rw-r--r--  1 main main  52091 Jul  7  2015 Chart.min.js
+drwxr-xr-x  7 main main   4096 Feb  4 18:20 Snap.svg-0.3.0
+-rw-r--r--  1 main main  44133 Jul  7  2015 chosen.jquery.js
+-rw-r--r--  1 main main  28001 Jul  7  2015 chosen.jquery.min.js
+-rw-r--r--  1 main main   1395 Dec 17 18:39 clip-j.js
+drwxr-xr-x  5 main main   4096 Feb  4 18:18 dt-1.10.5
+-rw-r--r--  1 main main  41209 Jul  7  2015 excanvas-1.js
+-rw-r--r--  1 main main  11363 Jul  7  2015 excanvas.compiled.js
+-rw-r--r--  1 main main  27045 Jul  7  2015 excanvas.js
+drwxr-xr-x  4 main main   4096 Feb  4 18:18 excanvas_r3
+-rw-r--r--  1 main main 285987 Jul  7  2015 forge.min.js
+drwxr-xr-x  3 main main   4096 Feb  4 18:19 glDatePicker-2.0
+-rw-r--r--  1 main main   7507 Jul  7  2015 glDatePicker.min.js
+-rw-r--r--  1 main main  71947 Jul  7  2015 header-menu-old.js
+-rw-r--r--  1 main main  72613 Jul  7  2015 header-menu.js
+drwxr-xr-x  5 main main   4096 Feb  4 18:19 highlighter
+-rw-r--r--  1 main main   9477 Jul  7  2015 image-picker.js
+-rw-r--r--  1 main main   5251 Jul  7  2015 image-picker.min.js
+drwxr-xr-x  4 main main   4096 Feb  4 18:19 jStarbox
+drwxr-xr-x  8 main main   4096 Feb  4 18:19 jfu-9.9.3
+-rw-r--r--  1 main main 162463 Jul  7  2015 jit-yc.js
+-rw-r--r--  1 main main 490615 Jul  7  2015 jit.js
+-rw-r--r--  1 main main  63918 Jul  7  2015 jmpress.custom.js
+-rw-r--r--  1 main main   7199 Jul  7  2015 jquery-migrate-1.2.1.min.js
+-rw-r--r--  1 main main 470596 Jul  7  2015 jquery-ui.js
+-rw-r--r--  1 main main 240427 Sep 28 15:22 jquery-ui.min.js
+-rw-r--r--  1 main main  32233 Dec 23 18:30 jquery.csv2table.js
+-rw-r--r--  1 main main   5989 Dec 23 17:15 jquery.csvToTable.js
+-rw-r--r--  1 main main   5177 Jul  7  2015 jquery.fileupload-jquery-ui.js
+-rw-r--r--  1 main main  63330 Jul  7  2015 jquery.fileupload.js
+-rw-r--r--  1 main main  26222 Jul  7  2015 jquery.knob.js
+-rw-r--r--  1 main main  24686 Jul  7  2015 jquery.mjs.nestedSortable.js
+-rw-r--r--  1 main main   9769 Jul  7  2015 jquery.simplemodal.1.4.4.min.js
+-rw-r--r--  1 main main  12597 Aug  1  2015 jquery.stellar.min.js
+-rw-r--r--  1 main main  12345 Jul  7  2015 jquery.tagsinput.js
+-rw-r--r--  1 main main  17523 Jul  7  2015 jquery.tooltipster.min.js
+-rw-r--r--  1 main main  25946 Jul  7  2015 jquery.tree.js
+drwxr-xr-x  7 main main   4096 Feb  4 18:19 jsc3d
+-rw-r--r--  1 main main 246638 Jul  7  2015 jstree.js
+-rw-r--r--  1 main main 113031 Jul  7  2015 jstree.min.js
+-rw-r--r--  1 main main    108 Jul  7  2015 main.jquery.css
+-rw-r--r--  1 main main     85 Dec 23 18:21 main.js
+-rw-r--r--  1 main main  33406 Jul  7  2015 mdetect.js
+-rw-r--r--  1 main main  43016 Jul  7  2015 notifier.js
+drwxr-xr-x  6 main main   4096 Feb  4 18:20 pickadate
+-rw-r--r--  1 main main 227458 Jul  7  2015 processing.min.js
+-rw-r--r--  1 main main   3397 Jul 31  2015 responsiveslides.min.js
+-rw-r--r--  1 main main  23168 Jul  7  2015 sjcl.js
+-rw-r--r--  1 main main  73161 Jul  7  2015 snap.svg-min.js
+-rw-r--r--  1 main main  78973 Jul  7  2015 spectrum.js
+-rw-r--r--  1 main main   1468 Jul  7  2015 sticky.min.js
+-rw-r--r--  1 main main   4207 Jul  7  2015 stree-minimal.js
+-rw-r--r--  1 main main   5048 Jul  7  2015 stree.js
+drwxr-xr-x  8 main main   4096 Feb  4 18:21 toxiclibs
+-rw-r--r--  1 main main 222266 Jul  7  2015 toxiclibs.min.js
+drwxr-xr-x  2 main main   4096 Feb  4 18:21 tv
+drwxr-xr-x  7 main main   4096 Feb  4 18:22 wdCalendar
+-rw-r--r--  1 main main   3611 Jul  7  2015 widearea.min.js
+
+::: Chart.js functionality implemented in shreds/Charts.php
+
+./js/Chart.js:
+total 220
+drwxr-xr-x  5 main main   4096 Feb  4 18:17 .
+drwxr-xr-x 15 main main   4096 Feb  4 18:22 ..
+-rw-r--r--  1 main main     51 Jul  7  2015 .gitignore
+-rw-r--r--  1 main main    162 Jul  7  2015 .travis.yml
+-rw-r--r--  1 main main   2991 Jul  7  2015 CONTRIBUTING.md
+-rw-r--r--  1 main main 109612 Jul  7  2015 Chart.js
+-rw-r--r--  1 main main  52091 Jul  7  2015 Chart.min.js
+-rw-r--r--  1 main main   1060 Jul  7  2015 LICENSE.md
+-rw-r--r--  1 main main   1144 Jul  7  2015 README.md
+-rw-r--r--  1 main main    239 Jul  7  2015 bower.json
+drwxr-xr-x  2 main main   4096 Feb  4 18:17 docs
+-rw-r--r--  1 main main   3651 Jul  7  2015 gulpfile.js
+-rw-r--r--  1 main main    664 Jul  7  2015 package.json
+drwxr-xr-x  2 main main   4096 Feb  4 18:17 samples
+drwxr-xr-x  2 main main   4096 Feb  4 18:17 src
+
+./js/Chart.js/docs:
+total 68
+drwxr-xr-x 2 main main 4096 Feb  4 18:17 .
+drwxr-xr-x 5 main main 4096 Feb  4 18:17 ..
+-rw-r--r-- 1 main main 6872 Jul  7  2015 00-Getting-Started.md
+-rw-r--r-- 1 main main 5570 Jul  7  2015 01-Line-Chart.md
+-rw-r--r-- 1 main main 5039 Jul  7  2015 02-Bar-Chart.md
+-rw-r--r-- 1 main main 5807 Jul  7  2015 03-Radar-Chart.md
+-rw-r--r-- 1 main main 5401 Jul  7  2015 04-Polar-Area-Chart.md
+-rw-r--r-- 1 main main 5710 Jul  7  2015 05-Pie-Doughnut-Chart.md
+-rw-r--r-- 1 main main 6423 Jul  7  2015 06-Advanced.md
+-rw-r--r-- 1 main main 2808 Jul  7  2015 07-Notes.md
+
+./js/Chart.js/samples:
+total 44
+drwxr-xr-x 2 main main 4096 Feb  4 18:17 .
+drwxr-xr-x 5 main main 4096 Feb  4 18:17 ..
+-rw-r--r-- 1 main main 1321 Jul  7  2015 bar.html
+-rw-r--r-- 1 main main 1077 Jul  7  2015 doughnut.html
+-rw-r--r-- 1 main main 4024 Jul  7  2015 line-customTooltips.html
+-rw-r--r-- 1 main main 1558 Jul  7  2015 line.html
+-rw-r--r-- 1 main main 4110 Jul  7  2015 pie-customTooltips.html
+-rw-r--r-- 1 main main  926 Jul  7  2015 pie.html
+-rw-r--r-- 1 main main  997 Jul  7  2015 polar-area.html
+-rw-r--r-- 1 main main 1275 Jul  7  2015 radar.html
+
+./js/Chart.js/src:
+total 128
+drwxr-xr-x 2 main main  4096 Feb  4 18:17 .
+drwxr-xr-x 5 main main  4096 Feb  4 18:17 ..
+-rw-r--r-- 1 main main  9689 Jul  7  2015 Chart.Bar.js
+-rw-r--r-- 1 main main 65285 Jul  7  2015 Chart.Core.js
+-rw-r--r-- 1 main main  5837 Jul  7  2015 Chart.Doughnut.js
+-rw-r--r-- 1 main main 11788 Jul  7  2015 Chart.Line.js
+-rw-r--r-- 1 main main  7641 Jul  7  2015 Chart.PolarArea.js
+-rw-r--r-- 1 main main 10089 Jul  7  2015 Chart.Radar.js
+
+::: SVG rendering plugin
+
+./js/Snap.svg-0.3.0:
+total 112
+drwxr-xr-x  7 main main  4096 Feb  4 18:20 .
+drwxr-xr-x 15 main main  4096 Feb  4 18:22 ..
+-rw-r--r--  1 main main    44 Jul  7  2015 .gitignore
+-rw-r--r--  1 main main   323 Jul  7  2015 .gitmodules
+-rw-r--r--  1 main main   168 Jul  7  2015 CONTRIBUTING
+-rw-r--r--  1 main main  1751 Jul  7  2015 Gruntfile.js
+-rw-r--r--  1 main main 11356 Jul  7  2015 LICENSE
+-rw-r--r--  1 main main  8460 Jul  7  2015 NOTICE
+-rw-r--r--  1 main main  1806 Jul  7  2015 README.md
+-rw-r--r--  1 main main   460 Jul  7  2015 bower.json
+-rw-r--r--  1 main main   330 Jul  7  2015 component.json
+drwxr-xr-x 10 main main  4096 Feb  4 18:20 demos
+drwxr-xr-x  2 main main  4096 Feb  4 18:20 dist
+drwxr-xr-x  6 main main  4096 Feb  4 18:20 doc
+-rw-r--r--  1 main main  1263 Jul  7  2015 dr.json
+-rw-r--r--  1 main main  1012 Jul  7  2015 history.md
+-rw-r--r--  1 main main   585 Jul  7  2015 package.json
+drwxr-xr-x  2 main main  4096 Feb  4 18:20 src
+-rw-r--r--  1 main main  9008 Jul  7  2015 template.dot
+drwxr-xr-x  3 main main  4096 Feb  4 18:20 test
+-rw-r--r--  1 main main  7127 Jul  7  2015 test.html
+
+./js/Snap.svg-0.3.0/demos:
+total 40
+drwxr-xr-x 10 main main 4096 Feb  4 18:20 .
+drwxr-xr-x  7 main main 4096 Feb  4 18:20 ..
+drwxr-xr-x  3 main main 4096 Feb  4 18:20 animated-game
+drwxr-xr-x  2 main main 4096 Feb  4 18:20 animated-map
+drwxr-xr-x  2 main main 4096 Feb  4 18:20 clock
+drwxr-xr-x  2 main main 4096 Feb  4 18:20 illustrated-infographic-coffee
+drwxr-xr-x  2 main main 4096 Feb  4 18:20 pattern
+drwxr-xr-x  4 main main 4096 Feb  4 18:20 snap-ad
+drwxr-xr-x  2 main main 4096 Feb  4 18:20 snap-mascot
+drwxr-xr-x  2 main main 4096 Feb  4 18:20 tutorial
+
+./js/Snap.svg-0.3.0/demos/animated-game:
+total 112
+drwxr-xr-x  3 main main  4096 Feb  4 18:20 .
+drwxr-xr-x 10 main main  4096 Feb  4 18:20 ..
+-rw-r--r--  1 main main 95864 Jul  7  2015 index.html
+drwxr-xr-x  2 main main  4096 Feb  4 18:20 js
+
+./js/Snap.svg-0.3.0/demos/animated-game/js:
+total 472
+drwxr-xr-x 2 main main   4096 Feb  4 18:20 .
+drwxr-xr-x 3 main main   4096 Feb  4 18:20 ..
+-rw-r--r-- 1 main main  59594 Jul  7  2015 backbone.js
+-rw-r--r-- 1 main main  93068 Jul  7  2015 jquery-1.9.0.min.js
+-rw-r--r-- 1 main main   2470 Jul  7  2015 main.js
+-rw-r--r-- 1 main main   2612 Jul  7  2015 path-animal.js
+-rw-r--r-- 1 main main  11541 Jul  7  2015 seedrandom.js
+-rw-r--r-- 1 main main 235192 Jul  7  2015 snap.svg.js
+-rw-r--r-- 1 main main   1600 Jul  7  2015 tree-face.js
+-rw-r--r-- 1 main main  41662 Jul  7  2015 underscore.js
+
+./js/Snap.svg-0.3.0/demos/animated-map:
+total 76
+drwxr-xr-x  2 main main  4096 Feb  4 18:20 .
+drwxr-xr-x 10 main main  4096 Feb  4 18:20 ..
+-rw-r--r--  1 main main  3978 Jul  7  2015 index.html
+-rw-r--r--  1 main main 58147 Jul  7  2015 map.svg
+
+./js/Snap.svg-0.3.0/demos/clock:
+total 12
+drwxr-xr-x  2 main main 4096 Feb  4 18:20 .
+drwxr-xr-x 10 main main 4096 Feb  4 18:20 ..
+-rw-r--r--  1 main main 2962 Jul  7  2015 index.html
+
+./js/Snap.svg-0.3.0/demos/illustrated-infographic-coffee:
+total 44
+drwxr-xr-x  2 main main  4096 Feb  4 18:20 .
+drwxr-xr-x 10 main main  4096 Feb  4 18:20 ..
+-rw-r--r--  1 main main 18891 Jul  7  2015 demo.svg
+-rw-r--r--  1 main main 15817 Jul  7  2015 index.html
+
+./js/Snap.svg-0.3.0/demos/pattern:
+total 112
+drwxr-xr-x  2 main main  4096 Feb  4 18:20 .
+drwxr-xr-x 10 main main  4096 Feb  4 18:20 ..
+-rw-r--r--  1 main main  5795 Jul  7  2015 bg.png
+-rw-r--r--  1 main main 86947 Jul  7  2015 demo-card.svg
+-rw-r--r--  1 main main  3831 Jul  7  2015 index.html
+
+./js/Snap.svg-0.3.0/demos/snap-ad:
+total 32
+drwxr-xr-x  4 main main 4096 Feb  4 18:20 .
+drwxr-xr-x 10 main main 4096 Feb  4 18:20 ..
+-rw-r--r--  1 main main 2187 Jul  7  2015 Gruntfile.js
+-rw-r--r--  1 main main   98 Jul  7  2015 README.md
+-rw-r--r--  1 main main 2507 Jul  7  2015 SnapAd.tmproj
+-rw-r--r--  1 main main  405 Jul  7  2015 package.json
+drwxr-xr-x  5 main main 4096 Feb  4 18:20 site
+drwxr-xr-x  7 main main 4096 Feb  4 18:20 src
+
+./js/Snap.svg-0.3.0/demos/snap-ad/site:
+total 360
+drwxr-xr-x 5 main main   4096 Feb  4 18:20 .
+drwxr-xr-x 4 main main   4096 Feb  4 18:20 ..
+drwxr-xr-x 3 main main   4096 Feb  4 18:20 assets
+-rw-r--r-- 1 main main  34998 Jul  7  2015 backup.jpg
+drwxr-xr-x 2 main main   4096 Feb  4 18:20 css
+-rw-r--r-- 1 main main   9920 Jul  7  2015 index.html
+-rw-r--r-- 1 main main 291799 Jul  7  2015 index.min.html
+drwxr-xr-x 3 main main   4096 Feb  4 18:20 js
+
+./js/Snap.svg-0.3.0/demos/snap-ad/site/assets:
+total 28
+drwxr-xr-x 3 main main 4096 Feb  4 18:20 .
+drwxr-xr-x 5 main main 4096 Feb  4 18:20 ..
+-rw-r--r-- 1 main main 1222 Jul  7  2015 computer.svg
+drwxr-xr-x 2 main main 4096 Feb  4 18:20 fonts
+-rw-r--r-- 1 main main  649 Jul  7  2015 heart.svg
+-rw-r--r-- 1 main main  928 Jul  7  2015 phone.svg
+-rw-r--r-- 1 main main  931 Jul  7  2015 tablet.svg
+
+./js/Snap.svg-0.3.0/demos/snap-ad/site/assets/fonts:
+total 384
+drwxr-xr-x 2 main main   4096 Feb  4 18:20 .
+drwxr-xr-x 3 main main   4096 Feb  4 18:20 ..
+-rw-r--r-- 1 main main 222412 Jul  7  2015 OpenSans-Light.ttf
+-rw-r--r-- 1 main main 149636 Jul  7  2015 SourceSansPro-Semibold.ttf
+
+./js/Snap.svg-0.3.0/demos/snap-ad/site/css:
+total 12
+drwxr-xr-x 2 main main 4096 Feb  4 18:20 .
+drwxr-xr-x 5 main main 4096 Feb  4 18:20 ..
+-rw-r--r-- 1 main main 2091 Jul  7  2015 screen.css
+
+./js/Snap.svg-0.3.0/demos/snap-ad/site/js:
+total 276
+drwxr-xr-x 3 main main   4096 Feb  4 18:20 .
+drwxr-xr-x 5 main main   4096 Feb  4 18:20 ..
+-rw-r--r-- 1 main main 264738 Jul  7  2015 main.js
+drwxr-xr-x 2 main main   4096 Feb  4 18:20 vendor
+
+./js/Snap.svg-0.3.0/demos/snap-ad/site/js/vendor:
+total 116
+drwxr-xr-x 2 main main  4096 Feb  4 18:20 .
+drwxr-xr-x 3 main main  4096 Feb  4 18:20 ..
+-rw-r--r-- 1 main main  7761 Jul  7  2015 modernizr.min.js
+-rw-r--r-- 1 main main 81102 Jul  7  2015 require.js
+-rw-r--r-- 1 main main 15209 Jul  7  2015 require.min.js
+
+./js/Snap.svg-0.3.0/demos/snap-ad/src:
+total 80
+drwxr-xr-x 7 main main  4096 Feb  4 18:20 .
+drwxr-xr-x 4 main main  4096 Feb  4 18:20 ..
+drwxr-xr-x 3 main main  4096 Feb  4 18:20 .sass-cache
+drwxr-xr-x 3 main main  4096 Feb  4 18:20 assets
+-rw-r--r-- 1 main main 34998 Jul  7  2015 backup.jpg
+-rw-r--r-- 1 main main   851 Jul  7  2015 config.rb
+drwxr-xr-x 2 main main  4096 Feb  4 18:20 css
+-rw-r--r-- 1 main main 10015 Jul  7  2015 index.html
+drwxr-xr-x 4 main main  4096 Feb  4 18:20 js
+drwxr-xr-x 2 main main  4096 Feb  4 18:20 sass
+
+./js/Snap.svg-0.3.0/demos/snap-ad/src/.sass-cache:
+total 12
+drwxr-xr-x 3 main main 4096 Feb  4 18:20 .
+drwxr-xr-x 7 main main 4096 Feb  4 18:20 ..
+drwxr-xr-x 2 main main 4096 Feb  4 18:20 7eb2e4ecfecd432261de95f74b5302c6e0956ac9
+
+./js/Snap.svg-0.3.0/demos/snap-ad/src/.sass-cache/7eb2e4ecfecd432261de95f74b5302c6e0956ac9:
+total 16
+drwxr-xr-x 2 main main 4096 Feb  4 18:20 .
+drwxr-xr-x 3 main main 4096 Feb  4 18:20 ..
+-rw-r--r-- 1 main main 6370 Jul  7  2015 screen.scssc
+
+./js/Snap.svg-0.3.0/demos/snap-ad/src/assets:
+total 28
+drwxr-xr-x 3 main main 4096 Feb  4 18:20 .
+drwxr-xr-x 7 main main 4096 Feb  4 18:20 ..
+-rw-r--r-- 1 main main 1222 Jul  7  2015 computer.svg
+drwxr-xr-x 2 main main 4096 Feb  4 18:20 fonts
+-rw-r--r-- 1 main main  649 Jul  7  2015 heart.svg
+-rw-r--r-- 1 main main  928 Jul  7  2015 phone.svg
+-rw-r--r-- 1 main main  931 Jul  7  2015 tablet.svg
+
+./js/Snap.svg-0.3.0/demos/snap-ad/src/assets/fonts:
+total 384
+drwxr-xr-x 2 main main   4096 Feb  4 18:20 .
+drwxr-xr-x 3 main main   4096 Feb  4 18:20 ..
+-rw-r--r-- 1 main main 222412 Jul  7  2015 OpenSans-Light.ttf
+-rw-r--r-- 1 main main 149636 Jul  7  2015 SourceSansPro-Semibold.ttf
+
+./js/Snap.svg-0.3.0/demos/snap-ad/src/css:
+total 12
+drwxr-xr-x 2 main main 4096 Feb  4 18:20 .
+drwxr-xr-x 7 main main 4096 Feb  4 18:20 ..
+-rw-r--r-- 1 main main 2000 Jul  7  2015 screen.css
+
+./js/Snap.svg-0.3.0/demos/snap-ad/src/js:
+total 20
+drwxr-xr-x 4 main main 4096 Feb  4 18:20 .
+drwxr-xr-x 7 main main 4096 Feb  4 18:20 ..
+drwxr-xr-x 2 main main 4096 Feb  4 18:20 app
+-rw-r--r-- 1 main main 3741 Jul  7  2015 main.js
+drwxr-xr-x 3 main main 4096 Feb  4 18:20 vendor
+
+./js/Snap.svg-0.3.0/demos/snap-ad/src/js/app:
+total 40
+drwxr-xr-x 2 main main 4096 Feb  4 18:20 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:20 ..
+-rw-r--r-- 1 main main 5469 Jul  7  2015 app.js
+-rw-r--r-- 1 main main  777 Jul  7  2015 burst.js
+-rw-r--r-- 1 main main 4423 Jul  7  2015 device.js
+-rw-r--r-- 1 main main 1878 Jul  7  2015 heart.js
+-rw-r--r-- 1 main main 1131 Jul  7  2015 logo.js
+-rw-r--r-- 1 main main 3368 Jul  7  2015 mesh.js
+
+./js/Snap.svg-0.3.0/demos/snap-ad/src/js/vendor:
+total 436
+drwxr-xr-x 3 main main   4096 Feb  4 18:20 .
+drwxr-xr-x 4 main main   4096 Feb  4 18:20 ..
+drwxr-xr-x 2 main main   4096 Feb  4 18:20 fss
+-rw-r--r-- 1 main main  19715 Jul  7  2015 fss.js
+-rw-r--r-- 1 main main   7761 Jul  7  2015 modernizr.min.js
+-rw-r--r-- 1 main main  81102 Jul  7  2015 require.js
+-rw-r--r-- 1 main main  15209 Jul  7  2015 require.min.js
+-rw-r--r-- 1 main main  66897 Jul  7  2015 snap.svg-min.js
+-rw-r--r-- 1 main main 223931 Jul  7  2015 snap.svg.js
+
+./js/Snap.svg-0.3.0/demos/snap-ad/src/js/vendor/fss:
+total 76
+drwxr-xr-x 2 main main 4096 Feb  4 18:20 .
+drwxr-xr-x 3 main main 4096 Feb  4 18:20 ..
+-rw-r--r-- 1 main main 1031 Jul  7  2015 Color.js
+-rw-r--r-- 1 main main 1525 Jul  7  2015 Core.js
+-rw-r--r-- 1 main main  479 Jul  7  2015 Geometry.js
+-rw-r--r-- 1 main main  326 Jul  7  2015 Light.js
+-rw-r--r-- 1 main main  244 Jul  7  2015 Material.js
+-rw-r--r-- 1 main main  326 Jul  7  2015 Math.js
+-rw-r--r-- 1 main main 2028 Jul  7  2015 Mesh.js
+-rw-r--r-- 1 main main  254 Jul  7  2015 Object.js
+-rw-r--r-- 1 main main 1233 Jul  7  2015 Plane.js
+-rw-r--r-- 1 main main  547 Jul  7  2015 Renderer.js
+-rw-r--r-- 1 main main 1753 Jul  7  2015 SVGRenderer.js
+-rw-r--r-- 1 main main  738 Jul  7  2015 Scene.js
+-rw-r--r-- 1 main main 1293 Jul  7  2015 Triangle.js
+-rw-r--r-- 1 main main 4477 Jul  7  2015 Vector3.js
+-rw-r--r-- 1 main main 1749 Jul  7  2015 Vector4.js
+-rw-r--r-- 1 main main  268 Jul  7  2015 Vertex.js
+
+./js/Snap.svg-0.3.0/demos/snap-ad/src/sass:
+total 12
+drwxr-xr-x 2 main main 4096 Feb  4 18:20 .
+drwxr-xr-x 7 main main 4096 Feb  4 18:20 ..
+-rw-r--r-- 1 main main  941 Jul  7  2015 screen.scss
+
+./js/Snap.svg-0.3.0/demos/snap-mascot:
+total 64
+drwxr-xr-x  2 main main  4096 Feb  4 18:20 .
+drwxr-xr-x 10 main main  4096 Feb  4 18:20 ..
+-rw-r--r--  1 main main  9962 Jul  7  2015 crocodile-1.html
+-rw-r--r--  1 main main 27328 Jul  7  2015 crocodile-2.html
+-rw-r--r--  1 main main  1005 Jul  7  2015 index.html
+-rw-r--r--  1 main main  5323 Jul  7  2015 snap-logo.html
+-rw-r--r--  1 main main   234 Jul  7  2015 style.css
+
+./js/Snap.svg-0.3.0/demos/tutorial:
+total 64
+drwxr-xr-x  2 main main 4096 Feb  4 18:20 .
+drwxr-xr-x 10 main main 4096 Feb  4 18:20 ..
+-rw-r--r--  1 main main 7081 Jul  7  2015 1.html
+-rw-r--r--  1 main main 7343 Jul  7  2015 2.html
+-rw-r--r--  1 main main 7647 Jul  7  2015 3.html
+-rw-r--r--  1 main main 6855 Jul  7  2015 4.html
+-rw-r--r--  1 main main 9502 Jul  7  2015 index.html
+-rw-r--r--  1 main main 6809 Jul  7  2015 mascot.svg
+-rw-r--r--  1 main main 1378 Jul  7  2015 tutorial.html
+
+./js/Snap.svg-0.3.0/dist:
+total 336
+drwxr-xr-x 2 main main   4096 Feb  4 18:20 .
+drwxr-xr-x 7 main main   4096 Feb  4 18:20 ..
+-rw-r--r-- 1 main main  73161 Jul  7  2015 snap.svg-min.js
+-rw-r--r-- 1 main main 251221 Jul  7  2015 snap.svg.js
+
+./js/Snap.svg-0.3.0/doc:
+total 736
+drwxr-xr-x 6 main main   4096 Feb  4 18:20 .
+drwxr-xr-x 7 main main   4096 Feb  4 18:20 ..
+drwxr-xr-x 2 main main   4096 Feb  4 18:20 css
+drwxr-xr-x 2 main main   4096 Feb  4 18:20 fonts
+drwxr-xr-x 2 main main   4096 Feb  4 18:20 img
+drwxr-xr-x 2 main main   4096 Feb  4 18:20 js
+-rw-r--r-- 1 main main 722592 Jul  7  2015 reference.html
+
+./js/Snap.svg-0.3.0/doc/css:
+total 312
+drwxr-xr-x 2 main main   4096 Feb  4 18:20 .
+drwxr-xr-x 6 main main   4096 Feb  4 18:20 ..
+-rw-r--r-- 1 main main   2615 Jul  7  2015 dr.css
+-rw-r--r-- 1 main main 201447 Jul  7  2015 main.css
+-rw-r--r-- 1 main main   3635 Jul  7  2015 prism.css
+-rw-r--r-- 1 main main  86052 Jul  7  2015 topcoat-desktop-light.css
+
+./js/Snap.svg-0.3.0/doc/fonts:
+total 688
+drwxr-xr-x 2 main main  4096 Feb  4 18:20 .
+drwxr-xr-x 6 main main  4096 Feb  4 18:20 ..
+-rw-r--r-- 1 main main 23949 Jul  7  2015 sourcecodepro-regular-webfont.eot
+-rw-r--r-- 1 main main 53926 Jul  7  2015 sourcecodepro-regular-webfont.svg
+-rw-r--r-- 1 main main 52660 Jul  7  2015 sourcecodepro-regular-webfont.ttf
+-rw-r--r-- 1 main main 27068 Jul  7  2015 sourcecodepro-regular-webfont.woff
+-rw-r--r-- 1 main main 23716 Jul  7  2015 sourcesanspro-light-webfont.eot
+-rw-r--r-- 1 main main 58559 Jul  7  2015 sourcesanspro-light-webfont.svg
+-rw-r--r-- 1 main main 51876 Jul  7  2015 sourcesanspro-light-webfont.ttf
+-rw-r--r-- 1 main main 26716 Jul  7  2015 sourcesanspro-light-webfont.woff
+-rw-r--r-- 1 main main 23970 Jul  7  2015 sourcesanspro-regular-webfont.eot
+-rw-r--r-- 1 main main 57056 Jul  7  2015 sourcesanspro-regular-webfont.svg
+-rw-r--r-- 1 main main 52456 Jul  7  2015 sourcesanspro-regular-webfont.ttf
+-rw-r--r-- 1 main main 27076 Jul  7  2015 sourcesanspro-regular-webfont.woff
+-rw-r--r-- 1 main main 23974 Jul  7  2015 sourcesanspro-semibold-webfont.eot
+-rw-r--r-- 1 main main 56584 Jul  7  2015 sourcesanspro-semibold-webfont.svg
+-rw-r--r-- 1 main main 51960 Jul  7  2015 sourcesanspro-semibold-webfont.ttf
+-rw-r--r-- 1 main main 27048 Jul  7  2015 sourcesanspro-semibold-webfont.woff
+-rw-r--r-- 1 main main  1849 Jul  7  2015 stylesheet.css
+
+./js/Snap.svg-0.3.0/doc/img:
+total 16
+drwxr-xr-x 2 main main 4096 Feb  4 18:20 .
+drwxr-xr-x 6 main main 4096 Feb  4 18:20 ..
+-rw-r--r-- 1 main main 1150 Jul  7  2015 search.svg
+-rw-r--r-- 1 main main 1290 Jul  7  2015 search_dark.svg
+
+./js/Snap.svg-0.3.0/doc/js:
+total 16
+drwxr-xr-x 2 main main 4096 Feb  4 18:20 .
+drwxr-xr-x 6 main main 4096 Feb  4 18:20 ..
+-rw-r--r-- 1 main main 5399 Jul  7  2015 prism.js
+
+./js/Snap.svg-0.3.0/src:
+total 280
+drwxr-xr-x 2 main main  4096 Feb  4 18:20 .
+drwxr-xr-x 7 main main  4096 Feb  4 18:20 ..
+-rw-r--r-- 1 main main   401 Jul  7  2015 amd-banner.js
+-rw-r--r-- 1 main main    17 Jul  7  2015 amd-footer.js
+-rw-r--r-- 1 main main 14245 Jul  7  2015 attr.js
+-rw-r--r-- 1 main main  3015 Jul  7  2015 attradd.js
+-rw-r--r-- 1 main main   672 Jul  7  2015 copy.js
+-rw-r--r-- 1 main main  5852 Jul  7  2015 equal.js
+-rw-r--r-- 1 main main 11027 Jul  7  2015 filter.js
+-rw-r--r-- 1 main main 10236 Jul  7  2015 matrix.js
+-rw-r--r-- 1 main main  9730 Jul  7  2015 mina.js
+-rw-r--r-- 1 main main 16899 Jul  7  2015 mouse.js
+-rw-r--r-- 1 main main 22526 Jul  7  2015 paper.js
+-rw-r--r-- 1 main main 51701 Jul  7  2015 path.js
+-rw-r--r-- 1 main main  9441 Jul  7  2015 set.js
+-rw-r--r-- 1 main main 81606 Jul  7  2015 svg.js
+
+./js/Snap.svg-0.3.0/test:
+total 152
+drwxr-xr-x 3 main main  4096 Feb  4 18:20 .
+drwxr-xr-x 7 main main  4096 Feb  4 18:20 ..
+-rw-r--r-- 1 main main  1132 Jul  7  2015 attradd.js
+-rw-r--r-- 1 main main  6449 Jul  7  2015 attrs.js
+-rw-r--r-- 1 main main  1859 Jul  7  2015 class.js
+-rw-r--r-- 1 main main  6244 Jul  7  2015 colors.js
+-rw-r--r-- 1 main main 24637 Jul  7  2015 element.js
+-rw-r--r-- 1 main main  7296 Jul  7  2015 filter.js
+-rw-r--r-- 1 main main  5482 Jul  7  2015 matrix.js
+-rw-r--r-- 1 main main  2944 Jul  7  2015 mina.js
+-rw-r--r-- 1 main main  5239 Jul  7  2015 paper.js
+-rw-r--r-- 1 main main 16559 Jul  7  2015 path.js
+-rw-r--r-- 1 main main  5550 Jul  7  2015 primitives.js
+drwxr-xr-x 2 main main  4096 Feb  4 18:20 res
+-rw-r--r-- 1 main main  6452 Jul  7  2015 set.js
+-rw-r--r-- 1 main main 16222 Jul  7  2015 snap-tests.js
+-rw-r--r-- 1 main main   299 Jul  7  2015 system.js
+-rw-r--r-- 1 main main  2070 Jul  7  2015 test.html
+
+./js/Snap.svg-0.3.0/test/res:
+total 16
+drwxr-xr-x 2 main main 4096 Feb  4 18:20 .
+drwxr-xr-x 3 main main 4096 Feb  4 18:20 ..
+-rw-r--r-- 1 main main  146 Jul  7  2015 external-svg.svg
+-rw-r--r-- 1 main main    7 Jul  7  2015 file-for-ajax.txt
+
+::: DataTables jQuery plugin v1.10.5
+
+./js/dt-1.10.5:
+total 48
+drwxr-xr-x  5 main main 4096 Feb  4 18:18 .
+drwxr-xr-x 15 main main 4096 Feb  4 18:22 ..
+-rw-r--r--  1 main main 1096 Jul  7  2015 Contributing.md
+-rw-r--r--  1 main main 2621 Jul  7  2015 Readme.md
+-rw-r--r--  1 main main  436 Jul  7  2015 bower.json
+-rw-r--r--  1 main main  526 Jul  7  2015 composer.json
+-rw-r--r--  1 main main  806 Jul  7  2015 dataTables.jquery.json
+drwxr-xr-x 11 main main 4096 Feb  4 18:18 examples
+drwxr-xr-x 11 main main 4096 Feb  4 18:18 extensions
+-rw-r--r--  1 main main 1088 Jul  7  2015 license.txt
+drwxr-xr-x  5 main main 4096 Feb  4 18:18 media
+-rw-r--r--  1 main main  950 Jul  7  2015 package.json
+
+./js/dt-1.10.5/examples:
+total 56
+drwxr-xr-x 11 main main  4096 Feb  4 18:18 .
+drwxr-xr-x  5 main main  4096 Feb  4 18:18 ..
+drwxr-xr-x  2 main main  4096 Feb  4 18:17 advanced_init
+drwxr-xr-x  3 main main  4096 Feb  4 18:18 ajax
+drwxr-xr-x  2 main main  4096 Feb  4 18:18 api
+drwxr-xr-x  2 main main  4096 Feb  4 18:18 basic_init
+drwxr-xr-x  2 main main  4096 Feb  4 18:18 data_sources
+-rw-r--r--  1 main main 10294 Jul  7  2015 index.html
+drwxr-xr-x  2 main main  4096 Feb  4 18:18 plug-ins
+drwxr-xr-x  3 main main  4096 Feb  4 18:18 resources
+drwxr-xr-x  3 main main  4096 Feb  4 18:18 server_side
+drwxr-xr-x  2 main main  4096 Feb  4 18:18 styling
+
+./js/dt-1.10.5/examples/advanced_init:
+total 424
+drwxr-xr-x  2 main main  4096 Feb  4 18:17 .
+drwxr-xr-x 11 main main  4096 Feb  4 18:18 ..
+-rw-r--r--  1 main main 24442 Jul  7  2015 column_render.html
+-rw-r--r--  1 main main 25076 Jul  7  2015 complex_header.html
+-rw-r--r--  1 main main 23678 Jul  7  2015 defaults.html
+-rw-r--r--  1 main main 24076 Jul  7  2015 dom_multiple_elements.html
+-rw-r--r--  1 main main 24459 Jul  7  2015 dom_toolbar.html
+-rw-r--r--  1 main main 24767 Jul  7  2015 dt_events.html
+-rw-r--r--  1 main main 23502 Jul  7  2015 events_live.html
+-rw-r--r--  1 main main 23622 Jul  7  2015 footer_callback.html
+-rw-r--r--  1 main main 28683 Jul  7  2015 html5-data-attributes.html
+-rw-r--r--  1 main main 24585 Jul  7  2015 html5-data-options.html
+-rw-r--r--  1 main main  3594 Jul  7  2015 index.html
+-rw-r--r--  1 main main 23619 Jul  7  2015 language_file.html
+-rw-r--r--  1 main main 23643 Jul  7  2015 length_menu.html
+-rw-r--r--  1 main main 24753 Jul  7  2015 object_dom_read.html
+-rw-r--r--  1 main main 23999 Jul  7  2015 row_callback.html
+-rw-r--r--  1 main main 25388 Jul  7  2015 row_grouping.html
+-rw-r--r--  1 main main 24382 Jul  7  2015 sort_direction_control.html
+
+./js/dt-1.10.5/examples/ajax:
+total 160
+drwxr-xr-x  3 main main  4096 Feb  4 18:18 .
+drwxr-xr-x 11 main main  4096 Feb  4 18:18 ..
+-rw-r--r--  1 main main 15146 Jul  7  2015 custom_data_flat.html
+-rw-r--r--  1 main main 14784 Jul  7  2015 custom_data_property.html
+drwxr-xr-x  2 main main  4096 Feb  4 18:17 data
+-rw-r--r--  1 main main 14992 Jul  7  2015 deep.html
+-rw-r--r--  1 main main 14210 Jul  7  2015 defer_render.html
+-rw-r--r--  1 main main  3064 Jul  7  2015 index.html
+-rw-r--r--  1 main main 15365 Jul  7  2015 null_data_source.html
+-rw-r--r--  1 main main 14617 Jul  7  2015 objects.html
+-rw-r--r--  1 main main 15854 Jul  7  2015 objects_subarrays.html
+-rw-r--r--  1 main main 14669 Jul  7  2015 orthogonal-data.html
+-rw-r--r--  1 main main 14636 Jul  7  2015 simple.html
+
+./js/dt-1.10.5/examples/ajax/data:
+total 140
+drwxr-xr-x 2 main main  4096 Feb  4 18:17 .
+drwxr-xr-x 3 main main  4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main 10207 Jul  7  2015 arrays.txt
+-rw-r--r-- 1 main main 10207 Jul  7  2015 arrays_custom_prop.txt
+-rw-r--r-- 1 main main 18871 Jul  7  2015 arrays_subobjects.txt
+-rw-r--r-- 1 main main 13741 Jul  7  2015 objects.txt
+-rw-r--r-- 1 main main 18016 Jul  7  2015 objects_deep.txt
+-rw-r--r-- 1 main main 11897 Jul  7  2015 objects_root_array.txt
+-rw-r--r-- 1 main main 17218 Jul  7  2015 objects_subarrays.txt
+-rw-r--r-- 1 main main 18795 Jul  7  2015 orthogonal.txt
+
+./js/dt-1.10.5/examples/api:
+total 380
+drwxr-xr-x  2 main main  4096 Feb  4 18:18 .
+drwxr-xr-x 11 main main  4096 Feb  4 18:18 ..
+-rw-r--r--  1 main main 14328 Jul  7  2015 add_row.html
+-rw-r--r--  1 main main 24783 Jul  7  2015 api_in_init.html
+-rw-r--r--  1 main main 24397 Jul  7  2015 counter_columns.html
+-rw-r--r--  1 main main 53252 Jul  7  2015 form.html
+-rw-r--r--  1 main main 24896 Jul  7  2015 highlight.html
+-rw-r--r--  1 main main  3069 Jul  7  2015 index.html
+-rw-r--r--  1 main main 25725 Jul  7  2015 multi_filter.html
+-rw-r--r--  1 main main 27188 Jul  7  2015 multi_filter_select.html
+-rw-r--r--  1 main main 28286 Jul  7  2015 regex.html
+-rw-r--r--  1 main main 17340 Jul  7  2015 row_details.html
+-rw-r--r--  1 main main 24173 Jul  7  2015 select_row.html
+-rw-r--r--  1 main main 24832 Jul  7  2015 select_single_row.html
+-rw-r--r--  1 main main 25049 Jul  7  2015 show_hide.html
+-rw-r--r--  1 main main 25203 Jul  7  2015 tabs_and_scrolling.html
+
+./js/dt-1.10.5/examples/basic_init:
+total 444
+drwxr-xr-x  2 main main  4096 Feb  4 18:18 .
+drwxr-xr-x 11 main main  4096 Feb  4 18:18 ..
+-rw-r--r--  1 main main 24819 Jul  7  2015 alt_pagination.html
+-rw-r--r--  1 main main 24681 Jul  7  2015 comma-decimal.html
+-rw-r--r--  1 main main 24631 Jul  7  2015 complex_header.html
+-rw-r--r--  1 main main 25952 Jul  7  2015 dom.html
+-rw-r--r--  1 main main 23167 Jul  7  2015 filter_only.html
+-rw-r--r--  1 main main 23440 Jul  7  2015 flexible_width.html
+-rw-r--r--  1 main main 24161 Jul  7  2015 hidden_columns.html
+-rw-r--r--  1 main main  3372 Jul  7  2015 index.html
+-rw-r--r--  1 main main 23771 Jul  7  2015 language.html
+-rw-r--r--  1 main main 22874 Jul  7  2015 multi_col_sort.html
+-rw-r--r--  1 main main 17148 Jul  7  2015 multiple_tables.html
+-rw-r--r--  1 main main 28003 Jul  7  2015 scroll_x.html
+-rw-r--r--  1 main main 27390 Jul  7  2015 scroll_xy.html
+-rw-r--r--  1 main main 24204 Jul  7  2015 scroll_y.html
+-rw-r--r--  1 main main 23491 Jul  7  2015 scroll_y_theme.html
+-rw-r--r--  1 main main 24745 Jul  7  2015 state_save.html
+-rw-r--r--  1 main main 23946 Jul  7  2015 table_sorting.html
+-rw-r--r--  1 main main 23014 Jul  7  2015 zero_configuration.html
+
+./js/dt-1.10.5/examples/data_sources:
+total 88
+drwxr-xr-x  2 main main  4096 Feb  4 18:18 .
+drwxr-xr-x 11 main main  4096 Feb  4 18:18 ..
+-rw-r--r--  1 main main 14149 Jul  7  2015 ajax.html
+-rw-r--r--  1 main main 23392 Jul  7  2015 dom.html
+-rw-r--r--  1 main main  2609 Jul  7  2015 index.html
+-rw-r--r--  1 main main 20167 Jul  7  2015 js_array.html
+-rw-r--r--  1 main main 14443 Jul  7  2015 server_side.html
+
+./js/dt-1.10.5/examples/plug-ins:
+total 176
+drwxr-xr-x  2 main main  4096 Feb  4 18:18 .
+drwxr-xr-x 11 main main  4096 Feb  4 18:18 ..
+-rw-r--r--  1 main main 25340 Jul  7  2015 api.html
+-rw-r--r--  1 main main 55974 Jul  7  2015 dom_sort.html
+-rw-r--r--  1 main main  2652 Jul  7  2015 index.html
+-rw-r--r--  1 main main 25157 Jul  7  2015 range_filtering.html
+-rw-r--r--  1 main main 24277 Jul  7  2015 sorting_auto.html
+-rw-r--r--  1 main main 24396 Jul  7  2015 sorting_manual.html
+
+./js/dt-1.10.5/examples/resources:
+total 36
+drwxr-xr-x  3 main main 4096 Feb  4 18:18 .
+drwxr-xr-x 11 main main 4096 Feb  4 18:18 ..
+-rw-r--r--  1 main main 5734 Jul  7  2015 demo.css
+-rw-r--r--  1 main main 2881 Jul  7  2015 demo.js
+-rw-r--r--  1 main main  686 Jul  7  2015 details_close.png
+-rw-r--r--  1 main main  709 Jul  7  2015 details_open.png
+-rw-r--r--  1 main main  212 Jul  7  2015 examples.php
+drwxr-xr-x  2 main main 4096 Feb  4 18:18 syntax
+
+./js/dt-1.10.5/examples/resources/syntax:
+total 112
+drwxr-xr-x 2 main main  4096 Feb  4 18:18 .
+drwxr-xr-x 3 main main  4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main  1061 Jul  7  2015 Syntax Highlighter license
+-rw-r--r-- 1 main main 10098 Jul  7  2015 shCore.css
+-rw-r--r-- 1 main main 82302 Jul  7  2015 shCore.js
+
+./js/dt-1.10.5/examples/server_side:
+total 188
+drwxr-xr-x  3 main main  4096 Feb  4 18:18 .
+drwxr-xr-x 11 main main  4096 Feb  4 18:18 ..
+-rw-r--r--  1 main main 14341 Jul  7  2015 custom_vars.html
+-rw-r--r--  1 main main 16275 Jul  7  2015 defer_loading.html
+-rw-r--r--  1 main main 14676 Jul  7  2015 ids.html
+-rw-r--r--  1 main main  3735 Jul  7  2015 index.html
+-rw-r--r--  1 main main 14599 Jul  7  2015 jsonp.html
+-rw-r--r--  1 main main 14301 Jul  7  2015 object_data.html
+-rw-r--r--  1 main main 21611 Jul  7  2015 pipeline.html
+-rw-r--r--  1 main main 14851 Jul  7  2015 post.html
+-rw-r--r--  1 main main 18382 Jul  7  2015 row_details.html
+drwxr-xr-x  2 main main  4096 Feb  4 18:18 scripts
+-rw-r--r--  1 main main 14515 Jul  7  2015 select_rows.html
+-rw-r--r--  1 main main 14230 Jul  7  2015 simple.html
+
+./js/dt-1.10.5/examples/server_side/scripts:
+total 80
+drwxr-xr-x 2 main main  4096 Feb  4 18:18 .
+drwxr-xr-x 3 main main  4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main  2244 Jul  7  2015 ids-arrays.php
+-rw-r--r-- 1 main main  2235 Jul  7  2015 ids-objects.php
+-rw-r--r-- 1 main main  1882 Jul  7  2015 jsonp.php
+-rw-r--r-- 1 main main  7711 Jul  7  2015 mysql.sql
+-rw-r--r-- 1 main main  1453 Jul  7  2015 objects.php
+-rw-r--r-- 1 main main  1957 Jul  7  2015 post.php
+-rw-r--r-- 1 main main  7689 Jul  7  2015 postgres.sql
+-rw-r--r-- 1 main main  1894 Jul  7  2015 server_processing.php
+-rw-r--r-- 1 main main  7625 Jul  7  2015 sqlite.sql
+-rw-r--r-- 1 main main  7793 Jul  7  2015 sqlserver.sql
+-rw-r--r-- 1 main main 14161 Jul  7  2015 ssp.class.php
+
+./js/dt-1.10.5/examples/styling:
+total 260
+drwxr-xr-x  2 main main  4096 Feb  4 18:18 .
+drwxr-xr-x 11 main main  4096 Feb  4 18:18 ..
+-rw-r--r--  1 main main 24301 Jul  7  2015 bootstrap.html
+-rw-r--r--  1 main main 23019 Jul  7  2015 cell-border.html
+-rw-r--r--  1 main main 23058 Jul  7  2015 compact.html
+-rw-r--r--  1 main main 23972 Jul  7  2015 display.html
+-rw-r--r--  1 main main 24287 Jul  7  2015 foundation.html
+-rw-r--r--  1 main main  1199 Jul  7  2015 hover.html
+-rw-r--r--  1 main main  3226 Jul  7  2015 index.html
+-rw-r--r--  1 main main 24682 Jul  7  2015 jqueryUI.html
+-rw-r--r--  1 main main 23004 Jul  7  2015 no-classes.html
+-rw-r--r--  1 main main 23182 Jul  7  2015 order-column.html
+-rw-r--r--  1 main main 23029 Jul  7  2015 row-border.html
+-rw-r--r--  1 main main 22943 Jul  7  2015 stripe.html
+
+./js/dt-1.10.5/extensions:
+total 44
+drwxr-xr-x 11 main main 4096 Feb  4 18:18 .
+drwxr-xr-x  5 main main 4096 Feb  4 18:18 ..
+drwxr-xr-x  6 main main 4096 Feb  4 18:18 AutoFill
+drwxr-xr-x  6 main main 4096 Feb  4 18:18 ColReorder
+drwxr-xr-x  5 main main 4096 Feb  4 18:18 ColVis
+drwxr-xr-x  5 main main 4096 Feb  4 18:18 FixedColumns
+drwxr-xr-x  5 main main 4096 Feb  4 18:18 FixedHeader
+drwxr-xr-x  5 main main 4096 Feb  4 18:18 KeyTable
+drwxr-xr-x  5 main main 4096 Feb  4 18:18 Responsive
+drwxr-xr-x  6 main main 4096 Feb  4 18:18 Scroller
+drwxr-xr-x  7 main main 4096 Feb  4 18:18 TableTools
+
+./js/dt-1.10.5/extensions/AutoFill:
+total 28
+drwxr-xr-x  6 main main 4096 Feb  4 18:18 .
+drwxr-xr-x 11 main main 4096 Feb  4 18:18 ..
+-rw-r--r--  1 main main 1332 Jul  7  2015 Readme.txt
+drwxr-xr-x  2 main main 4096 Feb  4 18:18 css
+drwxr-xr-x  2 main main 4096 Feb  4 18:18 examples
+drwxr-xr-x  2 main main 4096 Feb  4 18:18 images
+drwxr-xr-x  2 main main 4096 Feb  4 18:18 js
+
+./js/dt-1.10.5/extensions/AutoFill/css:
+total 16
+drwxr-xr-x 2 main main 4096 Feb  4 18:18 .
+drwxr-xr-x 6 main main 4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main  493 Jul  7  2015 dataTables.autoFill.css
+-rw-r--r-- 1 main main  344 Jul  7  2015 dataTables.autoFill.min.css
+
+./js/dt-1.10.5/extensions/AutoFill/examples:
+total 144
+drwxr-xr-x 2 main main  4096 Feb  4 18:18 .
+drwxr-xr-x 6 main main  4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main 16578 Jul  7  2015 columns.html
+-rw-r--r-- 1 main main 16883 Jul  7  2015 complete-callback.html
+-rw-r--r-- 1 main main 16597 Jul  7  2015 fill-both.html
+-rw-r--r-- 1 main main 16544 Jul  7  2015 fill-horizontal.html
+-rw-r--r-- 1 main main  2705 Jul  7  2015 index.html
+-rw-r--r-- 1 main main 16270 Jul  7  2015 scrolling.html
+-rw-r--r-- 1 main main 16348 Jul  7  2015 simple.html
+-rw-r--r-- 1 main main 17417 Jul  7  2015 step-callback.html
+
+./js/dt-1.10.5/extensions/AutoFill/images:
+total 12
+drwxr-xr-x 2 main main 4096 Feb  4 18:18 .
+drwxr-xr-x 6 main main 4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main 1040 Jul  7  2015 filler.png
+
+./js/dt-1.10.5/extensions/AutoFill/js:
+total 44
+drwxr-xr-x 2 main main  4096 Feb  4 18:18 .
+drwxr-xr-x 6 main main  4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main 22645 Jul  7  2015 dataTables.autoFill.js
+-rw-r--r-- 1 main main  9046 Jul  7  2015 dataTables.autoFill.min.js
+
+./js/dt-1.10.5/extensions/ColReorder:
+total 28
+drwxr-xr-x  6 main main 4096 Feb  4 18:18 .
+drwxr-xr-x 11 main main 4096 Feb  4 18:18 ..
+-rw-r--r--  1 main main 1302 Jul  7  2015 Readme.txt
+drwxr-xr-x  2 main main 4096 Feb  4 18:18 css
+drwxr-xr-x  2 main main 4096 Feb  4 18:18 examples
+drwxr-xr-x  2 main main 4096 Feb  4 18:18 images
+drwxr-xr-x  2 main main 4096 Feb  4 18:18 js
+
+./js/dt-1.10.5/extensions/ColReorder/css:
+total 16
+drwxr-xr-x 2 main main 4096 Feb  4 18:18 .
+drwxr-xr-x 6 main main 4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main  224 Jul  7  2015 dataTables.colReorder.css
+-rw-r--r-- 1 main main  139 Jul  7  2015 dataTables.colReorder.min.css
+
+./js/dt-1.10.5/extensions/ColReorder/examples:
+total 284
+drwxr-xr-x 2 main main  4096 Feb  4 18:18 .
+drwxr-xr-x 6 main main  4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main 16851 Jul  7  2015 alt_insert.html
+-rw-r--r-- 1 main main 17855 Jul  7  2015 col_filter.html
+-rw-r--r-- 1 main main 17257 Jul  7  2015 colvis.html
+-rw-r--r-- 1 main main 22302 Jul  7  2015 fixedcolumns.html
+-rw-r--r-- 1 main main 17175 Jul  7  2015 fixedheader.html
+-rw-r--r-- 1 main main  3382 Jul  7  2015 index.html
+-rw-r--r-- 1 main main 17593 Jul  7  2015 jqueryui.html
+-rw-r--r-- 1 main main 16774 Jul  7  2015 new_init.html
+-rw-r--r-- 1 main main 16857 Jul  7  2015 predefined.html
+-rw-r--r-- 1 main main 16914 Jul  7  2015 realtime.html
+-rw-r--r-- 1 main main 17264 Jul  7  2015 reset.html
+-rw-r--r-- 1 main main 16785 Jul  7  2015 scrolling.html
+-rw-r--r-- 1 main main  7323 Jul  7  2015 server_side.html
+-rw-r--r-- 1 main main 17084 Jul  7  2015 simple.html
+-rw-r--r-- 1 main main 16817 Jul  7  2015 state_save.html
+
+./js/dt-1.10.5/extensions/ColReorder/images:
+total 12
+drwxr-xr-x 2 main main 4096 Feb  4 18:18 .
+drwxr-xr-x 6 main main 4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main 1885 Jul  7  2015 insert.png
+
+./js/dt-1.10.5/extensions/ColReorder/js:
+total 56
+drwxr-xr-x 2 main main  4096 Feb  4 18:18 .
+drwxr-xr-x 6 main main  4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main 36465 Jul  7  2015 dataTables.colReorder.js
+-rw-r--r-- 1 main main 11006 Jul  7  2015 dataTables.colReorder.min.js
+
+./js/dt-1.10.5/extensions/ColVis:
+total 24
+drwxr-xr-x  5 main main 4096 Feb  4 18:18 .
+drwxr-xr-x 11 main main 4096 Feb  4 18:18 ..
+-rw-r--r--  1 main main 1259 Jul  7  2015 Readme.txt
+drwxr-xr-x  2 main main 4096 Feb  4 18:18 css
+drwxr-xr-x  2 main main 4096 Feb  4 18:18 examples
+drwxr-xr-x  2 main main 4096 Feb  4 18:18 js
+
+./js/dt-1.10.5/extensions/ColVis/css:
+total 28
+drwxr-xr-x 2 main main 4096 Feb  4 18:18 .
+drwxr-xr-x 5 main main 4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main 5824 Jul  7  2015 dataTables.colVis.css
+-rw-r--r-- 1 main main 4376 Jul  7  2015 dataTables.colVis.min.css
+-rw-r--r-- 1 main main  316 Jul  7  2015 dataTables.colvis.jqueryui.css
+
+./js/dt-1.10.5/extensions/ColVis/examples:
+total 236
+drwxr-xr-x 2 main main  4096 Feb  4 18:18 .
+drwxr-xr-x 5 main main  4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main 16697 Jul  7  2015 button_order.html
+-rw-r--r-- 1 main main 16882 Jul  7  2015 exclude_columns.html
+-rw-r--r-- 1 main main 17387 Jul  7  2015 group_columns.html
+-rw-r--r-- 1 main main  3217 Jul  7  2015 index.html
+-rw-r--r-- 1 main main 17456 Jul  7  2015 jqueryui.html
+-rw-r--r-- 1 main main 16804 Jul  7  2015 mouseover.html
+-rw-r--r-- 1 main main 17030 Jul  7  2015 new_init.html
+-rw-r--r-- 1 main main 16967 Jul  7  2015 restore.html
+-rw-r--r-- 1 main main 16835 Jul  7  2015 simple.html
+-rw-r--r-- 1 main main 16682 Jul  7  2015 text.html
+-rw-r--r-- 1 main main 16901 Jul  7  2015 title_callback.html
+-rw-r--r-- 1 main main 10021 Jul  7  2015 two_tables.html
+-rw-r--r-- 1 main main 11366 Jul  7  2015 two_tables_identical.html
+
+./js/dt-1.10.5/extensions/ColVis/js:
+total 48
+drwxr-xr-x 2 main main  4096 Feb  4 18:18 .
+drwxr-xr-x 5 main main  4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main 26545 Jul  7  2015 dataTables.colVis.js
+-rw-r--r-- 1 main main  9805 Jul  7  2015 dataTables.colVis.min.js
+
+./js/dt-1.10.5/extensions/FixedColumns:
+total 20
+drwxr-xr-x  5 main main 4096 Feb  4 18:18 .
+drwxr-xr-x 11 main main 4096 Feb  4 18:18 ..
+drwxr-xr-x  2 main main 4096 Feb  4 18:18 css
+drwxr-xr-x  2 main main 4096 Feb  4 18:18 examples
+drwxr-xr-x  2 main main 4096 Feb  4 18:18 js
+
+./js/dt-1.10.5/extensions/FixedColumns/css:
+total 16
+drwxr-xr-x 2 main main 4096 Feb  4 18:18 .
+drwxr-xr-x 5 main main 4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main  517 Jul  7  2015 dataTables.fixedColumns.css
+-rw-r--r-- 1 main main  317 Jul  7  2015 dataTables.fixedColumns.min.css
+
+./js/dt-1.10.5/extensions/FixedColumns/examples:
+total 304
+drwxr-xr-x 2 main main  4096 Feb  4 18:18 .
+drwxr-xr-x 5 main main  4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main 22152 Jul  7  2015 bootstrap.html
+-rw-r--r-- 1 main main 22483 Jul  7  2015 col_filter.html
+-rw-r--r-- 1 main main 22394 Jul  7  2015 colvis.html
+-rw-r--r-- 1 main main 22185 Jul  7  2015 css_size.html
+-rw-r--r-- 1 main main  3564 Jul  7  2015 index.html
+-rw-r--r-- 1 main main 23755 Jul  7  2015 index_column.html
+-rw-r--r-- 1 main main 21367 Jul  7  2015 left_right_columns.html
+-rw-r--r-- 1 main main 21377 Jul  7  2015 right_column.html
+-rw-r--r-- 1 main main 18293 Jul  7  2015 rowspan.html
+-rw-r--r-- 1 main main  7602 Jul  7  2015 server-side-processing.html
+-rw-r--r-- 1 main main 21676 Jul  7  2015 simple.html
+-rw-r--r-- 1 main main 21801 Jul  7  2015 size_fixed.html
+-rw-r--r-- 1 main main 21794 Jul  7  2015 size_fluid.html
+-rw-r--r-- 1 main main 21099 Jul  7  2015 two_columns.html
+
+./js/dt-1.10.5/extensions/FixedColumns/js:
+total 64
+drwxr-xr-x 2 main main  4096 Feb  4 18:18 .
+drwxr-xr-x 5 main main  4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main 40727 Jul  7  2015 dataTables.fixedColumns.js
+-rw-r--r-- 1 main main 14107 Jul  7  2015 dataTables.fixedColumns.min.js
+
+./js/dt-1.10.5/extensions/FixedHeader:
+total 24
+drwxr-xr-x  5 main main 4096 Feb  4 18:18 .
+drwxr-xr-x 11 main main 4096 Feb  4 18:18 ..
+-rw-r--r--  1 main main 1404 Jul  7  2015 Readme.txt
+drwxr-xr-x  2 main main 4096 Feb  4 18:18 css
+drwxr-xr-x  2 main main 4096 Feb  4 18:18 examples
+drwxr-xr-x  2 main main 4096 Feb  4 18:18 js
+
+./js/dt-1.10.5/extensions/FixedHeader/css:
+total 16
+drwxr-xr-x 2 main main 4096 Feb  4 18:18 .
+drwxr-xr-x 5 main main 4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main   97 Jul  7  2015 dataTables.fixedHeader.css
+-rw-r--r-- 1 main main   87 Jul  7  2015 dataTables.fixedHeader.min.css
+
+./js/dt-1.10.5/extensions/FixedHeader/examples:
+total 92
+drwxr-xr-x 2 main main  4096 Feb  4 18:18 .
+drwxr-xr-x 5 main main  4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main 16321 Jul  7  2015 header_footer.html
+-rw-r--r-- 1 main main  2893 Jul  7  2015 index.html
+-rw-r--r-- 1 main main 16589 Jul  7  2015 simple.html
+-rw-r--r-- 1 main main  8406 Jul  7  2015 top_left_right.html
+-rw-r--r-- 1 main main  9731 Jul  7  2015 two_tables.html
+-rw-r--r-- 1 main main 16702 Jul  7  2015 zIndexes.html
+
+./js/dt-1.10.5/extensions/FixedHeader/js:
+total 56
+drwxr-xr-x 2 main main  4096 Feb  4 18:18 .
+drwxr-xr-x 5 main main  4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main 29308 Jul  7  2015 dataTables.fixedHeader.js
+-rw-r--r-- 1 main main 12590 Jul  7  2015 dataTables.fixedHeader.min.js
+
+./js/dt-1.10.5/extensions/KeyTable:
+total 24
+drwxr-xr-x  5 main main 4096 Feb  4 18:18 .
+drwxr-xr-x 11 main main 4096 Feb  4 18:18 ..
+-rw-r--r--  1 main main 1334 Jul  7  2015 Readme.txt
+drwxr-xr-x  2 main main 4096 Feb  4 18:18 css
+drwxr-xr-x  2 main main 4096 Feb  4 18:18 examples
+drwxr-xr-x  2 main main 4096 Feb  4 18:18 js
+
+./js/dt-1.10.5/extensions/KeyTable/css:
+total 16
+drwxr-xr-x 2 main main 4096 Feb  4 18:18 .
+drwxr-xr-x 5 main main 4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main  107 Jul  7  2015 dataTables.keyTable.css
+-rw-r--r-- 1 main main   95 Jul  7  2015 dataTables.keyTable.min.css
+
+./js/dt-1.10.5/extensions/KeyTable/examples:
+total 80
+drwxr-xr-x 2 main main  4096 Feb  4 18:18 .
+drwxr-xr-x 5 main main  4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main 19576 Jul  7  2015 events.html
+-rw-r--r-- 1 main main 15959 Jul  7  2015 html.html
+-rw-r--r-- 1 main main  2737 Jul  7  2015 index.html
+-rw-r--r-- 1 main main 16257 Jul  7  2015 scrolling.html
+-rw-r--r-- 1 main main 16133 Jul  7  2015 simple.html
+
+./js/dt-1.10.5/extensions/KeyTable/js:
+total 48
+drwxr-xr-x 2 main main  4096 Feb  4 18:18 .
+drwxr-xr-x 5 main main  4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main 29477 Jul  7  2015 dataTables.keyTable.js
+-rw-r--r-- 1 main main  6663 Jul  7  2015 dataTables.keyTable.min.js
+
+./js/dt-1.10.5/extensions/Responsive:
+total 20
+drwxr-xr-x  5 main main 4096 Feb  4 18:18 .
+drwxr-xr-x 11 main main 4096 Feb  4 18:18 ..
+-rw-r--r--  1 main main    0 Jul  7  2015 Readme.md
+drwxr-xr-x  2 main main 4096 Feb  4 18:18 css
+drwxr-xr-x  6 main main 4096 Feb  4 18:18 examples
+drwxr-xr-x  2 main main 4096 Feb  4 18:18 js
+
+./js/dt-1.10.5/extensions/Responsive/css:
+total 16
+drwxr-xr-x 2 main main 4096 Feb  4 18:18 .
+drwxr-xr-x 5 main main 4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main 2444 Jul  7  2015 dataTables.responsive.css
+-rw-r--r-- 1 main main 1870 Jul  7  2015 dataTables.responsive.scss
+
+./js/dt-1.10.5/extensions/Responsive/examples:
+total 28
+drwxr-xr-x 6 main main 4096 Feb  4 18:18 .
+drwxr-xr-x 5 main main 4096 Feb  4 18:18 ..
+drwxr-xr-x 2 main main 4096 Feb  4 18:18 child-rows
+drwxr-xr-x 2 main main 4096 Feb  4 18:18 display-control
+-rw-r--r-- 1 main main 3561 Jul  7  2015 index.html
+drwxr-xr-x 2 main main 4096 Feb  4 18:18 initialisation
+drwxr-xr-x 2 main main 4096 Feb  4 18:18 styling
+
+./js/dt-1.10.5/extensions/Responsive/examples/child-rows:
+total 132
+drwxr-xr-x 2 main main  4096 Feb  4 18:18 .
+drwxr-xr-x 6 main main  4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main 21613 Jul  7  2015 column-control.html
+-rw-r--r-- 1 main main 23161 Jul  7  2015 custom-renderer.html
+-rw-r--r-- 1 main main 21759 Jul  7  2015 disable-child-rows.html
+-rw-r--r-- 1 main main  3666 Jul  7  2015 index.html
+-rw-r--r-- 1 main main 20959 Jul  7  2015 right-column.html
+-rw-r--r-- 1 main main 20956 Jul  7  2015 whole-row-control.html
+
+./js/dt-1.10.5/extensions/Responsive/examples/display-control:
+total 84
+drwxr-xr-x 2 main main  4096 Feb  4 18:18 .
+drwxr-xr-x 6 main main  4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main 21758 Jul  7  2015 auto.html
+-rw-r--r-- 1 main main 10254 Jul  7  2015 classes.html
+-rw-r--r-- 1 main main 22131 Jul  7  2015 fixedHeader.html
+-rw-r--r-- 1 main main  2721 Jul  7  2015 index.html
+-rw-r--r-- 1 main main  8479 Jul  7  2015 init-classes.html
+
+./js/dt-1.10.5/extensions/Responsive/examples/initialisation:
+total 116
+drwxr-xr-x 2 main main  4096 Feb  4 18:18 .
+drwxr-xr-x 6 main main  4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main  7980 Jul  7  2015 ajax.html
+-rw-r--r-- 1 main main 21631 Jul  7  2015 className.html
+-rw-r--r-- 1 main main 22071 Jul  7  2015 default.html
+-rw-r--r-- 1 main main  2778 Jul  7  2015 index.html
+-rw-r--r-- 1 main main 22064 Jul  7  2015 new.html
+-rw-r--r-- 1 main main 22032 Jul  7  2015 option.html
+
+./js/dt-1.10.5/extensions/Responsive/examples/styling:
+total 60
+drwxr-xr-x 2 main main  4096 Feb  4 18:18 .
+drwxr-xr-x 6 main main  4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main 22851 Jul  7  2015 bootstrap.html
+-rw-r--r-- 1 main main 22323 Jul  7  2015 foundation.html
+-rw-r--r-- 1 main main  2294 Jul  7  2015 index.html
+
+./js/dt-1.10.5/extensions/Responsive/js:
+total 40
+drwxr-xr-x 2 main main  4096 Feb  4 18:18 .
+drwxr-xr-x 5 main main  4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main 23611 Jul  7  2015 dataTables.responsive.js
+-rw-r--r-- 1 main main  6955 Jul  7  2015 dataTables.responsive.min.js
+
+./js/dt-1.10.5/extensions/Scroller:
+total 28
+drwxr-xr-x  6 main main 4096 Feb  4 18:18 .
+drwxr-xr-x 11 main main 4096 Feb  4 18:18 ..
+-rw-r--r--  1 main main 2251 Jul  7  2015 Readme.txt
+drwxr-xr-x  2 main main 4096 Feb  4 18:18 css
+drwxr-xr-x  3 main main 4096 Feb  4 18:18 examples
+drwxr-xr-x  2 main main 4096 Feb  4 18:18 images
+drwxr-xr-x  2 main main 4096 Feb  4 18:18 js
+
+./js/dt-1.10.5/extensions/Scroller/css:
+total 16
+drwxr-xr-x 2 main main 4096 Feb  4 18:18 .
+drwxr-xr-x 6 main main 4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main  710 Jul  7  2015 dataTables.scroller.css
+-rw-r--r-- 1 main main  572 Jul  7  2015 dataTables.scroller.min.css
+
+./js/dt-1.10.5/extensions/Scroller/examples:
+total 56
+drwxr-xr-x 3 main main 4096 Feb  4 18:18 .
+drwxr-xr-x 6 main main 4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main 6111 Jul  7  2015 api_scrolling.html
+drwxr-xr-x 2 main main 4096 Feb  4 18:18 data
+-rw-r--r-- 1 main main 3846 Jul  7  2015 index.html
+-rw-r--r-- 1 main main 6557 Jul  7  2015 large_js_source.html
+-rw-r--r-- 1 main main 7943 Jul  7  2015 server-side_processing.html
+-rw-r--r-- 1 main main 6602 Jul  7  2015 simple.html
+-rw-r--r-- 1 main main 6186 Jul  7  2015 state_saving.html
+
+./js/dt-1.10.5/extensions/Scroller/examples/data:
+total 156
+drwxr-xr-x 2 main main   4096 Feb  4 18:18 .
+drwxr-xr-x 3 main main   4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main 142087 Jul  7  2015 2500.txt
+-rw-r--r-- 1 main main   1684 Jul  7  2015 ssp.php
+
+./js/dt-1.10.5/extensions/Scroller/images:
+total 12
+drwxr-xr-x 2 main main 4096 Feb  4 18:18 .
+drwxr-xr-x 6 main main 4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main 1013 Jul  7  2015 loading-background.png
+
+./js/dt-1.10.5/extensions/Scroller/js:
+total 60
+drwxr-xr-x 2 main main  4096 Feb  4 18:18 .
+drwxr-xr-x 6 main main  4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main 37984 Jul  7  2015 dataTables.scroller.js
+-rw-r--r-- 1 main main 10485 Jul  7  2015 dataTables.scroller.min.js
+
+./js/dt-1.10.5/extensions/TableTools:
+total 32
+drwxr-xr-x  7 main main 4096 Feb  4 18:18 .
+drwxr-xr-x 11 main main 4096 Feb  4 18:18 ..
+-rw-r--r--  1 main main 1331 Jul  7  2015 Readme.txt
+drwxr-xr-x  2 main main 4096 Feb  4 18:18 css
+drwxr-xr-x  2 main main 4096 Feb  4 18:18 examples
+drwxr-xr-x  3 main main 4096 Feb  4 18:18 images
+drwxr-xr-x  2 main main 4096 Feb  4 18:18 js
+drwxr-xr-x  2 main main 4096 Feb  4 18:18 swf
+
+./js/dt-1.10.5/extensions/TableTools/css:
+total 28
+drwxr-xr-x 2 main main  4096 Feb  4 18:18 .
+drwxr-xr-x 7 main main  4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main 10617 Jul  7  2015 dataTables.tableTools.css
+-rw-r--r-- 1 main main  6601 Jul  7  2015 dataTables.tableTools.min.css
+
+./js/dt-1.10.5/extensions/TableTools/examples:
+total 344
+drwxr-xr-x 2 main main  4096 Feb  4 18:18 .
+drwxr-xr-x 7 main main  4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main  7495 Jul  7  2015 ajax.html
+-rw-r--r-- 1 main main 17316 Jul  7  2015 alter_buttons.html
+-rw-r--r-- 1 main main 18515 Jul  7  2015 bootstrap.html
+-rw-r--r-- 1 main main 18017 Jul  7  2015 button_text.html
+-rw-r--r-- 1 main main 17688 Jul  7  2015 collection.html
+-rw-r--r-- 1 main main 17195 Jul  7  2015 defaults.html
+-rw-r--r-- 1 main main  3701 Jul  7  2015 index.html
+-rw-r--r-- 1 main main 17516 Jul  7  2015 jqueryui.html
+-rw-r--r-- 1 main main 17339 Jul  7  2015 multi_instance.html
+-rw-r--r-- 1 main main 10334 Jul  7  2015 multiple_tables.html
+-rw-r--r-- 1 main main 17446 Jul  7  2015 new_init.html
+-rw-r--r-- 1 main main 17426 Jul  7  2015 pdf_message.html
+-rw-r--r-- 1 main main 18480 Jul  7  2015 plug-in.html
+-rw-r--r-- 1 main main  9072 Jul  7  2015 select_column.html
+-rw-r--r-- 1 main main 17823 Jul  7  2015 select_multi.html
+-rw-r--r-- 1 main main 17856 Jul  7  2015 select_os.html
+-rw-r--r-- 1 main main 17508 Jul  7  2015 select_single.html
+-rw-r--r-- 1 main main 17307 Jul  7  2015 simple.html
+-rw-r--r-- 1 main main 17468 Jul  7  2015 swf_path.html
+
+./js/dt-1.10.5/extensions/TableTools/images:
+total 68
+drwxr-xr-x 3 main main 4096 Feb  4 18:18 .
+drwxr-xr-x 7 main main 4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main  944 Jul  7  2015 background.png
+-rw-r--r-- 1 main main 1166 Jul  7  2015 collection.png
+-rw-r--r-- 1 main main 1194 Jul  7  2015 collection_hover.png
+-rw-r--r-- 1 main main 2184 Jul  7  2015 copy.png
+-rw-r--r-- 1 main main 2797 Jul  7  2015 copy_hover.png
+-rw-r--r-- 1 main main 1607 Jul  7  2015 csv.png
+-rw-r--r-- 1 main main 1854 Jul  7  2015 csv_hover.png
+-rw-r--r-- 1 main main 4325 Jul  7  2015 pdf.png
+-rw-r--r-- 1 main main 2786 Jul  7  2015 pdf_hover.png
+-rw-r--r-- 1 main main 2123 Jul  7  2015 print.png
+-rw-r--r-- 1 main main 2230 Jul  7  2015 print_hover.png
+drwxr-xr-x 2 main main 4096 Feb  4 18:18 psd
+-rw-r--r-- 1 main main 1641 Jul  7  2015 xls.png
+-rw-r--r-- 1 main main 2061 Jul  7  2015 xls_hover.png
+
+./js/dt-1.10.5/extensions/TableTools/images/psd:
+total 1340
+drwxr-xr-x 2 main main    4096 Feb  4 18:18 .
+drwxr-xr-x 3 main main    4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main   25792 Jul  7  2015 collection.psd
+-rw-r--r-- 1 main main  104729 Jul  7  2015 copy document.psd
+-rw-r--r-- 1 main main 1090645 Jul  7  2015 file_types.psd
+-rw-r--r-- 1 main main  119952 Jul  7  2015 printer.psd
+
+./js/dt-1.10.5/extensions/TableTools/js:
+total 128
+drwxr-xr-x 2 main main  4096 Feb  4 18:18 .
+drwxr-xr-x 7 main main  4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main 84214 Jul  7  2015 dataTables.tableTools.js
+-rw-r--r-- 1 main main 31619 Jul  7  2015 dataTables.tableTools.min.js
+
+./js/dt-1.10.5/extensions/TableTools/swf:
+total 76
+drwxr-xr-x 2 main main  4096 Feb  4 18:18 .
+drwxr-xr-x 7 main main  4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main  2232 Jul  7  2015 copy_csv_xls.swf
+-rw-r--r-- 1 main main 58845 Jul  7  2015 copy_csv_xls_pdf.swf
+
+./js/dt-1.10.5/media:
+total 20
+drwxr-xr-x 5 main main 4096 Feb  4 18:18 .
+drwxr-xr-x 5 main main 4096 Feb  4 18:18 ..
+drwxr-xr-x 2 main main 4096 Feb  4 18:18 css
+drwxr-xr-x 2 main main 4096 Feb  4 18:18 images
+drwxr-xr-x 2 main main 4096 Feb  4 18:18 js
+
+./js/dt-1.10.5/media/css:
+total 60
+drwxr-xr-x 2 main main  4096 Feb  4 18:18 .
+drwxr-xr-x 5 main main  4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main 17203 Jul  7  2015 jquery.dataTables.css
+-rw-r--r-- 1 main main 15128 Jul  7  2015 jquery.dataTables.min.css
+-rw-r--r-- 1 main main 14245 Jul  7  2015 jquery.dataTables_themeroller.css
+
+./js/dt-1.10.5/media/images:
+total 84
+drwxr-xr-x 2 main main  4096 Feb  4 18:18 .
+drwxr-xr-x 5 main main  4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main 27490 Jul  7  2015 Sorting icons.psd
+-rw-r--r-- 1 main main   345 Jul  7  2015 back_disabled.png
+-rw-r--r-- 1 main main   453 Jul  7  2015 back_enabled.png
+-rw-r--r-- 1 main main   450 Jul  7  2015 back_enabled_hover.png
+-rw-r--r-- 1 main main   894 Jul  7  2015 favicon.ico
+-rw-r--r-- 1 main main   335 Jul  7  2015 forward_disabled.png
+-rw-r--r-- 1 main main   445 Jul  7  2015 forward_enabled.png
+-rw-r--r-- 1 main main   444 Jul  7  2015 forward_enabled_hover.png
+-rw-r--r-- 1 main main   160 Jul  7  2015 sort_asc.png
+-rw-r--r-- 1 main main   148 Jul  7  2015 sort_asc_disabled.png
+-rw-r--r-- 1 main main   201 Jul  7  2015 sort_both.png
+-rw-r--r-- 1 main main   158 Jul  7  2015 sort_desc.png
+-rw-r--r-- 1 main main   146 Jul  7  2015 sort_desc_disabled.png
+
+./js/dt-1.10.5/media/js:
+total 624
+drwxr-xr-x 2 main main   4096 Feb  4 18:18 .
+drwxr-xr-x 5 main main   4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main 435687 Jul  7  2015 jquery.dataTables.js
+-rw-r--r-- 1 main main  78980 Jul  7  2015 jquery.dataTables.min.js
+-rw-r--r-- 1 main main  95785 Jul  7  2015 jquery.js
+
+::: Excanvas R3 plugin (Javascript canvas handler)
+
+./js/excanvas_r3:
+total 36
+drwxr-xr-x  4 main main  4096 Feb  4 18:18 .
+drwxr-xr-x 15 main main  4096 Feb  4 18:22 ..
+-rw-r--r--  1 main main   205 Jul  7  2015 AUTHORS
+-rw-r--r--  1 main main 11358 Jul  7  2015 COPYING
+-rw-r--r--  1 main main   863 Jul  7  2015 README
+drwxr-xr-x  3 main main  4096 Feb  4 18:18 examples
+drwxr-xr-x  3 main main  4096 Feb  4 18:18 testcases
+
+./js/excanvas_r3/examples:
+total 64
+drwxr-xr-x 3 main main  4096 Feb  4 18:18 .
+drwxr-xr-x 4 main main  4096 Feb  4 18:18 ..
+drwxr-xr-x 4 main main  4096 Feb  4 18:18 .svn
+-rw-r--r-- 1 main main  2188 Jul  7  2015 example1.html
+-rw-r--r-- 1 main main 11995 Jul  7  2015 example2.html
+-rw-r--r-- 1 main main  7040 Jul  7  2015 example3.html
+-rw-r--r-- 1 main main 25286 Jul  7  2015 ff.jpg
+
+./js/excanvas_r3/examples/.svn:
+total 28
+drwxr-xr-x 4 main main 4096 Feb  4 18:18 .
+drwxr-xr-x 3 main main 4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main  468 Jul  7  2015 all-wcprops
+-rw-r--r-- 1 main main  857 Jul  7  2015 entries
+-rw-r--r-- 1 main main    2 Jul  7  2015 format
+drwxr-xr-x 2 main main 4096 Feb  4 18:18 prop-base
+drwxr-xr-x 2 main main 4096 Feb  4 18:18 text-base
+
+./js/excanvas_r3/examples/.svn/prop-base:
+total 12
+drwxr-xr-x 2 main main 4096 Feb  4 18:18 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main   53 Jul  7  2015 ff.jpg.svn-base
+
+./js/excanvas_r3/examples/.svn/text-base:
+total 64
+drwxr-xr-x 2 main main  4096 Feb  4 18:18 .
+drwxr-xr-x 4 main main  4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main  2280 Jul  7  2015 example1.html.svn-base
+-rw-r--r-- 1 main main 12507 Jul  7  2015 example2.html.svn-base
+-rw-r--r-- 1 main main  7040 Jul  7  2015 example3.html.svn-base
+-rw-r--r-- 1 main main 25286 Jul  7  2015 ff.jpg.svn-base
+
+./js/excanvas_r3/testcases:
+total 60
+drwxr-xr-x 3 main main 4096 Feb  4 18:18 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:18 ..
+drwxr-xr-x 4 main main 4096 Feb  4 18:18 .svn
+-rw-r--r-- 1 main main  834 Jul  7  2015 arc.html
+-rw-r--r-- 1 main main  893 Jul  7  2015 clearpath.html
+-rw-r--r-- 1 main main  538 Jul  7  2015 drawimage.html
+-rw-r--r-- 1 main main  771 Jul  7  2015 gradient.html
+-rw-r--r-- 1 main main  833 Jul  7  2015 gradient2.html
+-rw-r--r-- 1 main main  887 Jul  7  2015 linewidth.html
+-rw-r--r-- 1 main main  651 Jul  7  2015 overflow.html
+-rw-r--r-- 1 main main  996 Jul  7  2015 quadraticcurve.html
+-rw-r--r-- 1 main main 1489 Jul  7  2015 resizing.html
+-rw-r--r-- 1 main main  810 Jul  7  2015 saverestorepath.html
+-rw-r--r-- 1 main main 1256 Jul  7  2015 stroke-scale-rotate.html
+-rw-r--r-- 1 main main  591 Jul  7  2015 stroke-should-not-close-path.html
+
+./js/excanvas_r3/testcases/.svn:
+total 28
+drwxr-xr-x 4 main main 4096 Feb  4 18:18 .
+drwxr-xr-x 3 main main 4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main 1397 Jul  7  2015 all-wcprops
+-rw-r--r-- 1 main main 2093 Jul  7  2015 entries
+-rw-r--r-- 1 main main    2 Jul  7  2015 format
+drwxr-xr-x 2 main main 4096 Feb  4 18:18 prop-base
+drwxr-xr-x 2 main main 4096 Feb  4 18:18 text-base
+
+./js/excanvas_r3/testcases/.svn/prop-base:
+total 12
+drwxr-xr-x 2 main main 4096 Feb  4 18:18 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main   67 Jul  7  2015 overflow.html.svn-base
+
+./js/excanvas_r3/testcases/.svn/text-base:
+total 56
+drwxr-xr-x 2 main main 4096 Feb  4 18:18 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:18 ..
+-rw-r--r-- 1 main main  883 Jul  7  2015 arc.html.svn-base
+-rw-r--r-- 1 main main  942 Jul  7  2015 clearpath.html.svn-base
+-rw-r--r-- 1 main main  574 Jul  7  2015 drawimage.html.svn-base
+-rw-r--r-- 1 main main  810 Jul  7  2015 gradient.html.svn-base
+-rw-r--r-- 1 main main  874 Jul  7  2015 gradient2.html.svn-base
+-rw-r--r-- 1 main main  887 Jul  7  2015 linewidth.html.svn-base
+-rw-r--r-- 1 main main  651 Jul  7  2015 overflow.html.svn-base
+-rw-r--r-- 1 main main 1052 Jul  7  2015 quadraticcurve.html.svn-base
+-rw-r--r-- 1 main main 1554 Jul  7  2015 resizing.html.svn-base
+-rw-r--r-- 1 main main  858 Jul  7  2015 saverestorepath.html.svn-base
+-rw-r--r-- 1 main main 1336 Jul  7  2015 stroke-scale-rotate.html.svn-base
+-rw-r--r-- 1 main main  629 Jul  7  2015 stroke-should-not-close-path.html.svn-base
+
+::: glDatePicker jQuery plugin
+
+./js/glDatePicker-2.0:
+total 44
+drwxr-xr-x  3 main main  4096 Feb  4 18:19 .
+drwxr-xr-x 15 main main  4096 Feb  4 18:22 ..
+-rw-r--r--  1 main main  3577 Jul  7  2015 README.md
+-rw-r--r--  1 main main 25677 Jul  7  2015 glDatePicker.js
+drwxr-xr-x  2 main main  4096 Feb  4 18:19 styles
+
+./js/glDatePicker-2.0/styles:
+total 32
+drwxr-xr-x 2 main main 4096 Feb  4 18:19 .
+drwxr-xr-x 3 main main 4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main 8252 Jul  7  2015 glDatePicker.darkneon.css
+-rw-r--r-- 1 main main 8010 Jul  7  2015 glDatePicker.default.css
+-rw-r--r-- 1 main main 2291 Jul  7  2015 glDatePicker.flatwhite.css
+
+::: Code Highlighter
+
+./js/highlighter:
+total 32
+drwxr-xr-x  5 main main 4096 Feb  4 18:19 .
+drwxr-xr-x 15 main main 4096 Feb  4 18:22 ..
+-rw-r--r--  1 main main 7638 Jul  7  2015 LGPLv3.txt
+drwxr-xr-x  2 main main 4096 Feb  4 18:19 scripts
+drwxr-xr-x  2 main main 4096 Feb  4 18:19 src
+drwxr-xr-x  2 main main 4096 Feb  4 18:19 styles
+-rw-r--r--  1 main main 2071 Jul  7  2015 test.html
+
+./js/highlighter/scripts:
+total 152
+drwxr-xr-x 2 main main  4096 Feb  4 18:19 .
+drwxr-xr-x 5 main main  4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main  1361 Jul  7  2015 clipboard.swf
+-rw-r--r-- 1 main main  2892 Jul  7  2015 shBrushAS3.js
+-rw-r--r-- 1 main main  3416 Jul  7  2015 shBrushBash.js
+-rw-r--r-- 1 main main  2990 Jul  7  2015 shBrushCSharp.js
+-rw-r--r-- 1 main main  8728 Jul  7  2015 shBrushColdFusion.js
+-rw-r--r-- 1 main main  5707 Jul  7  2015 shBrushCpp.js
+-rw-r--r-- 1 main main  6125 Jul  7  2015 shBrushCss.js
+-rw-r--r-- 1 main main  2850 Jul  7  2015 shBrushDelphi.js
+-rw-r--r-- 1 main main  1535 Jul  7  2015 shBrushDiff.js
+-rw-r--r-- 1 main main  2184 Jul  7  2015 shBrushErlang.js
+-rw-r--r-- 1 main main  3475 Jul  7  2015 shBrushGroovy.js
+-rw-r--r-- 1 main main  2176 Jul  7  2015 shBrushJScript.js
+-rw-r--r-- 1 main main  2565 Jul  7  2015 shBrushJava.js
+-rw-r--r-- 1 main main  2704 Jul  7  2015 shBrushJavaFX.js
+-rw-r--r-- 1 main main  3625 Jul  7  2015 shBrushPerl.js
+-rw-r--r-- 1 main main  5640 Jul  7  2015 shBrushPhp.js
+-rw-r--r-- 1 main main  1237 Jul  7  2015 shBrushPlain.js
+-rw-r--r-- 1 main main  4369 Jul  7  2015 shBrushPowerShell.js
+-rw-r--r-- 1 main main  2904 Jul  7  2015 shBrushPython.js
+-rw-r--r-- 1 main main  2656 Jul  7  2015 shBrushRuby.js
+-rw-r--r-- 1 main main  2389 Jul  7  2015 shBrushScala.js
+-rw-r--r-- 1 main main  3508 Jul  7  2015 shBrushSql.js
+-rw-r--r-- 1 main main  2741 Jul  7  2015 shBrushVb.js
+-rw-r--r-- 1 main main  2450 Jul  7  2015 shBrushXml.js
+-rw-r--r-- 1 main main 19648 Jul  7  2015 shCore.js
+-rw-r--r-- 1 main main  2848 Jul  7  2015 shLegacy.js
+
+./js/highlighter/src:
+total 80
+drwxr-xr-x 2 main main  4096 Feb  4 18:19 .
+drwxr-xr-x 5 main main  4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main 59990 Jul  7  2015 shCore.js
+-rw-r--r-- 1 main main  4366 Jul  7  2015 shLegacy.js
+
+./js/highlighter/styles:
+total 64
+drwxr-xr-x 2 main main 4096 Feb  4 18:19 .
+drwxr-xr-x 5 main main 4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main  786 Jul  7  2015 help.png
+-rw-r--r-- 1 main main  615 Jul  7  2015 magnifier.png
+-rw-r--r-- 1 main main  603 Jul  7  2015 page_white_code.png
+-rw-r--r-- 1 main main  309 Jul  7  2015 page_white_copy.png
+-rw-r--r-- 1 main main  731 Jul  7  2015 printer.png
+-rw-r--r-- 1 main main 6866 Jul  7  2015 shCore.css
+-rw-r--r-- 1 main main 3356 Jul  7  2015 shThemeDefault.css
+-rw-r--r-- 1 main main 3423 Jul  7  2015 shThemeDjango.css
+-rw-r--r-- 1 main main 3663 Jul  7  2015 shThemeEclipse.css
+-rw-r--r-- 1 main main 3413 Jul  7  2015 shThemeEmacs.css
+-rw-r--r-- 1 main main 3479 Jul  7  2015 shThemeFadeToGrey.css
+-rw-r--r-- 1 main main 3423 Jul  7  2015 shThemeMidnight.css
+-rw-r--r-- 1 main main 3443 Jul  7  2015 shThemeRDark.css
+
+::: A nifty star box jQuery plugin
+
+./js/jStarbox:
+total 32
+drwxr-xr-x  4 main main 4096 Feb  4 18:19 .
+drwxr-xr-x 15 main main 4096 Feb  4 18:22 ..
+-rw-r--r--  1 main main 5917 Jul  7  2015 Readme.md
+drwxr-xr-x  2 main main 4096 Feb  4 18:19 css
+drwxr-xr-x  2 main main 4096 Feb  4 18:19 images
+-rw-r--r--  1 main main 5509 Jul  7  2015 jstarbox.js
+
+./js/jStarbox/css:
+total 16
+drwxr-xr-x 2 main main 4096 Feb  4 18:19 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main   90 Jul  7  2015 ie7.css
+-rw-r--r-- 1 main main 1013 Jul  7  2015 jstarbox.css
+
+./js/jStarbox/images:
+total 40
+drwxr-xr-x 2 main main 4096 Feb  4 18:19 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main  364 Jul  7  2015 5-large.png
+-rw-r--r-- 1 main main  239 Jul  7  2015 5-small.png
+-rw-r--r-- 1 main main  625 Jul  7  2015 6-large.png
+-rw-r--r-- 1 main main  363 Jul  7  2015 6-small.png
+-rw-r--r-- 1 main main  339 Jul  7  2015 curved-small.png
+-rw-r--r-- 1 main main 1307 Jul  7  2015 golden.png
+-rw-r--r-- 1 main main  406 Jul  7  2015 ribbon-small.png
+-rw-r--r-- 1 main main  581 Jul  7  2015 ribbon.png
+
+::: j-fu plugin library v9.9.3
+
+./js/jfu-9.9.3:
+total 136
+drwxr-xr-x  8 main main  4096 Feb  4 18:19 .
+drwxr-xr-x 15 main main  4096 Feb  4 18:22 ..
+-rw-r--r--  1 main main    29 Jul  7  2015 .gitignore
+-rw-r--r--  1 main main  5633 Jul  7  2015 .jshintrc
+-rw-r--r--  1 main main  2593 Jul  7  2015 CONTRIBUTING.md
+-rw-r--r--  1 main main   827 Jul  7  2015 Gruntfile.js
+-rw-r--r--  1 main main  7695 Jul  7  2015 README.md
+-rw-r--r--  1 main main 12505 Jul  7  2015 angularjs.html
+-rw-r--r--  1 main main 10610 Jul  7  2015 basic-plus.html
+-rw-r--r--  1 main main  6626 Jul  7  2015 basic.html
+-rw-r--r--  1 main main  1344 Jul  7  2015 blueimp-file-upload.jquery.json
+-rw-r--r--  1 main main  2270 Jul  7  2015 bower.json
+drwxr-xr-x  2 main main  4096 Feb  4 18:19 cors
+drwxr-xr-x  2 main main  4096 Feb  4 18:19 css
+drwxr-xr-x  2 main main  4096 Feb  4 18:19 img
+-rw-r--r--  1 main main 13052 Jul  7  2015 index.html
+-rw-r--r--  1 main main 12027 Jul  7  2015 jquery-ui.html
+drwxr-xr-x  4 main main  4096 Feb  4 18:19 js
+-rw-r--r--  1 main main  1441 Jul  7  2015 package.json
+drwxr-xr-x  6 main main  4096 Feb  4 18:19 server
+drwxr-xr-x  2 main main  4096 Feb  4 18:19 test
+
+./js/jfu-9.9.3/cors:
+total 16
+drwxr-xr-x 2 main main 4096 Feb  4 18:19 .
+drwxr-xr-x 8 main main 4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main 2049 Jul  7  2015 postmessage.html
+-rw-r--r-- 1 main main  537 Jul  7  2015 result.html
+
+./js/jfu-9.9.3/css:
+total 36
+drwxr-xr-x 2 main main 4096 Feb  4 18:19 .
+drwxr-xr-x 8 main main 4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main  396 Jul  7  2015 demo-ie8.css
+-rw-r--r-- 1 main main 1124 Jul  7  2015 demo.css
+-rw-r--r-- 1 main main  431 Jul  7  2015 jquery.fileupload-noscript.css
+-rw-r--r-- 1 main main  371 Jul  7  2015 jquery.fileupload-ui-noscript.css
+-rw-r--r-- 1 main main 1102 Jul  7  2015 jquery.fileupload-ui.css
+-rw-r--r-- 1 main main  655 Jul  7  2015 jquery.fileupload.css
+-rw-r--r-- 1 main main  294 Jul  7  2015 style.css
+
+./js/jfu-9.9.3/img:
+total 16
+drwxr-xr-x 2 main main 4096 Feb  4 18:19 .
+drwxr-xr-x 8 main main 4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main 3897 Jul  7  2015 loading.gif
+-rw-r--r-- 1 main main 3323 Jul  7  2015 progressbar.gif
+
+./js/jfu-9.9.3/js:
+total 196
+drwxr-xr-x 4 main main  4096 Feb  4 18:19 .
+drwxr-xr-x 8 main main  4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main  3588 Jul  7  2015 app.js
+drwxr-xr-x 2 main main  4096 Feb  4 18:19 cors
+-rw-r--r-- 1 main main 16707 Jul  7  2015 jquery.fileupload-angular.js
+-rw-r--r-- 1 main main  3538 Jul  7  2015 jquery.fileupload-audio.js
+-rw-r--r-- 1 main main 11996 Jul  7  2015 jquery.fileupload-image.js
+-rw-r--r-- 1 main main  5177 Jul  7  2015 jquery.fileupload-jquery-ui.js
+-rw-r--r-- 1 main main  6103 Jul  7  2015 jquery.fileupload-process.js
+-rw-r--r-- 1 main main 27868 Jul  7  2015 jquery.fileupload-ui.js
+-rw-r--r-- 1 main main  4183 Jul  7  2015 jquery.fileupload-validate.js
+-rw-r--r-- 1 main main  3538 Jul  7  2015 jquery.fileupload-video.js
+-rw-r--r-- 1 main main 63330 Jul  7  2015 jquery.fileupload.js
+-rw-r--r-- 1 main main 10729 Jul  7  2015 jquery.iframe-transport.js
+-rw-r--r-- 1 main main  2484 Jul  7  2015 main.js
+drwxr-xr-x 2 main main  4096 Feb  4 18:19 vendor
+
+./js/jfu-9.9.3/js/cors:
+total 20
+drwxr-xr-x 2 main main 4096 Feb  4 18:19 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main 4108 Jul  7  2015 jquery.postmessage-transport.js
+-rw-r--r-- 1 main main 3422 Jul  7  2015 jquery.xdr-transport.js
+
+./js/jfu-9.9.3/js/vendor:
+total 24
+drwxr-xr-x 2 main main  4096 Feb  4 18:19 .
+drwxr-xr-x 4 main main  4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main 15863 Jul  7  2015 jquery.ui.widget.js
+
+./js/jfu-9.9.3/server:
+total 24
+drwxr-xr-x 6 main main 4096 Feb  4 18:19 .
+drwxr-xr-x 8 main main 4096 Feb  4 18:19 ..
+drwxr-xr-x 4 main main 4096 Feb  4 18:19 gae-go
+drwxr-xr-x 3 main main 4096 Feb  4 18:19 gae-python
+drwxr-xr-x 4 main main 4096 Feb  4 18:19 node
+drwxr-xr-x 3 main main 4096 Feb  4 18:19 php
+
+./js/jfu-9.9.3/server/gae-go:
+total 20
+drwxr-xr-x 4 main main 4096 Feb  4 18:19 .
+drwxr-xr-x 6 main main 4096 Feb  4 18:19 ..
+drwxr-xr-x 2 main main 4096 Feb  4 18:19 app
+-rw-r--r-- 1 main main  214 Jul  7  2015 app.yaml
+drwxr-xr-x 2 main main 4096 Feb  4 18:19 static
+
+./js/jfu-9.9.3/server/gae-go/app:
+total 16
+drwxr-xr-x 2 main main 4096 Feb  4 18:19 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main 7076 Jul  7  2015 main.go
+
+./js/jfu-9.9.3/server/gae-go/static:
+total 16
+drwxr-xr-x 2 main main 4096 Feb  4 18:19 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main 1150 Jul  7  2015 favicon.ico
+-rw-r--r-- 1 main main   24 Jul  7  2015 robots.txt
+
+./js/jfu-9.9.3/server/gae-python:
+total 24
+drwxr-xr-x 3 main main 4096 Feb  4 18:19 .
+drwxr-xr-x 6 main main 4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main  262 Jul  7  2015 app.yaml
+-rw-r--r-- 1 main main 5845 Jul  7  2015 main.py
+drwxr-xr-x 2 main main 4096 Feb  4 18:19 static
+
+./js/jfu-9.9.3/server/gae-python/static:
+total 16
+drwxr-xr-x 2 main main 4096 Feb  4 18:19 .
+drwxr-xr-x 3 main main 4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main 1150 Jul  7  2015 favicon.ico
+-rw-r--r-- 1 main main   24 Jul  7  2015 robots.txt
+
+./js/jfu-9.9.3/server/node:
+total 36
+drwxr-xr-x 4 main main  4096 Feb  4 18:19 .
+drwxr-xr-x 6 main main  4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main    23 Jul  7  2015 .gitignore
+-rw-r--r-- 1 main main  1100 Jul  7  2015 package.json
+drwxr-xr-x 3 main main  4096 Feb  4 18:19 public
+-rw-r--r-- 1 main main 11604 Jul  7  2015 server.js
+drwxr-xr-x 2 main main  4096 Feb  4 18:19 tmp
+
+./js/jfu-9.9.3/server/node/public:
+total 12
+drwxr-xr-x 3 main main 4096 Feb  4 18:19 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:19 ..
+drwxr-xr-x 2 main main 4096 Feb  4 18:19 files
+
+./js/jfu-9.9.3/server/node/public/files:
+total 12
+drwxr-xr-x 2 main main 4096 Feb  4 18:19 .
+drwxr-xr-x 3 main main 4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main   14 Jul  7  2015 .gitignore
+
+./js/jfu-9.9.3/server/node/tmp:
+total 8
+drwxr-xr-x 2 main main 4096 Feb  4 18:19 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main    0 Jul  7  2015 .gitignore
+
+./js/jfu-9.9.3/server/php:
+total 76
+drwxr-xr-x 3 main main  4096 Feb  4 18:19 .
+drwxr-xr-x 6 main main  4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main 54028 Jul  7  2015 UploadHandler.php
+drwxr-xr-x 2 main main  4096 Feb  4 18:19 files
+-rw-r--r-- 1 main main   355 Jul  7  2015 index.php
+
+./js/jfu-9.9.3/server/php/files:
+total 16
+drwxr-xr-x 2 main main 4096 Feb  4 18:19 .
+drwxr-xr-x 3 main main 4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main   25 Jul  7  2015 .gitignore
+-rw-r--r-- 1 main main  871 Jul  7  2015 .htaccess
+
+./js/jfu-9.9.3/test:
+total 60
+drwxr-xr-x 2 main main  4096 Feb  4 18:19 .
+drwxr-xr-x 8 main main  4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main  7356 Jul  7  2015 index.html
+-rw-r--r-- 1 main main 42116 Jul  7  2015 test.js
+
+::: jsc3d plugin
+
+./js/jsc3d:
+total 436
+drwxr-xr-x  7 main main   4096 Feb  4 18:19 .
+drwxr-xr-x 15 main main   4096 Feb  4 18:22 ..
+drwxr-xr-x  2 main main   4096 Feb  4 18:19 bin
+drwxr-xr-x  2 main main   4096 Feb  4 18:19 build
+drwxr-xr-x  3 main main   4096 Feb  4 18:19 docs
+drwxr-xr-x  4 main main   4096 Feb  4 18:19 external
+-rw-r--r--  1 main main  17746 Jul  7  2015 jsc3d.3ds.js
+-rw-r--r--  1 main main   4855 Jul  7  2015 jsc3d.console.js
+-rw-r--r--  1 main main 156828 Jul  7  2015 jsc3d.js
+-rw-r--r--  1 main main  47270 Jul  7  2015 jsc3d.touch.js
+-rw-r--r--  1 main main  37211 Jul  7  2015 jsc3d.webgl.js
+-rw-r--r--  1 main main 125559 Jul  7  2015 jsc3d_ie.js
+-rw-r--r--  1 main main   2196 Jul  7  2015 readme.txt
+drwxr-xr-x  4 main main   4096 Feb  4 18:19 tools
+
+./js/jsc3d/bin:
+total 144
+drwxr-xr-x 2 main main  4096 Feb  4 18:19 .
+drwxr-xr-x 7 main main  4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main 70368 Jul  7  2015 jsc3d.min.js
+-rw-r--r-- 1 main main 54951 Jul  7  2015 jsc3d_ie.min.js
+
+./js/jsc3d/build:
+total 24
+drwxr-xr-x 2 main main 4096 Feb  4 18:19 .
+drwxr-xr-x 7 main main 4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main   98 Jul  7  2015 compile.bat
+-rw-r--r-- 1 main main  104 Jul  7  2015 compile.sh
+-rw-r--r-- 1 main main  152 Jul  7  2015 gendoc.bat
+-rw-r--r-- 1 main main  155 Jul  7  2015 gendoc.sh
+
+./js/jsc3d/docs:
+total 28
+drwxr-xr-x 3 main main 4096 Feb  4 18:19 .
+drwxr-xr-x 7 main main 4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main 4343 Jul  7  2015 files.html
+-rw-r--r-- 1 main main 6807 Jul  7  2015 index.html
+drwxr-xr-x 3 main main 4096 Feb  4 18:19 symbols
+
+./js/jsc3d/docs/symbols:
+total 224
+drwxr-xr-x 3 main main  4096 Feb  4 18:19 .
+drwxr-xr-x 3 main main  4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main  8873 Jul  7  2015 JSC3D.AABB.html
+-rw-r--r-- 1 main main 22331 Jul  7  2015 JSC3D.BinaryStream.html
+-rw-r--r-- 1 main main  9873 Jul  7  2015 JSC3D.LoaderSelector.html
+-rw-r--r-- 1 main main  8725 Jul  7  2015 JSC3D.Material.html
+-rw-r--r-- 1 main main 11183 Jul  7  2015 JSC3D.Math3D.html
+-rw-r--r-- 1 main main 14089 Jul  7  2015 JSC3D.Matrix3x4.html
+-rw-r--r-- 1 main main 14621 Jul  7  2015 JSC3D.Mesh.html
+-rw-r--r-- 1 main main  9228 Jul  7  2015 JSC3D.ObjLoader.html
+-rw-r--r-- 1 main main  6774 Jul  7  2015 JSC3D.PickInfo.html
+-rw-r--r-- 1 main main 12381 Jul  7  2015 JSC3D.Scene.html
+-rw-r--r-- 1 main main 10310 Jul  7  2015 JSC3D.StlLoader.html
+-rw-r--r-- 1 main main 12143 Jul  7  2015 JSC3D.Texture.html
+-rw-r--r-- 1 main main 29244 Jul  7  2015 JSC3D.Viewer.html
+-rw-r--r-- 1 main main  6594 Jul  7  2015 JSC3D.html
+-rw-r--r-- 1 main main  5594 Jul  7  2015 _global_.html
+drwxr-xr-x 2 main main  4096 Feb  4 18:19 src
+
+./js/jsc3d/docs/symbols/src:
+total 1604
+drwxr-xr-x 2 main main    4096 Feb  4 18:19 .
+drwxr-xr-x 3 main main    4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main 1627062 Jul  7  2015 jsc3d.js.html
+
+./js/jsc3d/external:
+total 16
+drwxr-xr-x 4 main main 4096 Feb  4 18:19 .
+drwxr-xr-x 7 main main 4096 Feb  4 18:19 ..
+drwxr-xr-x 3 main main 4096 Feb  4 18:19 FlashCanvasPro
+drwxr-xr-x 2 main main 4096 Feb  4 18:19 Sonic
+
+./js/jsc3d/external/FlashCanvasPro:
+total 28
+drwxr-xr-x 3 main main 4096 Feb  4 18:19 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main 2778 Jul  7  2015 COPYING
+-rw-r--r-- 1 main main 3833 Jul  7  2015 ChangeLog
+-rw-r--r-- 1 main main 1351 Jul  7  2015 LICENSE
+-rw-r--r-- 1 main main 2511 Jul  7  2015 README
+drwxr-xr-x 2 main main 4096 Feb  4 18:19 bin
+
+./js/jsc3d/external/FlashCanvasPro/bin:
+total 88
+drwxr-xr-x 2 main main  4096 Feb  4 18:19 .
+drwxr-xr-x 3 main main  4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main  1074 Jul  7  2015 canvas2png.js
+-rw-r--r-- 1 main main 25310 Jul  7  2015 flash10canvas.swf
+-rw-r--r-- 1 main main 25468 Jul  7  2015 flash9canvas.swf
+-rw-r--r-- 1 main main 10878 Jul  7  2015 flashcanvas.js
+-rw-r--r-- 1 main main  2382 Jul  7  2015 proxy.php
+-rw-r--r-- 1 main main  1935 Jul  7  2015 save.php
+
+./js/jsc3d/external/Sonic:
+total 24
+drwxr-xr-x 2 main main 4096 Feb  4 18:19 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main 4423 Jul  7  2015 README.md
+-rw-r--r-- 1 main main 6224 Jul  7  2015 sonic.js
+
+./js/jsc3d/tools:
+total 16
+drwxr-xr-x 4 main main 4096 Feb  4 18:19 .
+drwxr-xr-x 7 main main 4096 Feb  4 18:19 ..
+drwxr-xr-x 2 main main 4096 Feb  4 18:19 closure
+drwxr-xr-x 6 main main 4096 Feb  4 18:19 doc_generator
+
+./js/jsc3d/tools/closure:
+total 4212
+drwxr-xr-x 2 main main    4096 Feb  4 18:19 .
+drwxr-xr-x 4 main main    4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main   11358 Jul  7  2015 COPYING
+-rw-r--r-- 1 main main    6684 Jul  7  2015 README
+-rw-r--r-- 1 main main    4932 Jul  7  2015 USAGE
+-rw-r--r-- 1 main main 4263582 Jul  7  2015 compiler.jar
+
+./js/jsc3d/tools/doc_generator:
+total 48
+drwxr-xr-x 6 main main 4096 Feb  4 18:19 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main 5430 Jul  7  2015 README.txt
+drwxr-xr-x 8 main main 4096 Feb  4 18:19 app
+-rw-r--r-- 1 main main 4813 Jul  7  2015 changes.txt
+drwxr-xr-x 2 main main 4096 Feb  4 18:19 conf
+drwxr-xr-x 4 main main 4096 Feb  4 18:19 java
+-rw-r--r-- 1 main main 1307 Jul  7  2015 jsdebug.jar
+-rw-r--r-- 1 main main 1303 Jul  7  2015 jsrun.jar
+drwxr-xr-x 3 main main 4096 Feb  4 18:19 templates
+
+./js/jsc3d/tools/doc_generator/app:
+total 72
+drwxr-xr-x 8 main main  4096 Feb  4 18:19 .
+drwxr-xr-x 6 main main  4096 Feb  4 18:19 ..
+drwxr-xr-x 2 main main  4096 Feb  4 18:19 frame
+-rw-r--r-- 1 main main   832 Jul  7  2015 frame.js
+drwxr-xr-x 3 main main  4096 Feb  4 18:19 handlers
+drwxr-xr-x 3 main main  4096 Feb  4 18:19 lib
+-rw-r--r-- 1 main main  3133 Jul  7  2015 main.js
+drwxr-xr-x 2 main main  4096 Feb  4 18:19 plugins
+-rw-r--r-- 1 main main  8102 Jul  7  2015 run.js
+drwxr-xr-x 2 main main  4096 Feb  4 18:19 t
+drwxr-xr-x 2 main main  4096 Feb  4 18:19 test
+-rw-r--r-- 1 main main 21477 Jul  7  2015 test.js
+
+./js/jsc3d/tools/doc_generator/app/frame:
+total 48
+drwxr-xr-x 2 main main 4096 Feb  4 18:19 .
+drwxr-xr-x 8 main main 4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main 2288 Jul  7  2015 Chain.js
+-rw-r--r-- 1 main main 3617 Jul  7  2015 Dumper.js
+-rw-r--r-- 1 main main 1656 Jul  7  2015 Hash.js
+-rw-r--r-- 1 main main 4162 Jul  7  2015 Link.js
+-rw-r--r-- 1 main main  183 Jul  7  2015 Namespace.js
+-rw-r--r-- 1 main main 2959 Jul  7  2015 Opt.js
+-rw-r--r-- 1 main main  690 Jul  7  2015 Reflection.js
+-rw-r--r-- 1 main main 2365 Jul  7  2015 String.js
+-rw-r--r-- 1 main main 3593 Jul  7  2015 Testrun.js
+
+./js/jsc3d/tools/doc_generator/app/handlers:
+total 20
+drwxr-xr-x 3 main main 4096 Feb  4 18:19 .
+drwxr-xr-x 8 main main 4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main  467 Jul  7  2015 FOODOC.js
+drwxr-xr-x 2 main main 4096 Feb  4 18:19 XMLDOC
+-rw-r--r-- 1 main main  456 Jul  7  2015 XMLDOC.js
+
+./js/jsc3d/tools/doc_generator/app/handlers/XMLDOC:
+total 32
+drwxr-xr-x 2 main main 4096 Feb  4 18:19 .
+drwxr-xr-x 3 main main 4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main 4104 Jul  7  2015 DomReader.js
+-rw-r--r-- 1 main main  465 Jul  7  2015 XMLDoc.js
+-rw-r--r-- 1 main main 8529 Jul  7  2015 XMLParse.js
+
+./js/jsc3d/tools/doc_generator/app/lib:
+total 16
+drwxr-xr-x 3 main main 4096 Feb  4 18:19 .
+drwxr-xr-x 8 main main 4096 Feb  4 18:19 ..
+drwxr-xr-x 2 main main 4096 Feb  4 18:19 JSDOC
+-rw-r--r-- 1 main main 3085 Jul  7  2015 JSDOC.js
+
+./js/jsc3d/tools/doc_generator/app/lib/JSDOC:
+total 120
+drwxr-xr-x 2 main main  4096 Feb  4 18:19 .
+drwxr-xr-x 3 main main  4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main  5530 Jul  7  2015 DocComment.js
+-rw-r--r-- 1 main main  9740 Jul  7  2015 DocTag.js
+-rw-r--r-- 1 main main  3332 Jul  7  2015 JsDoc.js
+-rw-r--r-- 1 main main  3451 Jul  7  2015 JsPlate.js
+-rw-r--r-- 1 main main  3168 Jul  7  2015 Lang.js
+-rw-r--r-- 1 main main  3486 Jul  7  2015 Parser.js
+-rw-r--r-- 1 main main  1056 Jul  7  2015 PluginManager.js
+-rw-r--r-- 1 main main 18207 Jul  7  2015 Symbol.js
+-rw-r--r-- 1 main main  6579 Jul  7  2015 SymbolSet.js
+-rw-r--r-- 1 main main   804 Jul  7  2015 TextStream.js
+-rw-r--r-- 1 main main   394 Jul  7  2015 Token.js
+-rw-r--r-- 1 main main  8481 Jul  7  2015 TokenReader.js
+-rw-r--r-- 1 main main  2780 Jul  7  2015 TokenStream.js
+-rw-r--r-- 1 main main   927 Jul  7  2015 Util.js
+-rw-r--r-- 1 main main 14480 Jul  7  2015 Walker.js
+
+./js/jsc3d/tools/doc_generator/app/plugins:
+total 36
+drwxr-xr-x 2 main main 4096 Feb  4 18:19 .
+drwxr-xr-x 8 main main 4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main  453 Jul  7  2015 commentSrcJson.js
+-rw-r--r-- 1 main main  465 Jul  7  2015 frameworkPrototype.js
+-rw-r--r-- 1 main main  263 Jul  7  2015 functionCall.js
+-rw-r--r-- 1 main main 1632 Jul  7  2015 publishSrcHilite.js
+-rw-r--r-- 1 main main  157 Jul  7  2015 symbolLink.js
+-rw-r--r-- 1 main main  779 Jul  7  2015 tagParamConfig.js
+-rw-r--r-- 1 main main 1215 Jul  7  2015 tagSynonyms.js
+
+./js/jsc3d/tools/doc_generator/app/t:
+total 16
+drwxr-xr-x 2 main main 4096 Feb  4 18:19 .
+drwxr-xr-x 8 main main 4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main 3718 Jul  7  2015 TestDoc.js
+-rw-r--r-- 1 main main  363 Jul  7  2015 runner.js
+
+./js/jsc3d/tools/doc_generator/app/test:
+total 176
+drwxr-xr-x 2 main main  4096 Feb  4 18:19 .
+drwxr-xr-x 8 main main  4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main   390 Jul  7  2015 addon.js
+-rw-r--r-- 1 main main   162 Jul  7  2015 anon_inner.js
+-rw-r--r-- 1 main main   352 Jul  7  2015 augments.js
+-rw-r--r-- 1 main main   334 Jul  7  2015 augments2.js
+-rw-r--r-- 1 main main   685 Jul  7  2015 borrows.js
+-rw-r--r-- 1 main main   325 Jul  7  2015 borrows2.js
+-rw-r--r-- 1 main main   479 Jul  7  2015 config.js
+-rw-r--r-- 1 main main   404 Jul  7  2015 constructs.js
+-rw-r--r-- 1 main main   122 Jul  7  2015 encoding.js
+-rw-r--r-- 1 main main   170 Jul  7  2015 encoding_other.js
+-rw-r--r-- 1 main main   894 Jul  7  2015 event.js
+-rw-r--r-- 1 main main   602 Jul  7  2015 functions_anon.js
+-rw-r--r-- 1 main main   695 Jul  7  2015 functions_nested.js
+-rw-r--r-- 1 main main   107 Jul  7  2015 global.js
+-rw-r--r-- 1 main main   483 Jul  7  2015 globals.js
+-rw-r--r-- 1 main main   131 Jul  7  2015 ignore.js
+-rw-r--r-- 1 main main   220 Jul  7  2015 inner.js
+-rw-r--r-- 1 main main 10479 Jul  7  2015 jsdoc_test.js
+-rw-r--r-- 1 main main   480 Jul  7  2015 lend.js
+-rw-r--r-- 1 main main   338 Jul  7  2015 memberof.js
+-rw-r--r-- 1 main main   277 Jul  7  2015 memberof_constructor.js
+-rw-r--r-- 1 main main   266 Jul  7  2015 name.js
+-rw-r--r-- 1 main main   307 Jul  7  2015 namespace_nested.js
+-rw-r--r-- 1 main main   140 Jul  7  2015 nocode.js
+-rw-r--r-- 1 main main   222 Jul  7  2015 oblit_anon.js
+-rw-r--r-- 1 main main   418 Jul  7  2015 overview.js
+-rw-r--r-- 1 main main   630 Jul  7  2015 param_inline.js
+-rw-r--r-- 1 main main   197 Jul  7  2015 params_optional.js
+-rw-r--r-- 1 main main   268 Jul  7  2015 prototype.js
+-rw-r--r-- 1 main main   126 Jul  7  2015 prototype_nested.js
+-rw-r--r-- 1 main main   178 Jul  7  2015 prototype_oblit.js
+-rw-r--r-- 1 main main   397 Jul  7  2015 prototype_oblit_constructor.js
+-rw-r--r-- 1 main main   102 Jul  7  2015 public.js
+-rw-r--r-- 1 main main   549 Jul  7  2015 shared.js
+-rw-r--r-- 1 main main    25 Jul  7  2015 shared2.js
+-rw-r--r-- 1 main main   310 Jul  7  2015 shortcuts.js
+-rw-r--r-- 1 main main   185 Jul  7  2015 static_this.js
+-rw-r--r-- 1 main main   414 Jul  7  2015 synonyms.js
+-rw-r--r-- 1 main main   336 Jul  7  2015 tosource.js
+-rw-r--r-- 1 main main   187 Jul  7  2015 variable_redefine.js
+
+./js/jsc3d/tools/doc_generator/conf:
+total 12
+drwxr-xr-x 2 main main 4096 Feb  4 18:19 .
+drwxr-xr-x 6 main main 4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main  868 Jul  7  2015 sample.conf
+
+./js/jsc3d/tools/doc_generator/java:
+total 24
+drwxr-xr-x 4 main main 4096 Feb  4 18:19 .
+drwxr-xr-x 6 main main 4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main 1102 Jul  7  2015 build.xml
+-rw-r--r-- 1 main main 1191 Jul  7  2015 build_1.4.xml
+drwxr-xr-x 2 main main 4096 Feb  4 18:19 classes
+drwxr-xr-x 2 main main 4096 Feb  4 18:19 src
+
+./js/jsc3d/tools/doc_generator/java/classes:
+total 816
+drwxr-xr-x 2 main main   4096 Feb  4 18:19 .
+drwxr-xr-x 4 main main   4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main 819369 Jul  7  2015 js.jar
+
+./js/jsc3d/tools/doc_generator/java/src:
+total 16
+drwxr-xr-x 2 main main 4096 Feb  4 18:19 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main  753 Jul  7  2015 JsDebugRun.java
+-rw-r--r-- 1 main main  743 Jul  7  2015 JsRun.java
+
+./js/jsc3d/tools/doc_generator/templates:
+total 12
+drwxr-xr-x 3 main main 4096 Feb  4 18:19 .
+drwxr-xr-x 6 main main 4096 Feb  4 18:19 ..
+drwxr-xr-x 3 main main 4096 Feb  4 18:19 jsdoc
+
+./js/jsc3d/tools/doc_generator/templates/jsdoc:
+total 60
+drwxr-xr-x 3 main main  4096 Feb  4 18:19 .
+drwxr-xr-x 3 main main  4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main   434 Jul  7  2015 allclasses.tmpl
+-rw-r--r-- 1 main main  1838 Jul  7  2015 allfiles.tmpl
+-rw-r--r-- 1 main main 21933 Jul  7  2015 class.tmpl
+-rw-r--r-- 1 main main  1132 Jul  7  2015 index.tmpl
+-rw-r--r-- 1 main main  5533 Jul  7  2015 publish.js
+drwxr-xr-x 2 main main  4096 Feb  4 18:19 static
+-rw-r--r-- 1 main main  1038 Jul  7  2015 symbol.tmpl
+
+./js/jsc3d/tools/doc_generator/templates/jsdoc/static:
+total 20
+drwxr-xr-x 2 main main 4096 Feb  4 18:19 .
+drwxr-xr-x 3 main main 4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main 2211 Jul  7  2015 default.css
+-rw-r--r-- 1 main main   24 Jul  7  2015 header.html
+-rw-r--r-- 1 main main  673 Jul  7  2015 index.html
+
+::: jQuery Pick-a-date plugin
+
+./js/pickadate:
+total 152
+drwxr-xr-x  6 main main  4096 Feb  4 18:20 .
+drwxr-xr-x 15 main main  4096 Feb  4 18:22 ..
+drwxr-xr-x  4 main main  4096 Feb  4 18:19 compressed
+-rw-r--r--  1 main main  4136 Apr 20  2015 legacy.js
+-rw-r--r--  1 main main 48158 Apr 20  2015 picker.date.js
+-rw-r--r--  1 main main 36941 Apr 20  2015 picker.js
+-rw-r--r--  1 main main 31899 Apr 20  2015 picker.time.js
+drwxr-xr-x  2 main main  4096 Feb  4 18:20 themes
+drwxr-xr-x  2 main main  4096 Feb  4 18:20 themes-source
+drwxr-xr-x  2 main main  4096 Feb  4 18:20 translations
+
+./js/pickadate/compressed:
+total 56
+drwxr-xr-x 4 main main  4096 Feb  4 18:19 .
+drwxr-xr-x 6 main main  4096 Feb  4 18:20 ..
+-rw-r--r-- 1 main main  1893 Apr 20  2015 legacy.js
+-rw-r--r-- 1 main main 12787 Apr 20  2015 picker.date.js
+-rw-r--r-- 1 main main  8174 Apr 20  2015 picker.js
+-rw-r--r-- 1 main main  9059 Apr 20  2015 picker.time.js
+drwxr-xr-x 2 main main  4096 Feb  4 18:19 themes
+drwxr-xr-x 2 main main  4096 Feb  4 18:20 translations
+
+./js/pickadate/compressed/themes:
+total 44
+drwxr-xr-x 2 main main 4096 Feb  4 18:19 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main 1678 Apr 20  2015 classic.css
+-rw-r--r-- 1 main main 4218 Apr 20  2015 classic.date.css
+-rw-r--r-- 1 main main 1676 Apr 20  2015 classic.time.css
+-rw-r--r-- 1 main main 2163 Apr 20  2015 default.css
+-rw-r--r-- 1 main main 4218 Apr 20  2015 default.date.css
+-rw-r--r-- 1 main main 1655 Apr 20  2015 default.time.css
+-rw-r--r-- 1 main main  313 Apr 20  2015 rtl.css
+
+./js/pickadate/compressed/translations:
+total 184
+drwxr-xr-x 2 main main 4096 Feb  4 18:20 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:19 ..
+-rw-r--r-- 1 main main  793 Apr 20  2015 ar.js
+-rw-r--r-- 1 main main  729 Apr 20  2015 bg_BG.js
+-rw-r--r-- 1 main main  548 Apr 20  2015 bs_BA.js
+-rw-r--r-- 1 main main  578 Apr 20  2015 ca_ES.js
+-rw-r--r-- 1 main main  560 Apr 20  2015 cs_CZ.js
+-rw-r--r-- 1 main main  552 Apr 20  2015 da_DK.js
+-rw-r--r-- 1 main main  573 Apr 20  2015 de_DE.js
+-rw-r--r-- 1 main main  813 Apr 20  2015 el_GR.js
+-rw-r--r-- 1 main main  576 Apr 20  2015 es_ES.js
+-rw-r--r-- 1 main main  589 Apr 20  2015 et_EE.js
+-rw-r--r-- 1 main main  581 Apr 20  2015 eu_ES.js
+-rw-r--r-- 1 main main  860 Apr 20  2015 fa_IR.js
+-rw-r--r-- 1 main main  601 Apr 20  2015 fi_FI.js
+-rw-r--r-- 1 main main  718 Apr 20  2015 fr_FR.js
+-rw-r--r-- 1 main main  556 Apr 20  2015 gl_ES.js
+-rw-r--r-- 1 main main  686 Apr 20  2015 he_IL.js
+-rw-r--r-- 1 main main 1394 Apr 20  2015 hi_IN.js
+-rw-r--r-- 1 main main  571 Apr 20  2015 hr_HR.js
+-rw-r--r-- 1 main main  573 Apr 20  2015 hu_HU.js
+-rw-r--r-- 1 main main  543 Apr 20  2015 id_ID.js
+-rw-r--r-- 1 main main  599 Apr 20  2015 is_IS.js
+-rw-r--r-- 1 main main  756 Apr 20  2015 it_IT.js
+-rw-r--r-- 1 main main  552 Apr 20  2015 ja_JP.js
+-rw-r--r-- 1 main main  564 Apr 20  2015 ko_KR.js
+-rw-r--r-- 1 main main  776 Apr 20  2015 lt_LT.js
+-rw-r--r-- 1 main main  521 Apr 20  2015 lv_LV.js
+-rw-r--r-- 1 main main  563 Apr 20  2015 nb_NO.js
+-rw-r--r-- 1 main main 1067 Apr 20  2015 ne_NP.js
+-rw-r--r-- 1 main main  577 Apr 20  2015 nl_NL.js
+-rw-r--r-- 1 main main  486 Apr 20  2015 no_NO.js
+-rw-r--r-- 1 main main  594 Apr 20  2015 pl_PL.js
+-rw-r--r-- 1 main main  592 Apr 20  2015 pt_BR.js
+-rw-r--r-- 1 main main  556 Apr 20  2015 pt_PT.js
+-rw-r--r-- 1 main main  544 Apr 20  2015 ro_RO.js
+-rw-r--r-- 1 main main  768 Apr 20  2015 ru_RU.js
+-rw-r--r-- 1 main main  565 Apr 20  2015 sk_SK.js
+-rw-r--r-- 1 main main  563 Apr 20  2015 sl_SI.js
+-rw-r--r-- 1 main main  685 Apr 20  2015 sv_SE.js
+-rw-r--r-- 1 main main  871 Apr 20  2015 th_TH.js
+-rw-r--r-- 1 main main  563 Apr 20  2015 tr_TR.js
+-rw-r--r-- 1 main main  774 Apr 20  2015 uk_UA.js
+-rw-r--r-- 1 main main  644 Apr 20  2015 vi_VN.js
+-rw-r--r-- 1 main main  597 Apr 20  2015 zh_CN.js
+-rw-r--r-- 1 main main  597 Apr 20  2015 zh_TW.js
+
+./js/pickadate/themes:
+total 44
+drwxr-xr-x 2 main main 4096 Feb  4 18:20 .
+drwxr-xr-x 6 main main 4096 Feb  4 18:20 ..
+-rw-r--r-- 1 main main 2757 Apr 20  2015 classic.css
+-rw-r--r-- 1 main main 6040 Apr 20  2015 classic.date.css
+-rw-r--r-- 1 main main 2961 Apr 20  2015 classic.time.css
+-rw-r--r-- 1 main main 3795 Apr 20  2015 default.css
+-rw-r--r-- 1 main main 6040 Apr 20  2015 default.date.css
+-rw-r--r-- 1 main main 2785 Apr 20  2015 default.time.css
+-rw-r--r-- 1 main main  561 Apr 20  2015 rtl.css
+
+./js/pickadate/themes-source:
+total 60
+drwxr-xr-x 2 main main 4096 Feb  4 18:20 .
+drwxr-xr-x 6 main main 4096 Feb  4 18:20 ..
+-rw-r--r-- 1 main main 2849 Apr 20  2015 _variables.less
+-rw-r--r-- 1 main main 6677 Apr 20  2015 base.date.less
+-rw-r--r-- 1 main main 1068 Apr 20  2015 base.less
+-rw-r--r-- 1 main main 2451 Apr 20  2015 base.time.less
+-rw-r--r-- 1 main main  215 Apr 20  2015 classic.date.less
+-rw-r--r-- 1 main main 2319 Apr 20  2015 classic.less
+-rw-r--r-- 1 main main 1030 Apr 20  2015 classic.time.less
+-rw-r--r-- 1 main main  215 Apr 20  2015 default.date.less
+-rw-r--r-- 1 main main 4419 Apr 20  2015 default.less
+-rw-r--r-- 1 main main  817 Apr 20  2015 default.time.less
+-rw-r--r-- 1 main main  610 Apr 20  2015 rtl.less
+
+./js/pickadate/translations:
+total 188
+drwxr-xr-x 2 main main 4096 Feb  4 18:20 .
+drwxr-xr-x 6 main main 4096 Feb  4 18:20 ..
+-rw-r--r-- 1 main main  446 Apr 20  2015 FORMATTING.md
+-rw-r--r-- 1 main main  490 Apr 20  2015 NAMING.md
+-rw-r--r-- 1 main main  909 Apr 20  2015 ar.js
+-rw-r--r-- 1 main main  832 Apr 20  2015 bg_BG.js
+-rw-r--r-- 1 main main  671 Apr 20  2015 bs_BA.js
+-rw-r--r-- 1 main main  707 Apr 20  2015 ca_ES.js
+-rw-r--r-- 1 main main  681 Apr 20  2015 cs_CZ.js
+-rw-r--r-- 1 main main  680 Apr 20  2015 da_DK.js
+-rw-r--r-- 1 main main  701 Apr 20  2015 de_DE.js
+-rw-r--r-- 1 main main  934 Apr 20  2015 el_GR.js
+-rw-r--r-- 1 main main  705 Apr 20  2015 es_ES.js
+-rw-r--r-- 1 main main  713 Apr 20  2015 et_EE.js
+-rw-r--r-- 1 main main  703 Apr 20  2015 eu_ES.js
+-rw-r--r-- 1 main main  989 Apr 20  2015 fa_ir.js
+-rw-r--r-- 1 main main  724 Apr 20  2015 fi_FI.js
+-rw-r--r-- 1 main main  867 Apr 20  2015 fr_FR.js
+-rw-r--r-- 1 main main  680 Apr 20  2015 gl_ES.js
+-rw-r--r-- 1 main main  802 Apr 20  2015 he_IL.js
+-rw-r--r-- 1 main main 1534 Apr 20  2015 hi_IN.js
+-rw-r--r-- 1 main main  695 Apr 20  2015 hr_HR.js
+-rw-r--r-- 1 main main  698 Apr 20  2015 hu_HU.js
+-rw-r--r-- 1 main main  669 Apr 20  2015 id_ID.js
+-rw-r--r-- 1 main main  724 Apr 20  2015 is_IS.js
+-rw-r--r-- 1 main main  921 Apr 20  2015 it_IT.js
+-rw-r--r-- 1 main main  676 Apr 20  2015 ja_JP.js
+-rw-r--r-- 1 main main  686 Apr 20  2015 ko_KR.js
+-rw-r--r-- 1 main main 1019 Apr 20  2015 lt_LT.js
+-rw-r--r-- 1 main main  633 Apr 20  2015 lv_LV.js
+-rw-r--r-- 1 main main  692 Apr 20  2015 nb_NO.js
+-rw-r--r-- 1 main main 1200 Apr 20  2015 ne_NP.js
+-rw-r--r-- 1 main main  704 Apr 20  2015 nl_NL.js
+-rw-r--r-- 1 main main  722 Apr 20  2015 pl_PL.js
+-rw-r--r-- 1 main main  728 Apr 20  2015 pt_BR.js
+-rw-r--r-- 1 main main  682 Apr 20  2015 pt_PT.js
+-rw-r--r-- 1 main main  668 Apr 20  2015 ro_RO.js
+-rw-r--r-- 1 main main  897 Apr 20  2015 ru_RU.js
+-rw-r--r-- 1 main main  693 Apr 20  2015 sk_SK.js
+-rw-r--r-- 1 main main  694 Apr 20  2015 sl_SI.js
+-rw-r--r-- 1 main main  838 Apr 20  2015 sv_SE.js
+-rw-r--r-- 1 main main  985 Apr 20  2015 th_TH.js
+-rw-r--r-- 1 main main  692 Apr 20  2015 tr_TR.js
+-rw-r--r-- 1 main main  899 Apr 20  2015 uk_UA.js
+-rw-r--r-- 1 main main  758 Apr 20  2015 vi_VN.js
+-rw-r--r-- 1 main main  737 Apr 20  2015 zh_CN.js
+-rw-r--r-- 1 main main  738 Apr 20  2015 zh_TW.js
+
+./js/toxiclibs:
+total 108
+drwxr-xr-x  8 main main  4096 Feb  4 18:21 .
+drwxr-xr-x 15 main main  4096 Feb  4 18:22 ..
+-rw-r--r--  1 main main    85 Jul  7  2015 .gitignore
+-rw-r--r--  1 main main    41 Jul  7  2015 .npmignore
+-rw-r--r--  1 main main  6099 Jul  7  2015 CHANGES.md
+-rw-r--r--  1 main main 26436 Jul  7  2015 LICENSE.txt
+-rw-r--r--  1 main main   691 Jul  7  2015 Makefile
+-rw-r--r--  1 main main  5391 Jul  7  2015 README.md
+drwxr-xr-x  2 main main  4096 Feb  4 18:20 bin
+-rw-r--r--  1 main main   591 Jul  7  2015 bower.json
+drwxr-xr-x  2 main main  4096 Feb  4 18:20 build
+-rw-r--r--  1 main main  4554 Jul  7  2015 build.js
+drwxr-xr-x  2 main main  4096 Feb  4 18:20 docs
+drwxr-xr-x  5 main main  4096 Feb  4 18:21 examples
+-rw-r--r--  1 main main   318 Jul  7  2015 index.js
+drwxr-xr-x  3 main main  4096 Feb  4 18:21 lib
+-rw-r--r--  1 main main  1198 Jul  7  2015 package.json
+drwxr-xr-x  2 main main  4096 Feb  4 18:21 test
+
+::: toxiclibs for Proce55ing.js
+
+./js/toxiclibs/bin:
+total 12
+drwxr-xr-x 2 main main 4096 Feb  4 18:20 .
+drwxr-xr-x 8 main main 4096 Feb  4 18:21 ..
+-rw-r--r-- 1 main main 2351 Jul  7  2015 toxiclibsjs
+
+./js/toxiclibs/build:
+total 488
+drwxr-xr-x 2 main main   4096 Feb  4 18:20 .
+drwxr-xr-x 8 main main   4096 Feb  4 18:21 ..
+-rw-r--r-- 1 main main 483721 Jul  7  2015 toxiclibs.js
+
+./js/toxiclibs/docs:
+total 44
+drwxr-xr-x 2 main main 4096 Feb  4 18:20 .
+drwxr-xr-x 8 main main 4096 Feb  4 18:21 ..
+-rw-r--r-- 1 main main 8523 Jul  7  2015 colorutils.md
+-rw-r--r-- 1 main main 1758 Jul  7  2015 contributing.md
+-rw-r--r-- 1 main main  945 Jul  7  2015 differences_from_toxiclibs.md
+-rw-r--r-- 1 main main 2669 Jul  7  2015 getting_started.md
+-rw-r--r-- 1 main main 1317 Jul  7  2015 processing.md
+-rw-r--r-- 1 main main 3853 Jul  7  2015 sugar.md
+-rw-r--r-- 1 main main 1274 Jul  7  2015 using_requirejs.md
+
+./js/toxiclibs/examples:
+total 164
+drwxr-xr-x 5 main main  4096 Feb  4 18:21 .
+drwxr-xr-x 8 main main  4096 Feb  4 18:21 ..
+-rw-r--r-- 1 main main  6214 Jul  7  2015 AdditiveWaves_pjs-webgl.html
+-rw-r--r-- 1 main main  3846 Jul  7  2015 ArcPolarCoordinates_pjs.html
+-rw-r--r-- 1 main main  4910 Jul  7  2015 Attraction2D_pjs.html
+-rw-r--r-- 1 main main  2158 Jul  7  2015 Circle3Points_pjs.html
+-rw-r--r-- 1 main main  3054 Jul  7  2015 ColorWaves_raphael.html
+-rw-r--r-- 1 main main  4482 Jul  7  2015 DraggableParticles_pjs.html
+-rw-r--r-- 1 main main  2926 Jul  7  2015 Line2DIntersection_pjs.html
+-rw-r--r-- 1 main main 11812 Jul  7  2015 MeshAlignToAxis_webgl.html
+-rw-r--r-- 1 main main  3996 Jul  7  2015 MeshDoodle_pjs-webgl.html
+-rw-r--r-- 1 main main  4541 Jul  7  2015 P5ToxiclibsSupport_2d.html
+-rw-r--r-- 1 main main  2847 Jul  7  2015 P5ToxiclibsSupport_webgl.html
+-rw-r--r-- 1 main main  4464 Jul  7  2015 PerlinNoise_canvas.html
+-rw-r--r-- 1 main main  3949 Jul  7  2015 PolarLines_pjs.html
+-rw-r--r-- 1 main main  4393 Jul  7  2015 PolarUnravel_pjs.html
+-rw-r--r-- 1 main main  1490 Jul  7  2015 ShiffmanFlocking_pjs.html
+-rw-r--r-- 1 main main  3232 Jul  7  2015 SimplexNoise_canvas.html
+-rw-r--r-- 1 main main  3862 Jul  7  2015 SmoothDoodle_canvas.html
+-rw-r--r-- 1 main main  4131 Jul  7  2015 SoftBodySquare_pjs.html
+-rw-r--r-- 1 main main  6349 Jul  7  2015 SphericalHarmonics_threejs.html
+-rw-r--r-- 1 main main  4232 Jul  7  2015 SuperEllipsoidMeshBuilder_pjs-webgl.html
+-rw-r--r-- 1 main main  2585 Jul  7  2015 TColor_pjs.html
+-rw-r--r-- 1 main main  3774 Jul  7  2015 ThreadDemo_pjs.html
+-rw-r--r-- 1 main main  4390 Jul  7  2015 WheelInsets_pjs.html
+drwxr-xr-x 2 main main  4096 Feb  4 18:20 css
+drwxr-xr-x 2 main main  4096 Feb  4 18:20 flocking
+drwxr-xr-x 2 main main  4096 Feb  4 18:20 js
+-rw-r--r-- 1 main main   206 Jul  7  2015 layout.css
+
+./js/toxiclibs/examples/css:
+total 16
+drwxr-xr-x 2 main main 4096 Feb  4 18:20 .
+drwxr-xr-x 5 main main 4096 Feb  4 18:21 ..
+-rw-r--r-- 1 main main 5603 Jul  7  2015 style.css
+
+./js/toxiclibs/examples/flocking:
+total 24
+drwxr-xr-x 2 main main 4096 Feb  4 18:20 .
+drwxr-xr-x 5 main main 4096 Feb  4 18:21 ..
+-rw-r--r-- 1 main main 5431 Jul  7  2015 Boid.pde
+-rw-r--r-- 1 main main  470 Jul  7  2015 Flock.pde
+-rw-r--r-- 1 main main 1728 Jul  7  2015 ShiffmanFlocking.pde
+
+./js/toxiclibs/examples/js:
+total 1296
+drwxr-xr-x 2 main main   4096 Feb  4 18:20 .
+drwxr-xr-x 5 main main   4096 Feb  4 18:21 ..
+-rw-r--r-- 1 main main  19918 Jul  7  2015 DAT.GUI.min.js
+-rw-r--r-- 1 main main   1800 Jul  7  2015 Detector.js
+-rw-r--r-- 1 main main    541 Jul  7  2015 RequestAnimationFrame.js
+-rw-r--r-- 1 main main   4103 Jul  7  2015 Stats.js
+-rw-r--r-- 1 main main   3194 Jul  7  2015 gee.min.js
+-rw-r--r-- 1 main main  78601 Jul  7  2015 jquery-1.4.4.min.js
+-rw-r--r-- 1 main main 226905 Jul  7  2015 processing.js
+-rw-r--r-- 1 main main  60293 Jul  7  2015 raphael-min.js
+-rw-r--r-- 1 main main  77400 Jul  7  2015 require.js
+-rw-r--r-- 1 main main   3213 Jul  7  2015 respond.min.js
+-rw-r--r-- 1 main main 794593 Jul  7  2015 three.js
+-rw-r--r-- 1 main main   5772 Jul  7  2015 webgl-utils.js
+
+./js/toxiclibs/lib:
+total 16
+drwxr-xr-x  3 main main 4096 Feb  4 18:21 .
+drwxr-xr-x  8 main main 4096 Feb  4 18:21 ..
+drwxr-xr-x 10 main main 4096 Feb  4 18:21 toxi
+-rw-r--r--  1 main main   59 Jul  7  2015 toxi.js
+
+./js/toxiclibs/lib/toxi:
+total 76
+drwxr-xr-x 10 main main 4096 Feb  4 18:21 .
+drwxr-xr-x  3 main main 4096 Feb  4 18:21 ..
+drwxr-xr-x  2 main main 4096 Feb  4 18:21 THREE
+-rw-r--r--  1 main main  213 Jul  7  2015 THREE.js
+drwxr-xr-x  3 main main 4096 Feb  4 18:21 color
+-rw-r--r--  1 main main 1443 Jul  7  2015 color.js
+drwxr-xr-x  3 main main 4096 Feb  4 18:21 geom
+-rw-r--r--  1 main main 2395 Jul  7  2015 geom.js
+drwxr-xr-x  2 main main 4096 Feb  4 18:21 internals
+-rw-r--r--  1 main main 1125 Jul  7  2015 internals.js
+-rw-r--r--  1 main main  499 Jul  7  2015 main.js
+drwxr-xr-x  5 main main 4096 Feb  4 18:21 math
+-rw-r--r--  1 main main 1484 Jul  7  2015 math.js
+drwxr-xr-x  4 main main 4096 Feb  4 18:21 physics2d
+-rw-r--r--  1 main main 1048 Jul  7  2015 physics2d.js
+drwxr-xr-x  2 main main 4096 Feb  4 18:21 processing
+-rw-r--r--  1 main main  229 Jul  7  2015 processing.js
+drwxr-xr-x  3 main main 4096 Feb  4 18:21 util
+-rw-r--r--  1 main main  155 Jul  7  2015 util.js
+
+./js/toxiclibs/lib/toxi/THREE:
+total 16
+drwxr-xr-x  2 main main 4096 Feb  4 18:21 .
+drwxr-xr-x 10 main main 4096 Feb  4 18:21 ..
+-rw-r--r--  1 main main 5481 Jul  7  2015 ToxiclibsSupport.js
+
+./js/toxiclibs/lib/toxi/color:
+total 160
+drwxr-xr-x  3 main main  4096 Feb  4 18:21 .
+drwxr-xr-x 10 main main  4096 Feb  4 18:21 ..
+-rw-r--r--  1 main main    79 Jul  7  2015 AlphaAccessor.js
+-rw-r--r--  1 main main    78 Jul  7  2015 CMYKAccessor.js
+-rw-r--r--  1 main main    87 Jul  7  2015 CMYKDistanceProxy.js
+-rw-r--r--  1 main main  4194 Jul  7  2015 ColorGradient.js
+-rw-r--r--  1 main main 12127 Jul  7  2015 ColorList.js
+-rw-r--r--  1 main main 13761 Jul  7  2015 ColorRange.js
+-rw-r--r--  1 main main  3981 Jul  7  2015 ColorTheme.js
+-rw-r--r--  1 main main    77 Jul  7  2015 HSVAccessor.js
+-rw-r--r--  1 main main    86 Jul  7  2015 HSVDistanceProxy.js
+-rw-r--r--  1 main main   364 Jul  7  2015 HistEntry.js
+-rw-r--r--  1 main main  1901 Jul  7  2015 Histogram.js
+-rw-r--r--  1 main main  3260 Jul  7  2015 Hue.js
+-rw-r--r--  1 main main    83 Jul  7  2015 LuminanceAccessor.js
+-rw-r--r--  1 main main   367 Jul  7  2015 ProximityComparator.js
+-rw-r--r--  1 main main    77 Jul  7  2015 RGBAccessor.js
+-rw-r--r--  1 main main    86 Jul  7  2015 RGBDistanceProxy.js
+-rw-r--r--  1 main main 29598 Jul  7  2015 TColor.js
+-rw-r--r--  1 main main  3534 Jul  7  2015 ToneMap.js
+-rw-r--r--  1 main main  1082 Jul  7  2015 accessCriteria.js
+-rw-r--r--  1 main main  1792 Jul  7  2015 accessors.js
+-rw-r--r--  1 main main   872 Jul  7  2015 createListUsingStrategy.js
+-rw-r--r--  1 main main   330 Jul  7  2015 distanceProxies.js
+-rw-r--r--  1 main main  1068 Jul  7  2015 namedColor.js
+drwxr-xr-x  2 main main  4096 Feb  4 18:21 theory
+-rw-r--r--  1 main main  1141 Jul  7  2015 theory.js
+
+./js/toxiclibs/lib/toxi/color/theory:
+total 56
+drwxr-xr-x 2 main main 4096 Feb  4 18:21 .
+drwxr-xr-x 3 main main 4096 Feb  4 18:21 ..
+-rw-r--r-- 1 main main 1755 Jul  7  2015 AnalagousStrategy.js
+-rw-r--r-- 1 main main 1258 Jul  7  2015 ComplementaryStrategy.js
+-rw-r--r-- 1 main main 1925 Jul  7  2015 CompoundTheoryStrategy.js
+-rw-r--r-- 1 main main  838 Jul  7  2015 LeftSplitComplementaryStrategy.js
+-rw-r--r-- 1 main main  950 Jul  7  2015 MonochromeTheoryStrategy.js
+-rw-r--r-- 1 main main  671 Jul  7  2015 RightSplitComplementaryStrategy.js
+-rw-r--r-- 1 main main  664 Jul  7  2015 SingleComplementStrategy.js
+-rw-r--r-- 1 main main  645 Jul  7  2015 SplitComplementaryStrategy.js
+-rw-r--r-- 1 main main 1165 Jul  7  2015 TetradTheoryStrategy.js
+-rw-r--r-- 1 main main  717 Jul  7  2015 TriadTheoryStrategy.js
+-rw-r--r-- 1 main main 1420 Jul  7  2015 colorTheoryRegistry.js
+-rw-r--r-- 1 main main 1331 Jul  7  2015 strategies.js
+
+./js/toxiclibs/lib/toxi/geom:
+total 268
+drwxr-xr-x  3 main main  4096 Feb  4 18:21 .
+drwxr-xr-x 10 main main  4096 Feb  4 18:21 ..
+-rw-r--r--  1 main main 11605 Jul  7  2015 AABB.js
+-rw-r--r--  1 main main  2093 Jul  7  2015 AxisAlignedCylinder.js
+-rw-r--r--  1 main main   763 Jul  7  2015 BernsteinPolynomial.js
+-rw-r--r--  1 main main   163 Jul  7  2015 Circle.js
+-rw-r--r--  1 main main   932 Jul  7  2015 CircleIntersector.js
+-rw-r--r--  1 main main  3845 Jul  7  2015 Cone.js
+-rw-r--r--  1 main main  7164 Jul  7  2015 Ellipse.js
+-rw-r--r--  1 main main   811 Jul  7  2015 IsectData2D.js
+-rw-r--r--  1 main main   812 Jul  7  2015 IsectData3D.js
+-rw-r--r--  1 main main  5502 Jul  7  2015 Line2D.js
+-rw-r--r--  1 main main  6508 Jul  7  2015 Line3D.js
+-rw-r--r--  1 main main  3231 Jul  7  2015 LineStrip3D.js
+-rw-r--r--  1 main main 16640 Jul  7  2015 Matrix4x4.js
+-rw-r--r--  1 main main  3523 Jul  7  2015 Plane.js
+-rw-r--r--  1 main main 15366 Jul  7  2015 Polygon2D-dirty.js
+-rw-r--r--  1 main main 11360 Jul  7  2015 Polygon2D.js
+-rw-r--r--  1 main main  7024 Jul  7  2015 Quaternion.js
+-rw-r--r--  1 main main  1969 Jul  7  2015 Ray2D.js
+-rw-r--r--  1 main main  1897 Jul  7  2015 Ray3D.js
+-rw-r--r--  1 main main  1072 Jul  7  2015 Ray3DIntersector.js
+-rw-r--r--  1 main main  8580 Jul  7  2015 Rect.js
+-rw-r--r--  1 main main  6220 Jul  7  2015 Sphere.js
+-rw-r--r--  1 main main  5078 Jul  7  2015 Spline2D.js
+-rw-r--r--  1 main main  7248 Jul  7  2015 Spline3D.js
+-rw-r--r--  1 main main  3733 Jul  7  2015 SutherlandHodgemanClipper.js
+-rw-r--r--  1 main main  5164 Jul  7  2015 Triangle2D.js
+-rw-r--r--  1 main main  7221 Jul  7  2015 Triangle3D.js
+-rw-r--r--  1 main main  1439 Jul  7  2015 TriangleIntersector.js
+-rw-r--r--  1 main main   221 Jul  7  2015 Vec2D.js
+-rw-r--r--  1 main main   215 Jul  7  2015 Vec3D.js
+-rw-r--r--  1 main main   999 Jul  7  2015 XAxisCylinder.js
+-rw-r--r--  1 main main   909 Jul  7  2015 YAxisCylinder.js
+-rw-r--r--  1 main main   970 Jul  7  2015 ZAxisCylinder.js
+drwxr-xr-x  3 main main  4096 Feb  4 18:21 mesh
+-rw-r--r--  1 main main  1046 Jul  7  2015 mesh.js
+-rw-r--r--  1 main main 32473 Jul  7  2015 vectors.js
+
+./js/toxiclibs/lib/toxi/geom/mesh:
+total 128
+drwxr-xr-x 3 main main  4096 Feb  4 18:21 .
+drwxr-xr-x 3 main main  4096 Feb  4 18:21 ..
+-rw-r--r-- 1 main main  3622 Jul  7  2015 BezierPatch.js
+-rw-r--r-- 1 main main   765 Jul  7  2015 BoxSelector.js
+-rw-r--r-- 1 main main   540 Jul  7  2015 DefaultSelector.js
+-rw-r--r-- 1 main main  2704 Jul  7  2015 Face.js
+-rw-r--r-- 1 main main  2360 Jul  7  2015 OBJWriter.js
+-rw-r--r-- 1 main main   936 Jul  7  2015 PlaneSelector.js
+-rw-r--r-- 1 main main    77 Jul  7  2015 SphereFunction.js
+-rw-r--r-- 1 main main  1362 Jul  7  2015 SphericalHarmonics.js
+-rw-r--r-- 1 main main  1173 Jul  7  2015 SuperEllipsoid.js
+-rw-r--r-- 1 main main    84 Jul  7  2015 SurfaceMeshBuilder.js
+-rw-r--r-- 1 main main   365 Jul  7  2015 Terrain.js
+-rw-r--r-- 1 main main    78 Jul  7  2015 TriangleMesh.js
+-rw-r--r-- 1 main main  2084 Jul  7  2015 Vertex.js
+-rw-r--r-- 1 main main  3001 Jul  7  2015 VertexSelector.js
+-rw-r--r-- 1 main main   137 Jul  7  2015 WEFace.js
+-rw-r--r-- 1 main main    79 Jul  7  2015 WETriangleMesh.js
+-rw-r--r-- 1 main main   149 Jul  7  2015 WEVertex.js
+-rw-r--r-- 1 main main  1240 Jul  7  2015 WingedEdge.js
+-rw-r--r-- 1 main main 39562 Jul  7  2015 meshCommon.js
+drwxr-xr-x 2 main main  4096 Feb  4 18:21 subdiv
+-rw-r--r-- 1 main main  1196 Jul  7  2015 subdiv.js
+
+./js/toxiclibs/lib/toxi/geom/mesh/subdiv:
+total 48
+drwxr-xr-x 2 main main 4096 Feb  4 18:21 .
+drwxr-xr-x 3 main main 4096 Feb  4 18:21 ..
+-rw-r--r-- 1 main main  677 Jul  7  2015 DisplacementSubdivision.js
+-rw-r--r-- 1 main main  732 Jul  7  2015 DualDisplacementSubdivision.js
+-rw-r--r-- 1 main main  448 Jul  7  2015 DualSubdivision.js
+-rw-r--r-- 1 main main  242 Jul  7  2015 EdgeLengthComparator.js
+-rw-r--r-- 1 main main  219 Jul  7  2015 FaceCountComparator.js
+-rw-r--r-- 1 main main  613 Jul  7  2015 MidpointDisplacementSubdivision.js
+-rw-r--r-- 1 main main  412 Jul  7  2015 MidpointSubdivision.js
+-rw-r--r-- 1 main main  631 Jul  7  2015 NormalDisplacementSubdivision.js
+-rw-r--r-- 1 main main  485 Jul  7  2015 SubdivisionStrategy.js
+-rw-r--r-- 1 main main  469 Jul  7  2015 TriSubdivision.js
+
+./js/toxiclibs/lib/toxi/internals:
+total 60
+drwxr-xr-x  2 main main 4096 Feb  4 18:21 .
+drwxr-xr-x 10 main main 4096 Feb  4 18:21 ..
+-rw-r--r--  1 main main 1099 Jul  7  2015 Iterator.js
+-rw-r--r--  1 main main 2167 Jul  7  2015 LinkedMap.js
+-rw-r--r--  1 main main  804 Jul  7  2015 bind.js
+-rw-r--r--  1 main main  855 Jul  7  2015 each.js
+-rw-r--r--  1 main main  565 Jul  7  2015 extend.js
+-rw-r--r--  1 main main  444 Jul  7  2015 filter.js
+-rw-r--r--  1 main main 1144 Jul  7  2015 has.js
+-rw-r--r--  1 main main 1905 Jul  7  2015 is.js
+-rw-r--r--  1 main main  269 Jul  7  2015 keys.js
+-rw-r--r--  1 main main  278 Jul  7  2015 mixin.js
+-rw-r--r--  1 main main  150 Jul  7  2015 numberComparator.js
+-rw-r--r--  1 main main  207 Jul  7  2015 removeItemFrom.js
+-rw-r--r--  1 main main  198 Jul  7  2015 values.js
+
+./js/toxiclibs/lib/toxi/math:
+total 84
+drwxr-xr-x  5 main main 4096 Feb  4 18:21 .
+drwxr-xr-x 10 main main 4096 Feb  4 18:21 ..
+-rw-r--r--  1 main main 1754 Jul  7  2015 BezierInterpolation.js
+-rw-r--r--  1 main main 1289 Jul  7  2015 CircularInterpolation.js
+-rw-r--r--  1 main main  458 Jul  7  2015 CosineInterpolation.js
+-rw-r--r--  1 main main  966 Jul  7  2015 DecimatedInterpolation.js
+-rw-r--r--  1 main main  830 Jul  7  2015 ExponentialInterpolation.js
+-rw-r--r--  1 main main 2071 Jul  7  2015 Interpolation2D.js
+-rw-r--r--  1 main main  439 Jul  7  2015 LinearInterpolation.js
+-rw-r--r--  1 main main 3980 Jul  7  2015 ScaleMap.js
+-rw-r--r--  1 main main  890 Jul  7  2015 SigmoidInterpolation.js
+-rw-r--r--  1 main main 2232 Jul  7  2015 SinCosLUT.js
+-rw-r--r--  1 main main  651 Jul  7  2015 ThresholdInterpolation.js
+-rw-r--r--  1 main main 1881 Jul  7  2015 ZoomLensInterpolation.js
+drwxr-xr-x  2 main main 4096 Feb  4 18:21 conversion
+-rw-r--r--  1 main main 5256 Jul  7  2015 mathUtils.js
+drwxr-xr-x  2 main main 4096 Feb  4 18:21 noise
+-rw-r--r--  1 main main  288 Jul  7  2015 noise.js
+drwxr-xr-x  2 main main 4096 Feb  4 18:21 waves
+-rw-r--r--  1 main main  854 Jul  7  2015 waves.js
+
+./js/toxiclibs/lib/toxi/math/conversion:
+total 16
+drwxr-xr-x 2 main main 4096 Feb  4 18:21 .
+drwxr-xr-x 5 main main 4096 Feb  4 18:21 ..
+-rw-r--r-- 1 main main 2555 Jul  7  2015 UnitTranslator.js
+-rw-r--r-- 1 main main  169 Jul  7  2015 index.js
+
+./js/toxiclibs/lib/toxi/math/noise:
+total 40
+drwxr-xr-x 2 main main  4096 Feb  4 18:21 .
+drwxr-xr-x 5 main main  4096 Feb  4 18:21 ..
+-rw-r--r-- 1 main main 10188 Jul  7  2015 PerlinNoise.js
+-rw-r--r-- 1 main main 17183 Jul  7  2015 simplexNoise.js
+
+./js/toxiclibs/lib/toxi/math/waves:
+total 48
+drwxr-xr-x 2 main main 4096 Feb  4 18:21 .
+drwxr-xr-x 5 main main 4096 Feb  4 18:21 ..
+-rw-r--r-- 1 main main 1631 Jul  7  2015 AMFMSineWave.js
+-rw-r--r-- 1 main main 3335 Jul  7  2015 AbstractWave.js
+-rw-r--r-- 1 main main  600 Jul  7  2015 ConstantWave.js
+-rw-r--r-- 1 main main 2022 Jul  7  2015 FMHarmonicSquareWave.js
+-rw-r--r-- 1 main main 1142 Jul  7  2015 FMSawtoothWave.js
+-rw-r--r-- 1 main main 1074 Jul  7  2015 FMSineWave.js
+-rw-r--r-- 1 main main 1280 Jul  7  2015 FMSquareWave.js
+-rw-r--r-- 1 main main 1361 Jul  7  2015 FMTriangleWave.js
+-rw-r--r-- 1 main main  877 Jul  7  2015 SineWave.js
+-rw-r--r-- 1 main main  303 Jul  7  2015 WaveState.js
+
+./js/toxiclibs/lib/toxi/physics2d:
+total 60
+drwxr-xr-x  4 main main 4096 Feb  4 18:21 .
+drwxr-xr-x 10 main main 4096 Feb  4 18:21 ..
+-rw-r--r--  1 main main  995 Jul  7  2015 ParticlePath2D.js
+-rw-r--r--  1 main main 3272 Jul  7  2015 ParticleString2D.js
+-rw-r--r--  1 main main  923 Jul  7  2015 PullBackString2D.js
+-rw-r--r--  1 main main 1297 Jul  7  2015 VerletConstrainedSpring2D.js
+-rw-r--r--  1 main main  663 Jul  7  2015 VerletMinDistanceSpring2D.js
+-rw-r--r--  1 main main 3712 Jul  7  2015 VerletParticle2D.js
+-rw-r--r--  1 main main 6627 Jul  7  2015 VerletPhysics2D.js
+-rw-r--r--  1 main main 1416 Jul  7  2015 VerletSpring2D.js
+drwxr-xr-x  2 main main 4096 Feb  4 18:21 behaviors
+-rw-r--r--  1 main main  384 Jul  7  2015 behaviors.js
+drwxr-xr-x  2 main main 4096 Feb  4 18:21 constraints
+-rw-r--r--  1 main main  681 Jul  7  2015 constraints.js
+
+./js/toxiclibs/lib/toxi/physics2d/behaviors:
+total 20
+drwxr-xr-x 2 main main 4096 Feb  4 18:21 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:21 ..
+-rw-r--r-- 1 main main 1792 Jul  7  2015 AttractionBehavior.js
+-rw-r--r-- 1 main main 1040 Jul  7  2015 ConstantForceBehavior.js
+-rw-r--r-- 1 main main  646 Jul  7  2015 GravityBehavior.js
+
+./js/toxiclibs/lib/toxi/physics2d/constraints:
+total 32
+drwxr-xr-x 2 main main 4096 Feb  4 18:21 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:21 ..
+-rw-r--r-- 1 main main  934 Jul  7  2015 AngularConstraint.js
+-rw-r--r-- 1 main main  419 Jul  7  2015 AxisConstraint.js
+-rw-r--r-- 1 main main  521 Jul  7  2015 CircularConstraint.js
+-rw-r--r-- 1 main main  368 Jul  7  2015 MaxConstraint.js
+-rw-r--r-- 1 main main  368 Jul  7  2015 MinConstraint.js
+-rw-r--r-- 1 main main 1513 Jul  7  2015 RectConstraint.js
+
+./js/toxiclibs/lib/toxi/processing:
+total 24
+drwxr-xr-x  2 main main  4096 Feb  4 18:21 .
+drwxr-xr-x 10 main main  4096 Feb  4 18:21 ..
+-rw-r--r--  1 main main 13024 Jul  7  2015 ToxiclibsSupport.js
+
+./js/toxiclibs/lib/toxi/util:
+total 16
+drwxr-xr-x  3 main main 4096 Feb  4 18:21 .
+drwxr-xr-x 10 main main 4096 Feb  4 18:21 ..
+drwxr-xr-x  2 main main 4096 Feb  4 18:21 datatypes
+-rw-r--r--  1 main main  332 Jul  7  2015 datatypes.js
+
+./js/toxiclibs/lib/toxi/util/datatypes:
+total 20
+drwxr-xr-x 2 main main 4096 Feb  4 18:21 .
+drwxr-xr-x 3 main main 4096 Feb  4 18:21 ..
+-rw-r--r-- 1 main main 2277 Jul  7  2015 ArraySet.js
+-rw-r--r-- 1 main main 2340 Jul  7  2015 FloatRange.js
+-rw-r--r-- 1 main main 2263 Jul  7  2015 UndirectedGraph.js
+
+./js/toxiclibs/test:
+total 216
+drwxr-xr-x 2 main main  4096 Feb  4 18:21 .
+drwxr-xr-x 8 main main  4096 Feb  4 18:21 ..
+-rw-r--r-- 1 main main    52 Jul  7  2015 .jshintrc
+-rw-r--r-- 1 main main  2533 Jul  7  2015 circulars.js
+-rw-r--r-- 1 main main  1852 Jul  7  2015 color.ColorGradient.js
+-rw-r--r-- 1 main main  2618 Jul  7  2015 color.ColorList.js
+-rw-r--r-- 1 main main 15515 Jul  7  2015 color.ColorRange.js
+-rw-r--r-- 1 main main  2569 Jul  7  2015 color.ColorTheme.js
+-rw-r--r-- 1 main main  1678 Jul  7  2015 color.Histogram.js
+-rw-r--r-- 1 main main  4005 Jul  7  2015 color.Hue.js
+-rw-r--r-- 1 main main  4211 Jul  7  2015 color.NamedColor.js
+-rw-r--r-- 1 main main  6431 Jul  7  2015 color.TColor.js
+-rw-r--r-- 1 main main  5023 Jul  7  2015 color.ToneMap.js
+-rw-r--r-- 1 main main   737 Jul  7  2015 color.createListUsingStrategy.js
+-rw-r--r-- 1 main main  1742 Jul  7  2015 color.theory.AnalagousStrategy.js
+-rw-r--r-- 1 main main  2400 Jul  7  2015 color.theory.ColorTheoryRegistry.js
+-rw-r--r-- 1 main main   772 Jul  7  2015 geom.AABB.js
+-rw-r--r-- 1 main main  2193 Jul  7  2015 geom.BernsteinPolynomial.js
+-rw-r--r-- 1 main main   502 Jul  7  2015 geom.Circle.js
+-rw-r--r-- 1 main main  1889 Jul  7  2015 geom.Cone.js
+-rw-r--r-- 1 main main   433 Jul  7  2015 geom.Ellipse.js
+-rw-r--r-- 1 main main   505 Jul  7  2015 geom.Line2D.js
+-rw-r--r-- 1 main main  2186 Jul  7  2015 geom.LineStrip3D.js
+-rw-r--r-- 1 main main  1537 Jul  7  2015 geom.Ray2D.js
+-rw-r--r-- 1 main main  3649 Jul  7  2015 geom.Rect.js
+-rw-r--r-- 1 main main   633 Jul  7  2015 geom.Sphere.js
+-rw-r--r-- 1 main main  3374 Jul  7  2015 geom.Spline2D.js
+-rw-r--r-- 1 main main  9357 Jul  7  2015 geom.Spline3D.js
+-rw-r--r-- 1 main main  1736 Jul  7  2015 geom.SutherlandHodgemanClipper.js
+-rw-r--r-- 1 main main  5091 Jul  7  2015 geom.Triangle2D.js
+-rw-r--r-- 1 main main 10522 Jul  7  2015 geom.Vec2D.js
+-rw-r--r-- 1 main main  1278 Jul  7  2015 geom.Vec3D.js
+-rw-r--r-- 1 main main  2373 Jul  7  2015 geom.mesh.BezierPatch.js
+-rw-r--r-- 1 main main  1937 Jul  7  2015 geom.mesh.OBJWriter.js
+-rw-r--r-- 1 main main  3004 Jul  7  2015 geom.mesh.Terrain.js
+-rw-r--r-- 1 main main  2668 Jul  7  2015 geom.mesh.TriangleMesh.js
+-rw-r--r-- 1 main main   706 Jul  7  2015 math.noise.SimplexNoise.js
+-rw-r--r-- 1 main main  1672 Jul  7  2015 packages.js
+-rw-r--r-- 1 main main  1152 Jul  7  2015 physics2d.ParticleString2D.js
+-rw-r--r-- 1 main main  2224 Jul  7  2015 physics2d.VerletPhysics2D.js
+-rw-r--r-- 1 main main  2207 Jul  7  2015 physics2d.constraints.RectConstraint.js
+-rw-r--r-- 1 main main  5015 Jul  7  2015 util.datatypes.FloatRange.js
+
+::: Thingiview
+
+./js/tv:
+total 160
+drwxr-xr-x  2 main main  4096 Feb  4 18:21 .
+drwxr-xr-x 15 main main  4096 Feb  4 18:22 ..
+-rw-r--r--  1 main main 95028 May  3  2011 Three.js
+-rw-r--r--  1 main main  3606 May  3  2011 binaryReader.js
+-rw-r--r--  1 main main  1457 May  3  2011 plane.js
+-rw-r--r--  1 main main  3799 May  3  2011 stats.js
+-rw-r--r--  1 main main 10311 May  3  2011 thingiloader.js
+-rw-r--r--  1 main main 26822 May  3  2011 thingiview.js
+
+:: wdCalendar plugin
+
+./js/wdCalendar:
+total 92
+drwxr-xr-x  7 main main  4096 Feb  4 18:22 .
+drwxr-xr-x 15 main main  4096 Feb  4 18:22 ..
+drwxr-xr-x  3 main main  4096 Feb  4 18:22 css
+drwxr-xr-x  3 main main  4096 Feb  4 18:22 docs
+-rw-r--r--  1 main main 13297 Jul  7  2015 edit.db.php
+-rw-r--r--  1 main main 13287 Jul  7  2015 edit.php
+-rw-r--r--  1 main main  8417 Jul  7  2015 lgpl.html
+drwxr-xr-x  2 main main  4096 Feb  4 18:22 php
+-rw-r--r--  1 main main  1211 Jul  7  2015 readme
+drwxr-xr-x  2 main main  4096 Feb  4 18:22 sample-css
+-rw-r--r--  1 main main 11499 Jul  7  2015 sample.php
+-rw-r--r--  1 main main   617 Jul  7  2015 setup.sql
+drwxr-xr-x  3 main main  4096 Feb  4 18:22 src
+
+./js/wdCalendar/css:
+total 68
+drwxr-xr-x  3 main main  4096 Feb  4 18:22 .
+drwxr-xr-x  7 main main  4096 Feb  4 18:22 ..
+-rw-r--r--  1 main main   304 Jul  7  2015 Error.css
+-rw-r--r--  1 main main  2282 Jul  7  2015 alert.css
+-rw-r--r--  1 main main 11273 Jul  7  2015 calendar.css
+-rw-r--r--  1 main main  1022 Jul  7  2015 colorselect.css
+-rw-r--r--  1 main main  4907 Jul  7  2015 dailog.css
+-rw-r--r--  1 main main  5612 Jul  7  2015 dp.css
+-rw-r--r--  1 main main   785 Jul  7  2015 dropdown.css
+drwxr-xr-x 12 main main  4096 Feb  4 18:22 images
+-rw-r--r--  1 main main 10285 Jul  7  2015 main.css
+
+./js/wdCalendar/css/images:
+total 48
+drwxr-xr-x 12 main main 4096 Feb  4 18:22 .
+drwxr-xr-x  3 main main 4096 Feb  4 18:22 ..
+drwxr-xr-x  3 main main 4096 Feb  4 18:21 alert
+drwxr-xr-x  3 main main 4096 Feb  4 18:21 bgs
+drwxr-xr-x  3 main main 4096 Feb  4 18:21 calendar
+drwxr-xr-x  3 main main 4096 Feb  4 18:22 dailog
+drwxr-xr-x  3 main main 4096 Feb  4 18:22 dp
+drwxr-xr-x  3 main main 4096 Feb  4 18:22 dropdown
+drwxr-xr-x  3 main main 4096 Feb  4 18:22 home
+drwxr-xr-x  3 main main 4096 Feb  4 18:22 icons
+drwxr-xr-x  3 main main 4096 Feb  4 18:22 share
+drwxr-xr-x  3 main main 4096 Feb  4 18:22 validation
+
+./js/wdCalendar/css/images/alert:
+total 48
+drwxr-xr-x  3 main main 4096 Feb  4 18:21 .
+drwxr-xr-x 12 main main 4096 Feb  4 18:22 ..
+drwxr-xr-x  4 main main 4096 Feb  4 18:21 .svn
+-rw-r--r--  1 main main  316 Jul  7  2015 bot.gif
+-rw-r--r--  1 main main  248 Jul  7  2015 close.gif
+-rw-r--r--  1 main main  125 Jul  7  2015 corners.gif
+-rw-r--r--  1 main main  125 Jul  7  2015 cornersBlue.gif
+-rw-r--r--  1 main main  700 Jul  7  2015 help.gif
+-rw-r--r--  1 main main 1259 Jul  7  2015 important.gif
+-rw-r--r--  1 main main  858 Jul  7  2015 info.gif
+-rw-r--r--  1 main main  872 Jul  7  2015 title.gif
+-rw-r--r--  1 main main  317 Jul  7  2015 title1.gif
+
+./js/wdCalendar/css/images/alert/.svn:
+total 24
+drwxr-xr-x 4 main main 4096 Feb  4 18:21 .
+drwxr-xr-x 3 main main 4096 Feb  4 18:21 ..
+-rw-r--r-- 1 main main 1348 Jul  7  2015 all-wcprops
+-rw-r--r-- 1 main main 1775 Jul  7  2015 entries
+drwxr-xr-x 2 main main 4096 Feb  4 18:21 prop-base
+drwxr-xr-x 2 main main 4096 Feb  4 18:21 text-base
+
+./js/wdCalendar/css/images/alert/.svn/prop-base:
+total 44
+drwxr-xr-x 2 main main 4096 Feb  4 18:21 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:21 ..
+-rw-r--r-- 1 main main   53 Jul  7  2015 bot.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 close.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 corners.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 cornersBlue.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 help.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 important.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 info.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 title.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 title1.gif.svn-base
+
+./js/wdCalendar/css/images/alert/.svn/text-base:
+total 44
+drwxr-xr-x 2 main main 4096 Feb  4 18:21 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:21 ..
+-rw-r--r-- 1 main main  316 Jul  7  2015 bot.gif.svn-base
+-rw-r--r-- 1 main main  248 Jul  7  2015 close.gif.svn-base
+-rw-r--r-- 1 main main  125 Jul  7  2015 corners.gif.svn-base
+-rw-r--r-- 1 main main  125 Jul  7  2015 cornersBlue.gif.svn-base
+-rw-r--r-- 1 main main  700 Jul  7  2015 help.gif.svn-base
+-rw-r--r-- 1 main main 1259 Jul  7  2015 important.gif.svn-base
+-rw-r--r-- 1 main main  858 Jul  7  2015 info.gif.svn-base
+-rw-r--r-- 1 main main  872 Jul  7  2015 title.gif.svn-base
+-rw-r--r-- 1 main main  317 Jul  7  2015 title1.gif.svn-base
+
+./js/wdCalendar/css/images/bgs:
+total 36
+drwxr-xr-x  3 main main 4096 Feb  4 18:21 .
+drwxr-xr-x 12 main main 4096 Feb  4 18:22 ..
+drwxr-xr-x  4 main main 4096 Feb  4 18:21 .svn
+-rw-r--r--  1 main main  446 Jul  7  2015 CardHeadbg.jpg
+-rw-r--r--  1 main main  194 Jul  7  2015 CardHeadbg.png
+-rw-r--r--  1 main main   99 Jul  7  2015 ch.gif
+-rw-r--r--  1 main main  872 Jul  7  2015 headbg.gif
+-rw-r--r--  1 main main  148 Jul  7  2015 minus1.gif
+-rw-r--r--  1 main main  152 Jul  7  2015 plus1.gif
+
+./js/wdCalendar/css/images/bgs/.svn:
+total 24
+drwxr-xr-x 4 main main 4096 Feb  4 18:21 .
+drwxr-xr-x 3 main main 4096 Feb  4 18:21 ..
+-rw-r--r-- 1 main main  831 Jul  7  2015 all-wcprops
+-rw-r--r-- 1 main main 1253 Jul  7  2015 entries
+drwxr-xr-x 2 main main 4096 Feb  4 18:21 prop-base
+drwxr-xr-x 2 main main 4096 Feb  4 18:21 text-base
+
+./js/wdCalendar/css/images/bgs/.svn/prop-base:
+total 32
+drwxr-xr-x 2 main main 4096 Feb  4 18:21 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:21 ..
+-rw-r--r-- 1 main main   53 Jul  7  2015 CardHeadbg.jpg.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 CardHeadbg.png.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 ch.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 headbg.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 minus1.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 plus1.gif.svn-base
+
+./js/wdCalendar/css/images/bgs/.svn/text-base:
+total 32
+drwxr-xr-x 2 main main 4096 Feb  4 18:21 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:21 ..
+-rw-r--r-- 1 main main  446 Jul  7  2015 CardHeadbg.jpg.svn-base
+-rw-r--r-- 1 main main  194 Jul  7  2015 CardHeadbg.png.svn-base
+-rw-r--r-- 1 main main   99 Jul  7  2015 ch.gif.svn-base
+-rw-r--r-- 1 main main  872 Jul  7  2015 headbg.gif.svn-base
+-rw-r--r-- 1 main main  148 Jul  7  2015 minus1.gif.svn-base
+-rw-r--r-- 1 main main  152 Jul  7  2015 plus1.gif.svn-base
+
+./js/wdCalendar/css/images/calendar:
+total 48
+drwxr-xr-x  3 main main 4096 Feb  4 18:21 .
+drwxr-xr-x 12 main main 4096 Feb  4 18:22 ..
+drwxr-xr-x  4 main main 4096 Feb  4 18:21 .svn
+-rw-r--r--  1 main main 1969 Jul  7  2015 bubble_combined.png
+-rw-r--r--  1 main main 5470 Jul  7  2015 combined.gif
+-rw-r--r--  1 main main  513 Jul  7  2015 grid.png
+-rw-r--r--  1 main main  836 Jul  7  2015 gridth.gif
+-rw-r--r--  1 main main  872 Jul  7  2015 headbg.gif
+-rw-r--r--  1 main main 1322 Jul  7  2015 indicator_web20_working.gif
+-rw-r--r--  1 main main 1042 Jul  7  2015 load-bg.png
+-rw-r--r--  1 main main  904 Jul  7  2015 tbg.gif
+
+./js/wdCalendar/css/images/calendar/.svn:
+total 24
+drwxr-xr-x 4 main main 4096 Feb  4 18:21 .
+drwxr-xr-x 3 main main 4096 Feb  4 18:21 ..
+-rw-r--r-- 1 main main 1287 Jul  7  2015 all-wcprops
+-rw-r--r-- 1 main main 1636 Jul  7  2015 entries
+drwxr-xr-x 2 main main 4096 Feb  4 18:21 prop-base
+drwxr-xr-x 2 main main 4096 Feb  4 18:21 text-base
+
+./js/wdCalendar/css/images/calendar/.svn/prop-base:
+total 40
+drwxr-xr-x 2 main main 4096 Feb  4 18:21 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:21 ..
+-rw-r--r-- 1 main main   53 Jul  7  2015 bubble_combined.png.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 combined.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 grid.png.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 gridth.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 headbg.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 indicator_web20_working.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 load-bg.png.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 tbg.gif.svn-base
+
+./js/wdCalendar/css/images/calendar/.svn/text-base:
+total 44
+drwxr-xr-x 2 main main 4096 Feb  4 18:21 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:21 ..
+-rw-r--r-- 1 main main 1969 Jul  7  2015 bubble_combined.png.svn-base
+-rw-r--r-- 1 main main 5470 Jul  7  2015 combined.gif.svn-base
+-rw-r--r-- 1 main main  513 Jul  7  2015 grid.png.svn-base
+-rw-r--r-- 1 main main  836 Jul  7  2015 gridth.gif.svn-base
+-rw-r--r-- 1 main main  872 Jul  7  2015 headbg.gif.svn-base
+-rw-r--r-- 1 main main 1322 Jul  7  2015 indicator_web20_working.gif.svn-base
+-rw-r--r-- 1 main main 1042 Jul  7  2015 load-bg.png.svn-base
+-rw-r--r-- 1 main main  904 Jul  7  2015 tbg.gif.svn-base
+
+./js/wdCalendar/css/images/dailog:
+total 44
+drwxr-xr-x  3 main main 4096 Feb  4 18:22 .
+drwxr-xr-x 12 main main 4096 Feb  4 18:22 ..
+drwxr-xr-x  4 main main 4096 Feb  4 18:21 .svn
+-rw-r--r--  1 main main  467 Jul  7  2015 app-form.png
+-rw-r--r--  1 main main  872 Jul  7  2015 headbg.gif
+-rw-r--r--  1 main main  200 Jul  7  2015 left-corners.png
+-rw-r--r--  1 main main  152 Jul  7  2015 left-right.png
+-rw-r--r--  1 main main  256 Jul  7  2015 right-corners.png
+-rw-r--r--  1 main main 4158 Jul  7  2015 tool-sprites.gif
+-rw-r--r--  1 main main  180 Jul  7  2015 top-bottom.png
+
+./js/wdCalendar/css/images/dailog/.svn:
+total 24
+drwxr-xr-x 4 main main 4096 Feb  4 18:21 .
+drwxr-xr-x 3 main main 4096 Feb  4 18:22 ..
+-rw-r--r-- 1 main main 1140 Jul  7  2015 all-wcprops
+-rw-r--r-- 1 main main 1475 Jul  7  2015 entries
+drwxr-xr-x 2 main main 4096 Feb  4 18:21 prop-base
+drwxr-xr-x 2 main main 4096 Feb  4 18:21 text-base
+
+./js/wdCalendar/css/images/dailog/.svn/prop-base:
+total 36
+drwxr-xr-x 2 main main 4096 Feb  4 18:21 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:21 ..
+-rw-r--r-- 1 main main   53 Jul  7  2015 app-form.png.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 headbg.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 left-corners.png.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 left-right.png.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 right-corners.png.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 tool-sprites.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 top-bottom.png.svn-base
+
+./js/wdCalendar/css/images/dailog/.svn/text-base:
+total 40
+drwxr-xr-x 2 main main 4096 Feb  4 18:21 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:21 ..
+-rw-r--r-- 1 main main  467 Jul  7  2015 app-form.png.svn-base
+-rw-r--r-- 1 main main  872 Jul  7  2015 headbg.gif.svn-base
+-rw-r--r-- 1 main main  200 Jul  7  2015 left-corners.png.svn-base
+-rw-r--r-- 1 main main  152 Jul  7  2015 left-right.png.svn-base
+-rw-r--r-- 1 main main  256 Jul  7  2015 right-corners.png.svn-base
+-rw-r--r-- 1 main main 4158 Jul  7  2015 tool-sprites.gif.svn-base
+-rw-r--r-- 1 main main  180 Jul  7  2015 top-bottom.png.svn-base
+
+./js/wdCalendar/css/images/dp:
+total 20
+drwxr-xr-x  3 main main 4096 Feb  4 18:22 .
+drwxr-xr-x 12 main main 4096 Feb  4 18:22 ..
+drwxr-xr-x  4 main main 4096 Feb  4 18:22 .svn
+-rw-r--r--  1 main main  916 Jul  7  2015 btn-arrow-light.gif
+-rw-r--r--  1 main main  919 Jul  7  2015 btn-arrow.gif
+
+./js/wdCalendar/css/images/dp/.svn:
+total 24
+drwxr-xr-x 4 main main 4096 Feb  4 18:22 .
+drwxr-xr-x 3 main main 4096 Feb  4 18:22 ..
+-rw-r--r-- 1 main main  404 Jul  7  2015 all-wcprops
+-rw-r--r-- 1 main main  600 Jul  7  2015 entries
+drwxr-xr-x 2 main main 4096 Feb  4 18:22 prop-base
+drwxr-xr-x 2 main main 4096 Feb  4 18:22 text-base
+
+./js/wdCalendar/css/images/dp/.svn/prop-base:
+total 16
+drwxr-xr-x 2 main main 4096 Feb  4 18:22 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:22 ..
+-rw-r--r-- 1 main main   53 Jul  7  2015 btn-arrow-light.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 btn-arrow.gif.svn-base
+
+./js/wdCalendar/css/images/dp/.svn/text-base:
+total 16
+drwxr-xr-x 2 main main 4096 Feb  4 18:22 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:22 ..
+-rw-r--r-- 1 main main  916 Jul  7  2015 btn-arrow-light.gif.svn-base
+-rw-r--r-- 1 main main  919 Jul  7  2015 btn-arrow.gif.svn-base
+
+./js/wdCalendar/css/images/dropdown:
+total 20
+drwxr-xr-x  3 main main 4096 Feb  4 18:22 .
+drwxr-xr-x 12 main main 4096 Feb  4 18:22 ..
+drwxr-xr-x  4 main main 4096 Feb  4 18:22 .svn
+-rw-r--r--  1 main main   64 Jul  7  2015 dropdown.gif
+-rw-r--r--  1 main main  178 Jul  7  2015 dropdownhover.gif
+
+./js/wdCalendar/css/images/dropdown/.svn:
+total 24
+drwxr-xr-x 4 main main 4096 Feb  4 18:22 .
+drwxr-xr-x 3 main main 4096 Feb  4 18:22 ..
+-rw-r--r-- 1 main main  416 Jul  7  2015 all-wcprops
+-rw-r--r-- 1 main main  602 Jul  7  2015 entries
+drwxr-xr-x 2 main main 4096 Feb  4 18:22 prop-base
+drwxr-xr-x 2 main main 4096 Feb  4 18:22 text-base
+
+./js/wdCalendar/css/images/dropdown/.svn/prop-base:
+total 16
+drwxr-xr-x 2 main main 4096 Feb  4 18:22 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:22 ..
+-rw-r--r-- 1 main main   53 Jul  7  2015 dropdown.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 dropdownhover.gif.svn-base
+
+./js/wdCalendar/css/images/dropdown/.svn/text-base:
+total 16
+drwxr-xr-x 2 main main 4096 Feb  4 18:22 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:22 ..
+-rw-r--r-- 1 main main   64 Jul  7  2015 dropdown.gif.svn-base
+-rw-r--r-- 1 main main  178 Jul  7  2015 dropdownhover.gif.svn-base
+
+./js/wdCalendar/css/images/home:
+total 24
+drwxr-xr-x  3 main main 4096 Feb  4 18:22 .
+drwxr-xr-x 12 main main 4096 Feb  4 18:22 ..
+drwxr-xr-x  4 main main 4096 Feb  4 18:22 .svn
+-rw-r--r--  1 main main 2941 Jul  7  2015 logo.gif
+-rw-r--r--  1 main main  481 Jul  7  2015 toolbarbg.jpg
+-rw-r--r--  1 main main  365 Jul  7  2015 top_bg.jpg
+
+./js/wdCalendar/css/images/home/.svn:
+total 24
+drwxr-xr-x 4 main main 4096 Feb  4 18:22 .
+drwxr-xr-x 3 main main 4096 Feb  4 18:22 ..
+-rw-r--r-- 1 main main  468 Jul  7  2015 all-wcprops
+-rw-r--r-- 1 main main  747 Jul  7  2015 entries
+drwxr-xr-x 2 main main 4096 Feb  4 18:22 prop-base
+drwxr-xr-x 2 main main 4096 Feb  4 18:22 text-base
+
+./js/wdCalendar/css/images/home/.svn/prop-base:
+total 20
+drwxr-xr-x 2 main main 4096 Feb  4 18:22 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:22 ..
+-rw-r--r-- 1 main main   53 Jul  7  2015 logo.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 toolbarbg.jpg.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 top_bg.jpg.svn-base
+
+./js/wdCalendar/css/images/home/.svn/text-base:
+total 20
+drwxr-xr-x 2 main main 4096 Feb  4 18:22 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:22 ..
+-rw-r--r-- 1 main main 2941 Jul  7  2015 logo.gif.svn-base
+-rw-r--r-- 1 main main  481 Jul  7  2015 toolbarbg.jpg.svn-base
+-rw-r--r-- 1 main main  365 Jul  7  2015 top_bg.jpg.svn-base
+
+./js/wdCalendar/css/images/icons:
+total 248
+drwxr-xr-x  3 main main 4096 Feb  4 18:22 .
+drwxr-xr-x 12 main main 4096 Feb  4 18:22 ..
+drwxr-xr-x  4 main main 4096 Feb  4 18:22 .svn
+-rw-r--r--  1 main main 1045 Jul  7  2015 Btn.Close.gif
+-rw-r--r--  1 main main  323 Jul  7  2015 Item.Add.gif
+-rw-r--r--  1 main main   67 Jul  7  2015 Item.Delete.gif
+-rw-r--r--  1 main main  360 Jul  7  2015 Item.Edit.gif
+-rw-r--r--  1 main main  892 Jul  7  2015 Item.Input.gif
+-rw-r--r--  1 main main  613 Jul  7  2015 Item.Save.gif
+-rw-r--r--  1 main main  576 Jul  7  2015 Item.Search.gif
+-rw-r--r--  1 main main  733 Jul  7  2015 add.png
+-rw-r--r--  1 main main  577 Jul  7  2015 appt.gif
+-rw-r--r--  1 main main  378 Jul  7  2015 au.gif
+-rw-r--r--  1 main main  731 Jul  7  2015 cacheClear.png
+-rw-r--r--  1 main main  632 Jul  7  2015 cal-day.gif
+-rw-r--r--  1 main main  598 Jul  7  2015 cal-month.gif
+-rw-r--r--  1 main main  484 Jul  7  2015 cal-proc.gif
+-rw-r--r--  1 main main 1436 Jul  7  2015 cal-rsc-perm.gif
+-rw-r--r--  1 main main  571 Jul  7  2015 cal-week.gif
+-rw-r--r--  1 main main  570 Jul  7  2015 cal-wk-week.gif
+-rw-r--r--  1 main main  366 Jul  7  2015 cal.gif
+-rw-r--r--  1 main main  617 Jul  7  2015 calendar.gif
+-rw-r--r--  1 main main  384 Jul  7  2015 calwrkwk.gif
+-rw-r--r--  1 main main  295 Jul  7  2015 canmtg.gif
+-rw-r--r--  1 main main 7347 Jul  7  2015 circle_animation.gif
+-rw-r--r--  1 main main 1286 Jul  7  2015 clndr.gif
+-rw-r--r--  1 main main  571 Jul  7  2015 clndrsmll.gif
+-rw-r--r--  1 main main  366 Jul  7  2015 cn.gif
+-rw-r--r--  1 main main  626 Jul  7  2015 date.png
+-rw-r--r--  1 main main  703 Jul  7  2015 date_add.png
+-rw-r--r--  1 main main  791 Jul  7  2015 date_reflash.png
+-rw-r--r--  1 main main  715 Jul  7  2015 delete.png
+-rw-r--r--  1 main main  450 Jul  7  2015 edit.png
+-rw-r--r--  1 main main  616 Jul  7  2015 folder_user.gif
+-rw-r--r--  1 main main  606 Jul  7  2015 group.gif
+-rw-r--r--  1 main main 1030 Jul  7  2015 group_add.gif
+-rw-r--r--  1 main main  691 Jul  7  2015 hk.png
+-rw-r--r--  1 main main 1024 Jul  7  2015 ico1.gif
+-rw-r--r--  1 main main 1553 Jul  7  2015 indicator.gif
+-rw-r--r--  1 main main 1082 Jul  7  2015 msg_center.gif
+-rw-r--r--  1 main main 1014 Jul  7  2015 msg_email.gif
+-rw-r--r--  1 main main  400 Jul  7  2015 msg_im.gif
+-rw-r--r--  1 main main  574 Jul  7  2015 msg_mobile.gif
+-rw-r--r--  1 main main  295 Jul  7  2015 mtgreq-cancel.gif
+-rw-r--r--  1 main main  282 Jul  7  2015 mtgreq.gif
+-rw-r--r--  1 main main  305 Jul  7  2015 mtgrsp-accept.gif
+-rw-r--r--  1 main main  303 Jul  7  2015 mtgrsp-decline.gif
+-rw-r--r--  1 main main  297 Jul  7  2015 mtgrsp-tent.gif
+-rw-r--r--  1 main main 3111 Jul  7  2015 pgrs-sm.gif
+-rw-r--r--  1 main main  395 Jul  7  2015 resultset_next.png
+-rw-r--r--  1 main main  389 Jul  7  2015 resultset_previous.png
+-rw-r--r--  1 main main  629 Jul  7  2015 rowdelete.png
+-rw-r--r--  1 main main  374 Jul  7  2015 table.gif
+-rw-r--r--  1 main main  618 Jul  7  2015 table_c.gif
+-rw-r--r--  1 main main  683 Jul  7  2015 table_copy.png
+-rw-r--r--  1 main main  663 Jul  7  2015 table_r.png
+-rw-r--r--  1 main main  795 Jul  7  2015 table_refresh.png
+-rw-r--r--  1 main main  537 Jul  7  2015 tick.png
+-rw-r--r--  1 main main  602 Jul  7  2015 turnback.png
+-rw-r--r--  1 main main  367 Jul  7  2015 us.gif
+-rw-r--r--  1 main main  788 Jul  7  2015 view.png
+
+./js/wdCalendar/css/images/icons/.svn:
+total 36
+drwxr-xr-x 4 main main  4096 Feb  4 18:22 .
+drwxr-xr-x 3 main main  4096 Feb  4 18:22 ..
+-rw-r--r-- 1 main main  7368 Jul  7  2015 all-wcprops
+-rw-r--r-- 1 main main 10011 Jul  7  2015 entries
+drwxr-xr-x 2 main main  4096 Feb  4 18:22 prop-base
+drwxr-xr-x 2 main main  4096 Feb  4 18:22 text-base
+
+./js/wdCalendar/css/images/icons/.svn/prop-base:
+total 236
+drwxr-xr-x 2 main main 4096 Feb  4 18:22 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:22 ..
+-rw-r--r-- 1 main main   53 Jul  7  2015 Btn.Close.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 Item.Add.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 Item.Delete.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 Item.Edit.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 Item.Input.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 Item.Save.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 Item.Search.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 add.png.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 appt.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 au.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 cacheClear.png.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 cal-day.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 cal-month.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 cal-proc.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 cal-rsc-perm.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 cal-week.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 cal-wk-week.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 cal.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 calendar.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 calwrkwk.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 canmtg.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 circle_animation.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 clndr.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 clndrsmll.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 cn.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 date.png.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 date_add.png.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 date_reflash.png.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 delete.png.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 edit.png.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 folder_user.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 group.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 group_add.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 ico1.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 indicator.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 msg_center.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 msg_email.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 msg_im.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 msg_mobile.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 mtgreq-cancel.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 mtgreq.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 mtgrsp-accept.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 mtgrsp-decline.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 mtgrsp-tent.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 pgrs-sm.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 resultset_next.png.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 resultset_previous.png.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 rowdelete.png.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 table.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 table_c.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 table_copy.png.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 table_r.png.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 table_refresh.png.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 tick.png.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 turnback.png.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 us.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 view.png.svn-base
+
+./js/wdCalendar/css/images/icons/.svn/text-base:
+total 240
+drwxr-xr-x 2 main main 4096 Feb  4 18:22 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:22 ..
+-rw-r--r-- 1 main main 1045 Jul  7  2015 Btn.Close.gif.svn-base
+-rw-r--r-- 1 main main  323 Jul  7  2015 Item.Add.gif.svn-base
+-rw-r--r-- 1 main main   67 Jul  7  2015 Item.Delete.gif.svn-base
+-rw-r--r-- 1 main main  360 Jul  7  2015 Item.Edit.gif.svn-base
+-rw-r--r-- 1 main main  892 Jul  7  2015 Item.Input.gif.svn-base
+-rw-r--r-- 1 main main  613 Jul  7  2015 Item.Save.gif.svn-base
+-rw-r--r-- 1 main main  576 Jul  7  2015 Item.Search.gif.svn-base
+-rw-r--r-- 1 main main  733 Jul  7  2015 add.png.svn-base
+-rw-r--r-- 1 main main  577 Jul  7  2015 appt.gif.svn-base
+-rw-r--r-- 1 main main  378 Jul  7  2015 au.gif.svn-base
+-rw-r--r-- 1 main main  731 Jul  7  2015 cacheClear.png.svn-base
+-rw-r--r-- 1 main main  632 Jul  7  2015 cal-day.gif.svn-base
+-rw-r--r-- 1 main main  598 Jul  7  2015 cal-month.gif.svn-base
+-rw-r--r-- 1 main main  484 Jul  7  2015 cal-proc.gif.svn-base
+-rw-r--r-- 1 main main 1436 Jul  7  2015 cal-rsc-perm.gif.svn-base
+-rw-r--r-- 1 main main  571 Jul  7  2015 cal-week.gif.svn-base
+-rw-r--r-- 1 main main  570 Jul  7  2015 cal-wk-week.gif.svn-base
+-rw-r--r-- 1 main main  366 Jul  7  2015 cal.gif.svn-base
+-rw-r--r-- 1 main main  617 Jul  7  2015 calendar.gif.svn-base
+-rw-r--r-- 1 main main  384 Jul  7  2015 calwrkwk.gif.svn-base
+-rw-r--r-- 1 main main  295 Jul  7  2015 canmtg.gif.svn-base
+-rw-r--r-- 1 main main 7347 Jul  7  2015 circle_animation.gif.svn-base
+-rw-r--r-- 1 main main 1286 Jul  7  2015 clndr.gif.svn-base
+-rw-r--r-- 1 main main  571 Jul  7  2015 clndrsmll.gif.svn-base
+-rw-r--r-- 1 main main  366 Jul  7  2015 cn.gif.svn-base
+-rw-r--r-- 1 main main  626 Jul  7  2015 date.png.svn-base
+-rw-r--r-- 1 main main  703 Jul  7  2015 date_add.png.svn-base
+-rw-r--r-- 1 main main  791 Jul  7  2015 date_reflash.png.svn-base
+-rw-r--r-- 1 main main  715 Jul  7  2015 delete.png.svn-base
+-rw-r--r-- 1 main main  450 Jul  7  2015 edit.png.svn-base
+-rw-r--r-- 1 main main  616 Jul  7  2015 folder_user.gif.svn-base
+-rw-r--r-- 1 main main  606 Jul  7  2015 group.gif.svn-base
+-rw-r--r-- 1 main main 1030 Jul  7  2015 group_add.gif.svn-base
+-rw-r--r-- 1 main main 1024 Jul  7  2015 ico1.gif.svn-base
+-rw-r--r-- 1 main main 1553 Jul  7  2015 indicator.gif.svn-base
+-rw-r--r-- 1 main main 1082 Jul  7  2015 msg_center.gif.svn-base
+-rw-r--r-- 1 main main 1014 Jul  7  2015 msg_email.gif.svn-base
+-rw-r--r-- 1 main main  400 Jul  7  2015 msg_im.gif.svn-base
+-rw-r--r-- 1 main main  574 Jul  7  2015 msg_mobile.gif.svn-base
+-rw-r--r-- 1 main main  295 Jul  7  2015 mtgreq-cancel.gif.svn-base
+-rw-r--r-- 1 main main  282 Jul  7  2015 mtgreq.gif.svn-base
+-rw-r--r-- 1 main main  305 Jul  7  2015 mtgrsp-accept.gif.svn-base
+-rw-r--r-- 1 main main  303 Jul  7  2015 mtgrsp-decline.gif.svn-base
+-rw-r--r-- 1 main main  297 Jul  7  2015 mtgrsp-tent.gif.svn-base
+-rw-r--r-- 1 main main 3111 Jul  7  2015 pgrs-sm.gif.svn-base
+-rw-r--r-- 1 main main  395 Jul  7  2015 resultset_next.png.svn-base
+-rw-r--r-- 1 main main  389 Jul  7  2015 resultset_previous.png.svn-base
+-rw-r--r-- 1 main main  629 Jul  7  2015 rowdelete.png.svn-base
+-rw-r--r-- 1 main main  374 Jul  7  2015 table.gif.svn-base
+-rw-r--r-- 1 main main  618 Jul  7  2015 table_c.gif.svn-base
+-rw-r--r-- 1 main main  683 Jul  7  2015 table_copy.png.svn-base
+-rw-r--r-- 1 main main  663 Jul  7  2015 table_r.png.svn-base
+-rw-r--r-- 1 main main  795 Jul  7  2015 table_refresh.png.svn-base
+-rw-r--r-- 1 main main  537 Jul  7  2015 tick.png.svn-base
+-rw-r--r-- 1 main main  602 Jul  7  2015 turnback.png.svn-base
+-rw-r--r-- 1 main main  367 Jul  7  2015 us.gif.svn-base
+-rw-r--r-- 1 main main  788 Jul  7  2015 view.png.svn-base
+
+./js/wdCalendar/css/images/share:
+total 60
+drwxr-xr-x  3 main main 4096 Feb  4 18:22 .
+drwxr-xr-x 12 main main 4096 Feb  4 18:22 ..
+drwxr-xr-x  4 main main 4096 Feb  4 18:22 .svn
+-rw-r--r--  1 main main  591 Jul  7  2015 card.gif
+-rw-r--r--  1 main main  873 Jul  7  2015 glass-bg.gif
+-rw-r--r--  1 main main 1099 Jul  7  2015 hd-sprite.gif
+-rw-r--r--  1 main main  872 Jul  7  2015 headbg.gif
+-rw-r--r--  1 main main  778 Jul  7  2015 information.png
+-rw-r--r--  1 main main  870 Jul  7  2015 left-btn.gif
+-rw-r--r--  1 main main  871 Jul  7  2015 right-btn.gif
+-rw-r--r--  1 main main  374 Jul  7  2015 table.gif
+-rw-r--r--  1 main main  618 Jul  7  2015 table_c.gif
+-rw-r--r--  1 main main  904 Jul  7  2015 tbg.gif
+-rw-r--r--  1 main main 4158 Jul  7  2015 tool-sprites.gif
+
+./js/wdCalendar/css/images/share/.svn:
+total 24
+drwxr-xr-x 4 main main 4096 Feb  4 18:22 .
+drwxr-xr-x 3 main main 4096 Feb  4 18:22 ..
+-rw-r--r-- 1 main main 1654 Jul  7  2015 all-wcprops
+-rw-r--r-- 1 main main 2132 Jul  7  2015 entries
+drwxr-xr-x 2 main main 4096 Feb  4 18:22 prop-base
+drwxr-xr-x 2 main main 4096 Feb  4 18:22 text-base
+
+./js/wdCalendar/css/images/share/.svn/prop-base:
+total 52
+drwxr-xr-x 2 main main 4096 Feb  4 18:22 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:22 ..
+-rw-r--r-- 1 main main   53 Jul  7  2015 card.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 glass-bg.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 hd-sprite.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 headbg.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 information.png.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 left-btn.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 right-btn.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 table.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 table_c.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 tbg.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 tool-sprites.gif.svn-base
+
+./js/wdCalendar/css/images/share/.svn/text-base:
+total 56
+drwxr-xr-x 2 main main 4096 Feb  4 18:22 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:22 ..
+-rw-r--r-- 1 main main  591 Jul  7  2015 card.gif.svn-base
+-rw-r--r-- 1 main main  873 Jul  7  2015 glass-bg.gif.svn-base
+-rw-r--r-- 1 main main 1099 Jul  7  2015 hd-sprite.gif.svn-base
+-rw-r--r-- 1 main main  872 Jul  7  2015 headbg.gif.svn-base
+-rw-r--r-- 1 main main  778 Jul  7  2015 information.png.svn-base
+-rw-r--r-- 1 main main  870 Jul  7  2015 left-btn.gif.svn-base
+-rw-r--r-- 1 main main  871 Jul  7  2015 right-btn.gif.svn-base
+-rw-r--r-- 1 main main  374 Jul  7  2015 table.gif.svn-base
+-rw-r--r-- 1 main main  618 Jul  7  2015 table_c.gif.svn-base
+-rw-r--r-- 1 main main  904 Jul  7  2015 tbg.gif.svn-base
+-rw-r--r-- 1 main main 4158 Jul  7  2015 tool-sprites.gif.svn-base
+
+./js/wdCalendar/css/images/validation:
+total 28
+drwxr-xr-x  3 main main 4096 Feb  4 18:22 .
+drwxr-xr-x 12 main main 4096 Feb  4 18:22 ..
+drwxr-xr-x  4 main main 4096 Feb  4 18:22 .svn
+-rw-r--r--  1 main main  781 Jul  7  2015 accept.png
+-rw-r--r--  1 main main  701 Jul  7  2015 exclamation.png
+-rw-r--r--  1 main main  515 Jul  7  2015 tooltop.gif
+-rw-r--r--  1 main main  234 Jul  7  2015 warning.gif
+
+./js/wdCalendar/css/images/validation/.svn:
+total 24
+drwxr-xr-x 4 main main 4096 Feb  4 18:22 .
+drwxr-xr-x 3 main main 4096 Feb  4 18:22 ..
+-rw-r--r-- 1 main main  702 Jul  7  2015 all-wcprops
+-rw-r--r-- 1 main main  941 Jul  7  2015 entries
+drwxr-xr-x 2 main main 4096 Feb  4 18:22 prop-base
+drwxr-xr-x 2 main main 4096 Feb  4 18:22 text-base
+
+./js/wdCalendar/css/images/validation/.svn/prop-base:
+total 24
+drwxr-xr-x 2 main main 4096 Feb  4 18:22 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:22 ..
+-rw-r--r-- 1 main main   53 Jul  7  2015 accept.png.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 exclamation.png.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 tooltop.gif.svn-base
+-rw-r--r-- 1 main main   53 Jul  7  2015 warning.gif.svn-base
+
+./js/wdCalendar/css/images/validation/.svn/text-base:
+total 24
+drwxr-xr-x 2 main main 4096 Feb  4 18:22 .
+drwxr-xr-x 4 main main 4096 Feb  4 18:22 ..
+-rw-r--r-- 1 main main  781 Jul  7  2015 accept.png.svn-base
+-rw-r--r-- 1 main main  701 Jul  7  2015 exclamation.png.svn-base
+-rw-r--r-- 1 main main  515 Jul  7  2015 tooltop.gif.svn-base
+-rw-r--r-- 1 main main  234 Jul  7  2015 warning.gif.svn-base
+
+./js/wdCalendar/docs:
+total 28
+drwxr-xr-x 3 main main  4096 Feb  4 18:22 .
+drwxr-xr-x 7 main main  4096 Feb  4 18:22 ..
+drwxr-xr-x 2 main main  4096 Feb  4 18:22 css
+-rw-r--r-- 1 main main 15158 Jul  7  2015 index.htm
+
+./js/wdCalendar/docs/css:
+total 96
+drwxr-xr-x 2 main main  4096 Feb  4 18:22 .
+drwxr-xr-x 3 main main  4096 Feb  4 18:22 ..
+-rw-r--r-- 1 main main  1498 Jul  7  2015 dbx-key.js
+-rw-r--r-- 1 main main  3101 Jul  7  2015 dbx.css
+-rw-r--r-- 1 main main 18986 Jul  7  2015 dbx.js
+-rw-r--r-- 1 main main   683 Jul  7  2015 geshi.css
+-rw-r--r-- 1 main main   650 Jul  7  2015 home-icon-trans.png
+-rw-r--r-- 1 main main  3826 Jul  7  2015 iblog2.png
+-rw-r--r-- 1 main main   158 Jul  7  2015 navgrad-active.png
+-rw-r--r-- 1 main main   177 Jul  7  2015 navgrad-down.png
+-rw-r--r-- 1 main main   159 Jul  7  2015 navgrad-hover.png
+-rw-r--r-- 1 main main  1145 Jul  7  2015 print.css
+-rw-r--r-- 1 main main  4922 Jul  7  2015 shared.css
+-rw-r--r-- 1 main main 17951 Jul  7  2015 style.css
+-rw-r--r-- 1 main main  1604 Jul  7  2015 treedata.js
+
+./js/wdCalendar/php:
+total 32
+drwxr-xr-x 2 main main 4096 Feb  4 18:22 .
+drwxr-xr-x 7 main main 4096 Feb  4 18:22 ..
+-rw-r--r-- 1 main main 7347 Jul  7  2015 datafeed.db.php
+-rw-r--r-- 1 main main 4148 Jul  7  2015 datafeed.php
+-rw-r--r-- 1 main main  340 Jul  7  2015 dbconfig.php
+-rw-r--r-- 1 main main  941 Jul  7  2015 functions.php
+
+./js/wdCalendar/sample-css:
+total 16
+drwxr-xr-x 2 main main 4096 Feb  4 18:22 .
+drwxr-xr-x 7 main main 4096 Feb  4 18:22 ..
+-rw-r--r-- 1 main main  366 Jul  7  2015 cal.gif
+-rw-r--r-- 1 main main 1374 Jul  7  2015 page.css
+
+./js/wdCalendar/src:
+total 300
+drwxr-xr-x 3 main main   4096 Feb  4 18:22 .
+drwxr-xr-x 7 main main   4096 Feb  4 18:22 ..
+drwxr-xr-x 2 main main   4096 Feb  4 18:22 Plugins
+-rw-r--r-- 1 main main 212502 Jul  7  2015 jquery.js
+-rw-r--r-- 1 main main  69838 Jul  7  2015 jquery.min.js
+
+./js/wdCalendar/src/Plugins:
+total 292
+drwxr-xr-x 2 main main   4096 Feb  4 18:22 .
+drwxr-xr-x 3 main main   4096 Feb  4 18:22 ..
+-rw-r--r-- 1 main main   3052 Jul  7  2015 Common.js
+-rw-r--r-- 1 main main    917 Jul  7  2015 datepicker_lang_AU.js
+-rw-r--r-- 1 main main    936 Jul  7  2015 datepicker_lang_HK.js
+-rw-r--r-- 1 main main    929 Jul  7  2015 datepicker_lang_US.js
+-rw-r--r-- 1 main main  12061 Jul  7  2015 jquery.alert.js
+-rw-r--r-- 1 main main 128964 Jul  7  2015 jquery.calendar.js
+-rw-r--r-- 1 main main   5604 Jul  7  2015 jquery.colorselect.js
+-rw-r--r-- 1 main main  26462 Jul  7  2015 jquery.datepicker.js
+-rw-r--r-- 1 main main   5243 Jul  7  2015 jquery.dropdown.js
+-rw-r--r-- 1 main main  15328 Jul  7  2015 jquery.form.js
+-rw-r--r-- 1 main main   3299 Jul  7  2015 jquery.ifrmdailog.js
+-rw-r--r-- 1 main main  45199 Jul  7  2015 jquery.validate.js
+-rw-r--r-- 1 main main   2065 Jul  7  2015 wdCalendar_lang_AU.js
+-rw-r--r-- 1 main main   2129 Jul  7  2015 wdCalendar_lang_HK.js
+-rw-r--r-- 1 main main   2066 Jul  7  2015 wdCalendar_lang_US.js
+
+::: Models, add yours here.  Includes the ones you need for the built-in Auth features.
+
+./model:
+total 60
+drwxr-xr-x  2 main main 4096 Feb  4 21:00 .
+drwxr-xr-x 23 main main 4096 Feb  4 22:49 ..
+-rw-r--r--  1 main main   55 Jul  7  2015 .htaccess
+-rw-r--r--  1 main main  386 Jul  7  2015 AppSettings.php
+-rw-r--r--  1 main main 1225 Sep 29 01:28 Auth.php
+-rw-r--r--  1 main main 1076 Jul 17  2015 AutoRowLock.php
+-rw-r--r--  1 main main 2467 Aug 26 01:48 File.php
+-rw-r--r--  1 main main  163 Jul  7  2015 FileFLAC.php
+-rw-r--r--  1 main main  470 Jul  7  2015 FileImage.php
+-rw-r--r--  1 main main  162 Jul  7  2015 FileWAV.php
+-rw-r--r--  1 main main  518 Jul  7  2015 Modification.php
+-rw-r--r--  1 main main   67 Jul  7  2015 Profile.php
+-rw-r--r--  1 main main   60 Jul  7  2015 RowLock.php
+-rw-r--r--  1 main main 7949 Oct  5 03:46 Session.php
+
+::: Modules which are used when needed.
+
+./modules:
+total 96
+drwxr-xr-x  2 main main  4096 Feb  4 21:05 .
+drwxr-xr-x 23 main main  4096 Feb  4 22:49 ..
+-rw-r--r--  1 main main    55 Jul  7  2015 .htaccess
+-rw-r--r--  1 main main 17906 Jul 16  2015 HData.php
+-rw-r--r--  1 main main 54132 Jul  7  2015 UploadHandler.php
+-rw-r--r--  1 main main   121 Jul  7  2015 growl.php
+
+::: pHTML files, woo
+
+./phtml:
+total 12
+drwxr-xr-x  2 main main 4096 Feb  4 18:23 .
+drwxr-xr-x 23 main main 4096 Feb  4 22:49 ..
+-rw-r--r--  1 main main   55 Jul  7  2015 .htaccess
+
+::: Schemas for your databases, don't store them online
+
+./schemas:
+total 108
+drwxr-xr-x  2 main main  4096 Feb  4 18:23 .
+drwxr-xr-x 23 main main  4096 Feb  4 22:49 ..
+-rw-r--r--  1 main main    55 Jul  7  2015 .htaccess
+-rw-r--r--  1 main main 33736 Jul  7  2015 CatalogMaker-6-28.sql
+-rw-r--r--  1 main main  7716 Jul  7  2015 Database.txt
+-rw-r--r--  1 main main  4316 Jul  7  2015 ImportSchema.php
+-rw-r--r--  1 main main 44112 Jul  7  2015 pm_cat_export_jun_18_2015.sql
+
+::: Settings and other global values
+
+./settings:
+total 36
+drwxr-xr-x  2 main main 4096 Feb  4 18:23 .
+drwxr-xr-x 23 main main 4096 Feb  4 22:49 ..
+-rw-r--r--  1 main main   55 Jul  7  2015 .htaccess
+-rw-r--r--  1 main main   64 Oct 28 01:57 config.crypt.php
+-rw-r--r--  1 main main 1113 Feb  4 21:46 config.databases.php
+-rw-r--r--  1 main main 1289 Feb  4 21:47 config.enums.php
+-rw-r--r--  1 main main  135 Jul  7  2015 config.flags.php
+-rw-r--r--  1 main main   90 Feb  4 21:48 config.global.php
+-rw-r--r--  1 main main  451 Feb  4 21:49 config.php
+
+::: Snippets of code you always want available, sort of like helpers
+
+./shreds:
+total 232
+drwxr-xr-x  2 main main  4096 Feb  4 21:02 .
+drwxr-xr-x 23 main main  4096 Feb  4 22:49 ..
+-rw-r--r--  1 main main    55 Jul  7  2015 .htaccess
+-rw-r--r--  1 main main   583 Sep 29 01:08 ACL.php
+-rw-r--r--  1 main main  2737 Jul  7  2015 AJAX.php
+-rw-r--r--  1 main main   858 Jul 16  2015 AJAXSelect.php
+-rw-r--r--  1 main main  2018 Dec 17 23:11 AjaxUI.php
+-rw-r--r--  1 main main  2330 Jul 21  2015 AutoLocks.php
+-rw-r--r--  1 main main  6104 Jul  7  2015 Breadcrumber.php
+-rw-r--r--  1 main main  3023 Jul  7  2015 CSS.php
+-rw-r--r--  1 main main  4902 Dec 22 21:08 Charts.php
+-rw-r--r--  1 main main  2601 Feb  4 21:04 Cipher.php
+-rw-r--r--  1 main main   128 Jul  7  2015 Coord.php
+-rw-r--r--  1 main main  2782 Feb  4 21:05 Crayon.php
+-rw-r--r--  1 main main 14534 Feb  4 22:46 CustomSelector.php
+-rw-r--r--  1 main main  5722 Jul  7  2015 DataForm.php
+-rw-r--r--  1 main main  3679 Feb  4 22:47 Dropdown.php
+-rw-r--r--  1 main main  1175 Jul  7  2015 EditSelect.php
+-rw-r--r--  1 main main 15106 Jul  7  2015 FormHelper.php
+-rw-r--r--  1 main main 21585 Jul  7  2015 FormTable.php
+-rw-r--r--  1 main main 15847 Jul  7  2015 GridHelper.php
+-rw-r--r--  1 main main   518 Jul  7  2015 JSON.php
+-rw-r--r--  1 main main  3453 Jul  8  2015 JSONColorpick.php
+-rw-r--r--  1 main main  1213 Jul  7  2015 JSONText.php
+-rw-r--r--  1 main main  2504 Jul 19  2015 Locks.php
+-rw-r--r--  1 main main   196 Jul  7  2015 MenuHelper.php
+-rw-r--r--  1 main main  2488 Aug  1  2015 Modifications.php
+-rw-r--r--  1 main main 10106 Aug  4  2015 PTree.php
+-rw-r--r--  1 main main  2367 Jul  7  2015 Pager.php
+-rw-r--r--  1 main main  1428 Dec 26 21:01 ShowArray.php
+-rw-r--r--  1 main main  1112 Aug  1  2015 Stellar.php
+-rw-r--r--  1 main main  2481 Jul  7  2015 TabHelper.php
+-rw-r--r--  1 main main  4459 Sep 29 22:50 TableHelper.php
+-rw-r--r--  1 main main 12607 Jul  7  2015 TandemForm.php
+-rw-r--r--  1 main main   955 Jul 31  2015 TimeElapsed.php
+
+::: Any UI uniqueness you want.
+
+./ui:
+total 24
+drwxr-xr-x  2 main main 4096 Feb  4 18:23 .
+drwxr-xr-x 23 main main 4096 Feb  4 22:49 ..
+-rw-r--r--  1 main main   55 Jul  7  2015 .htaccess
+-rw-r--r--  1 main main 8575 Jul  7  2015 Bootstrap.php
+
+::: Any views you want to load on-demand.
+
+./view:
+total 12
+drwxr-xr-x  2 main main 4096 Feb  4 18:15 .
+drwxr-xr-x 23 main main 4096 Feb  4 22:49 ..
+-rw-r--r--  1 main main   55 Jul  7  2015 .htaccess

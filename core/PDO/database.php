@@ -192,6 +192,32 @@ class Database extends PDO {
   $this->result = $this->Run($query, $prepared);
   return $this->result;
  }
+ 
+  public function Join( $values, $tableA, $tableB, $order_by=FALSE, $columns='*', $limit=FALSE, $offset=0, $type='INNER', $on_or_using="ON" ) {
+  if ( is_array($tableA) ) $tableA=implode(',',$tableA);
+  if ( is_array($tableB) ) $tableB=implode(',',$tableB);
+  if ( is_array($values) ) {
+   $value=array();
+   forech ( $values as $a=>$b ) {
+    $value[]=$a.'='.$b;
+   }
+   $value=implode(',',$value);
+  } else $value=$values;
+  $ending='';
+  if ( !false_or_null($order_by) && strlen($order_by)>0 ) {
+   $ending.=' ORDER BY '.$order_by;
+  }
+  if ( !false_or_null($limit) ) {
+   $limit=intval($limit);
+   $ending.=' LIMIT '.$limit'
+   if ( $offset > 0 ) $ending.=' OFFSET '.$offset;
+  }
+  $query='SELECT '.$columns.' FROM '.$tableA.' '.$type.' JOIN '.$tableB.' '.$on_or_using.' '.$value.$ending.';';
+  $result=$this->db->Execute($query);
+  if ( false_or_null($result) ) return array();
+  if ( count($result) == 1 ) return array_shift($result);
+  return $result;
+ }
 
  public function RunCountQuery($query, $prepared="") {
   plog("Query (counter): ".$query);

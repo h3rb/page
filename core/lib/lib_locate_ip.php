@@ -1,4 +1,4 @@
-<?php
+<?php // Not always the fastest due to it being a free service.  Commented out in Auth, uncomment to use IP detection.
 
 function get_ip_info( $ip="74.125.45.100", $type="city" ) {
  $api_key = "036d959260437aac4f565eb7e3ec94795d9bbfa2997196ead58820e9f672d33f";

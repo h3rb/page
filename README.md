@@ -52,6 +52,7 @@ Provides the basics:
  * A way to instantly modify database information in a Google Sheets style way using the Bind* functionality of Page class
  * A bunch of jQuery object supports.
  * Lots of undocumented examples.
+ * ACL support for limiting who can edit and what they can edit.
 
 Philosophy:
 

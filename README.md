@@ -110,7 +110,31 @@ How to attach to a database's table using a model:
 See files in core/PDO/ to learn how everything works.
 
 
-Run-down of what's in each folder:
+__Installing and using JQuery__
+
+Page supports any version of jQuery, and has some basic features that let you programmatically deploy jQuery.  Unlike other frameworks or code organizational methods, you'll want to break up your jQuery plugin into the css/ and js/ folders, placing the CSS and images in css/ and the Javascript files in js/ so that you can use $page->JS() $page->CSS() to load them.  Use $page->JQ() to stick lines in the document Ready() area and use $page->JS() to add to the page's global javascript.
+
+<pre>
+ include 'core/Page.php';
+ 
+ $p=new Page();
+ $p->JS('somejsfile.js');
+ $p->JS('http://cdn.url.com');
+ $p->JQuery(); // Loads Jquery automatically
+ $p->JQ('
+   $("#docisready").on("click" ... );
+ ');
+  $p->JS('var myGlobal=1; setInterval(function(){alert('foo');},1000);');
+</pre>
+
+Also, you'll want to be aware that if you load your own custom jQuery, either modify the loading sequence in core/Page.php to the version of your choice in the location of your choice, or load it via another method and inform Page that it is already installed so as not to install it twice, by doing:
+
+<pre>
+$page->jq_loaded=TRUE;
+</pre>
+
+
+__Run-down of what's in each folder:__
 
 view/
 
@@ -137,7 +161,12 @@ Contains the PDO-related functionality.  The one you need to extend is Model.  Y
 
 css/
 
-Contains your main.css and other css files for plugins or special areas of your site.
+Contains your main.css and other css files for plugins or special areas of your site.  You can include these files like this:
+
+<pre>
+ $p->CSS('main.css');  // Includes css/main.css
+ $p->CSS('myplugin/plugin.css');  // Includes css/myplugin/plugin.css. 
+</pre>
 
 engines/
 
@@ -161,7 +190,7 @@ Contains html snippets that can be loaded into a page's ->HTML by file reference
 
 js/
 
-Put your javascript files here.  When you $p->JS('somefile.js') it will look here
+Put your javascript files here.  When you $p->JS('somefile.js') it will look here, and it also recognizes CDN urls.
 
 phtml/
 

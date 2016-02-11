@@ -101,7 +101,7 @@ class Model {
   if ( is_array($tableB) ) $tableB=implode(',',$tableB);
   if ( is_array($values) ) {
    $value=array();
-   forech ( $values as $a=>$b ) {
+   foreach ( $values as $a=>$b ) {
     $value[]=$a.'='.$b;
    }
    $value=implode(',',$value);
@@ -112,7 +112,7 @@ class Model {
   }
   if ( !false_or_null($limit) ) {
    $limit=intval($limit);
-   $ending.=' LIMIT '.$limit'
+   $ending.=' LIMIT '.$limit;
    if ( $offset > 0 ) $ending.=' OFFSET '.$offset;
   }
   $query='SELECT '.$columns.' FROM '.$tableA.' '.$type.' JOIN '.$tableB.' '.$on_or_using.' '.$value.$ending.';';

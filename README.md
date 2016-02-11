@@ -91,6 +91,13 @@ include "core/automation.php";   // Does everything Page does except create the 
 //... load models and do stuff to db ...
 </pre>
 
+To set up full granular logging (stored in cache/logs/last-log.txt):
+
+<pre>
+global $plog_level; $plog_level=1; // must appear before Page.php is included
+include 'core/Page.php';
+</pre>
+
 Example of how to make a new model:
 
  1. Create a table in your database. For example, one called <b>tableName</b>

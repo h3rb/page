@@ -48,11 +48,12 @@ Provides the basics:
  * Contains lazy ajax calls for versatile low-impact AJAX-enabled widgetry
  * Super easy to make new models
  * A way to lock individual rows from being edited until they are unlocked.
- * A way to auto-lock rows to avoid two people editing the same information
+ * A way to auto-lock rows to avoid two people editing the same information at the same time.
  * A way to instantly modify database information in a Google Sheets style way using the Bind* functionality of Page class
  * A bunch of jQuery object supports.
  * Lots of undocumented examples.
  * ACL support for limiting who can edit and what they can edit.
+ * Granular edit logs when desired (see Modifications feature).
 
 Philosophy:
 

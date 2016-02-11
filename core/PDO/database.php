@@ -213,7 +213,7 @@ class Database extends PDO {
    if ( $offset > 0 ) $ending.=' OFFSET '.$offset;
   }
   $query='SELECT '.$columns.' FROM '.$tableA.' '.$type.' JOIN '.$tableB.' '.$on_or_using.' '.$value.$ending.';';
-  $result=$this->Execute($query);
+  $result=$this->Run($query);
   if ( false_or_null($result) ) return array();
   if ( count($result) == 1 ) return array_shift($result);
   return $result;

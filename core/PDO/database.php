@@ -209,7 +209,7 @@ class Database extends PDO {
   }
   if ( !false_or_null($limit) ) {
    $limit=intval($limit);
-   $ending.=' LIMIT '.$limit'
+   $ending.=' LIMIT '.$limit;
    if ( $offset > 0 ) $ending.=' OFFSET '.$offset;
   }
   $query='SELECT '.$columns.' FROM '.$tableA.' '.$type.' JOIN '.$tableB.' '.$on_or_using.' '.$value.$ending.';';

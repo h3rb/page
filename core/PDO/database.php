@@ -193,7 +193,7 @@ class Database extends PDO {
   return $this->result;
  }
  
-  public function Join( $values, $tableA, $tableB, $order_by=FALSE, $columns='*', $limit=FALSE, $offset=0, $type='INNER', $on_or_using="ON" ) {
+  public function Join( $values, $tableA, $tableB, $order_by=FALSE, $columns='*', $limit=FALSE, $offset=0, $where=FALSE, $type='INNER', $on_or_using="ON" ) {
   if ( is_array($tableA) ) $tableA=implode(',',$tableA);
   if ( is_array($tableB) ) $tableB=implode(',',$tableB);
   if ( is_array($values) ) {
@@ -204,6 +204,10 @@ class Database extends PDO {
    $value=implode(',',$value);
   } else $value=$values;
   $ending='';
+  if ( !false_or_null($where) ) {
+   if ( is_array($where) ) $ending.=$this->where;
+   else $ending.=$where;
+  }  
   if ( !false_or_null($order_by) && strlen($order_by)>0 ) {
    $ending.=' ORDER BY '.$order_by;
   }

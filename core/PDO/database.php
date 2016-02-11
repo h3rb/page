@@ -206,7 +206,7 @@ class Database extends PDO {
   $ending='';
   if ( !false_or_null($where) ) {
    if ( is_array($where) ) $ending.=$this->where;
-   else $ending.=$where;
+   else $ending.=' WHERE '.$where;
   }  
   if ( !false_or_null($order_by) && strlen($order_by)>0 ) {
    $ending.=' ORDER BY '.$order_by;

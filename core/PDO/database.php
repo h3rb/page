@@ -198,7 +198,7 @@ class Database extends PDO {
   if ( is_array($tableB) ) $tableB=implode(',',$tableB);
   if ( is_array($values) ) {
    $value=array();
-   forech ( $values as $a=>$b ) {
+   foreach ( $values as $a=>$b ) {
     $value[]=$a.'='.$b;
    }
    $value=implode(',',$value);

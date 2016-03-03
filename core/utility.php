@@ -1336,3 +1336,14 @@ if ( !function_exists('ask_to_continue') ) {
   echo "Thank you, continuing...\n";
  }
 }
+
+// Works only in automation.php mode (cli SAPI)
+if ( !function_exists('ask_for_input') ) {
+ function ask_for_input( $trim_it=TRUE ) {
+  $handle = fopen ("php://stdin","r");
+  $line = fgets($handle);
+  if ( $trim_it === TRUE ) return trim($line);
+  else return $line;
+ }
+}
+

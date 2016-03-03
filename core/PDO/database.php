@@ -64,7 +64,7 @@ class Database extends PDO {
  }
 
  function Tables( $db_name ) {
-  $q='SELECT TABLE_NAME FROM information_schema.TABLES WHERE TABLE_TYPE="BASE TABLE" AND TABLE_SCHEMA="'.$db_name.'";'
+  $q='SELECT TABLE_NAME FROM information_schema.TABLES WHERE TABLE_TYPE="BASE TABLE" AND TABLE_SCHEMA="'.$db_name.'";';
   $tables=$this->Run($q);
   if ( is_array($tables) ) {
    $out=array();

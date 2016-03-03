@@ -69,7 +69,7 @@ class Database extends PDO {
   if ( is_array($tables) ) {
    $out=array();
    foreach ($tables as $t) {
-    $out[]=$t[1];
+    $out[]=$t['TABLE_NAME'];
    }
    return $out;
   } else return FALSE;

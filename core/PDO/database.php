@@ -63,8 +63,20 @@ class Database extends PDO {
   }
  }
 
+ function Tables( $db_name ) {
+  $q='SELECT TABLE_NAME FROM information_schema.TABLES WHERE TABLE_TYPE="BASE TABLE" AND TABLE_SCHEMA="'.$db_name.'";'
+  $tables=$this->Run($q);
+  if ( is_array($tables) ) {
+   $out=array();
+   foreach ($tables as $t) {
+    $out[]=$t[1];
+   }
+   return $out;
+  } else return FALSE;
+ }
+ 
  // Get desired fields from a table
- private function Fields($table, $filter=false) {
+ function Fields($table, $filter=false) {
   switch ( $this->driver_code ) {
    case -1: return array( 'error'=>1 );
    case 1:

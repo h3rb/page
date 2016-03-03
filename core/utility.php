@@ -1321,3 +1321,18 @@ if ( !function_exists('array_format') ) {
   return $out;
  }
 }
+
+// Works only in automation.php mode (cli SAPI)
+if ( !function_exists('ask_to_continue') ) {
+ function ask_to_continue() {
+  echo "Are you sure you want to do this?  Type 'yes' to continue: ";
+  $handle = fopen ("php://stdin","r");
+  $line = fgets($handle);
+  if(trim($line) != 'yes'){
+     echo "ABORTING!\n";
+     exit;
+  }
+  echo "\n";
+  echo "Thank you, continuing...\n";
+ }
+}

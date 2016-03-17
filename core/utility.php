@@ -93,26 +93,6 @@ if ( !function_exists('folder_exists') ) {
  }
 }
 
-if ( !function_exists('make_path') ) {
- function make_path($pathname, $is_filename=false){
-  $pathname = str_replace(array('/', '\\'), DIRECTORY_SEPARATOR, $pathname);
-  if($is_filename) $pathname = substr($pathname, 0, strrpos($pathname, DIRECTORY_SEPARATOR));
-  // Check if directory already exists
-  if (is_dir($pathname) || empty($pathname)) return TRUE;
-  // Ensure a file does not already exist with the same name
-  if (is_file($pathname)) {
-   trigger_error('make_path() File exists on way to forming the path, cannot proceed', E_USER_ERROR);
-   return FALSE;
-  }
-  // Crawl up the directory tree
-  $next_pathname = substr($pathname, 0, strrpos($pathname, DIRECTORY_SEPARATOR));
-  if (make_path($next_pathname, $mode)) {
-   if (!file_exists($pathname)) return mkdir($pathname, $mode);
-  }
-  return FALSE;
- }
-}
-
 if ( !function_exists('array_msort') ) {
  function array_msort($array, $cols) {
   $colarr = array();
@@ -1347,3 +1327,140 @@ if ( !function_exists('ask_for_input') ) {
  }
 }
 
+
+if ( !function_exists('explode_trim') ) {
+ function explode_trim($sep,$hay) {
+  $res=explode($sep,$hay);
+  $fin=array();
+  foreach ( $res as $r ) $fin[]=trim($r);
+  return $fin;
+ }
+}
+
+if ( !function_exists('explode_trim_drop_empty') ) {
+ function explode_trim_drop_empty($sep,$hay) {
+  $res=explode($sep,$hay);
+  $fin=array();
+  foreach ( $res as $r ) {
+   $nex=trim($r);
+   if ( strlen($nex) > 0 ) $fin[]=$nex;
+  }
+  return $fin;
+ }
+}
+
+
+if ( !function_exists('kv_from_array') ) {
+ function kv_from_array($array) {
+  $kv=array();
+  $key=false;
+  foreach ( $array as $part ) { // key,value,key,value = key:value,key:value
+   if ( !$key ) $key=$part;
+   else {
+    $kv[$key]=$part;
+    $key=false;
+   }
+  }
+//  var_dump($kv);
+  return $kv;
+ }
+}
+
+if ( !function_exists('array_from_kv') ) {
+ function kv_to_array($array) {
+  $out=array();
+  foreach ( $array as $k=>$v ) { // key,value,key,value = key:value,key:value
+   $out[]=$k;
+   $out[]=$v;
+  }
+  return $out;
+ }
+}
+
+if ( !function_exists('b64k_decode') ) {
+ function b64k_decode( $n ) {
+  return base64_decode(str_replace('-','+',str_replace('_','/',$n)));
+ }
+}
+
+if ( !function_exists('special_decode') ) {
+ // Decodes a special formatted request
+ // the opposite of the str_replaces, base64 encoded, pipe-delimited key|value|... pairs
+ function special_decode($data) {
+  $data=explode("|",b64k_decode($data));
+  return kv_from_array($data);
+ }
+}
+
+if ( !function_exists('depipe') ) {
+ function depipe($data) {
+  $data=explode("|",$data);
+  return kv_from_array($data);
+ }
+}
+
+if ( !function_exists('enpipe') ) {
+ function enpipe($arr) {
+  return implode("|",array_from_kv($arr));
+ }
+}
+
+if ( !function_exists('death') ) {
+ function death( $msg ) {
+  echo $msg.PHP_EOL; die;
+ }
+}
+
+
+if ( !function_exists('json_post') ) {
+ function json_post( $url, $array_data, $dump=FALSE ) {
+  $data_string = json_encode($array_data);
+  $curl = curl_init($url);
+  curl_setopt($curl, CURLOPT_CUSTOMREQUEST, "POST");
+  curl_setopt($curl, CURLOPT_POST, true);
+  curl_setopt($curl, CURLOPT_POSTFIELDS, $data_string);
+  curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+  curl_setopt($curl, CURLOPT_HEADER, false);
+  curl_setopt($curl, CURLOPT_FAILONERROR, true);
+  curl_setopt($curl, CURLOPT_VERBOSE, true);
+  curl_setopt($curl, CURLOPT_STDERR, $verbose = fopen('php://temp','rw+'));
+  curl_setopt($curl, CURLOPT_HTTPHEADER, array(
+   'Content-Type: application/json',
+   'Content-Length: ' . strlen($data_string)
+  ));
+  $response = curl_exec($curl);
+  echo "Verbose information:\n", !rewind($verbose), stream_get_contents($verbose), "\n";
+  curl_close($curl);
+  echo 'json_post("'.$url.'") => RESPONSE: ';
+  if ( $dump !== FALSE ) var_dump($response);
+  if ( stripos($response,"</pre>") !== FALSE ) { // Cake barfed
+   $parts=explode("</pre>",$response);
+   $response=$parts[count($parts)-1];
+  }
+  return $response;
+ }
+}
+
+if ( !function_exists('make_path') ) {
+ function make_path($pathname, $mode=0777, $is_filename=false){
+  return mkdir($pathname,$mode,true);
+/*
+  $pathname = str_replace(array('/', '\\'), DIRECTORY_SEPARATOR, $pathname);
+  if($is_filename) $pathname = substr($pathname, 0, strrpos($pathname, DIRECTORY_SEPARATOR));
+  // Check if directory already exists
+  if (is_dir($pathname) || empty($pathname)) return TRUE;
+  // Ensure a file does not already exist with the same name
+  if (is_file($pathname)) {
+   trigger_error('make_path(`'.$pathname.'`) File exists on way to forming the path, cannot proceed', E_USER_ERROR);
+   return FALSE;
+  }
+  // Crawl up the directory tree
+  $next_pathname = substr($pathname, 0, strrpos($pathname, DIRECTORY_SEPARATOR));
+  if (make_path($next_pathname, $mode) !== FALSE ) {
+   if (strlen(trim($pathname))>0
+    && !file_exists($pathname)) return mkdir($pathname, $mode);
+  }
+  return FALSE;
+*/
+ }
+}

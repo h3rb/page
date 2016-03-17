@@ -1464,3 +1464,21 @@ if ( !function_exists('make_path') ) {
 */
  }
 }
+
+if ( !function_exists('folder_index_json') ) {
+ function folder_index_json($dir, $allow_delete=FALSE, $filter_index=TRUE) {
+  $inodes=scandir($dir);
+  $file=array();
+  foreach ( $inodes as $index=>$pathname ) {
+   if ( $filter_index === TRUE && $pathname == "index.php" ) continue;
+   if ( $allow_delete !== FALSE && $pathname == $_GET['DELETE'] ) { unlink($pathname); return TRUE; }
+   if ( file_exists($pathname) && !is_dir($pathname) )
+    $file[]=array(
+     "name"=>$pathname,
+     "size"=>filesize($pathname),
+     "mtime"=>filemtime($pathname)
+    );
+   }
+   return json_encode($file);
+  }
+}

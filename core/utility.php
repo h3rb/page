@@ -1500,4 +1500,9 @@ if ( !function_exists('special_decode') ) {
  }
 }
 
-
+if ( !function_exists('seconds_old')) {
+ function seconds_old( $filename ) {
+  if ( !file_exists($filename) ) return FALSE;
+  return strtotime('now')-filemtime($filename);
+ }
+}

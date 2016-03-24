@@ -1377,21 +1377,6 @@ if ( !function_exists('array_from_kv') ) {
  }
 }
 
-if ( !function_exists('b64k_decode') ) {
- function b64k_decode( $n ) {
-  return base64_decode(str_replace('-','+',str_replace('_','/',$n)));
- }
-}
-
-if ( !function_exists('special_decode') ) {
- // Decodes a special formatted request
- // the opposite of the str_replaces, base64 encoded, pipe-delimited key|value|... pairs
- function special_decode($data) {
-  $data=explode("|",b64k_decode($data));
-  return kv_from_array($data);
- }
-}
-
 if ( !function_exists('depipe') ) {
  function depipe($data) {
   $data=explode("|",$data);
@@ -1410,7 +1395,6 @@ if ( !function_exists('death') ) {
   echo $msg.PHP_EOL; die;
  }
 }
-
 
 if ( !function_exists('json_post') ) {
  function json_post( $url, $array_data, $dump=FALSE ) {
@@ -1508,7 +1492,7 @@ if ( !function_exists('b64k_json_encode') ) {
 }
 
 if ( !function_exists('special_decode') ) {
- // Decodes our special formatted request from KR
+ // Decodes our special formatted request
  // the opposite of the str_replaces, base64 encoded, pipe-delimited key|value|... pairs
  function special_decode($data) {
   $data=explode("|",b64k_decode($data));

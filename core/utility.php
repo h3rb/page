@@ -1482,3 +1482,38 @@ if ( !function_exists('folder_index_json') ) {
    return json_encode($file);
   }
 }
+
+if ( !function_exists('b64k_decode') ) {
+ function b64k_decode( $n ) {
+  return base64_decode(str_replace('-','+',str_replace('_','/',$n)));
+ }
+}
+
+if ( !function_exists('b64k_encode') ) {
+ function b64k_encode( $n ) {
+  return str_replace('+','-',str_replace('/','_',base64_encode($n)));
+ }
+}
+
+if ( !function_exists('b64k_json_decode') ) {
+ function b64k_json_decode( $n ) {
+  return json_decode(base64_decode(str_replace('-','+',str_replace('_','/',$n))),true);
+ }
+}
+
+if ( !function_exists('b64k_json_encode') ) {
+ function b64k_json_encode( $n ) {
+  return str_replace('+','-',str_replace('/','_',base64_encode(json_encode($n))));
+ }
+}
+
+if ( !function_exists('special_decode') ) {
+ // Decodes our special formatted request from KR
+ // the opposite of the str_replaces, base64 encoded, pipe-delimited key|value|... pairs
+ function special_decode($data) {
+  $data=explode("|",b64k_decode($data));
+  return kv_from_array($data);
+ }
+}
+
+

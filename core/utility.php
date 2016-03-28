@@ -1367,7 +1367,7 @@ if ( !function_exists('kv_from_array') ) {
 }
 
 if ( !function_exists('array_from_kv') ) {
- function kv_to_array($array) {
+ function array_from_kv($array) {
   $out=array();
   foreach ( $array as $k=>$v ) { // key,value,key,value = key:value,key:value
    $out[]=$k;

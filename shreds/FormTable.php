@@ -384,7 +384,7 @@ class FormTable extends Unique {
    )."
    }
    function ft_onchange_$u() {
-    ".$this->settings["callback"]."(ft_get_values_$u());
+    ".$this->settings["changed"]."(ft_get_values_$u());
    }
    function ft_get_values_$u() {
     var x=row_fields_$u.length;

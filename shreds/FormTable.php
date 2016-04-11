@@ -388,9 +388,13 @@ class FormTable extends Unique {
    function ft_get_values_$u(o) {
     var x=row_fields_$u.length;
     var y=rowids_$u.length;
-    var o= Array.apply(null, Array(x)).map(e => Array(y));
-    for ( var i=0; i<x; i++ ) for ( var j=0; j<y; j++ ) o[i,j]=$('#_'+i+'_'+j).val();
-    return o;
+    var ok= Array.apply(null, Array(x)).map(e => Array(y));
+    for ( var i=0; i<x; i++ ) {
+     for ( var j=0; j<y; j++ ) {
+      o[i][j]=$('#_'+i+'_'+j).get(0).value;
+     }
+    }
+    return ok;
    }
    function rem_$u(n,a) {
     var na=Array(); var i,c=0;

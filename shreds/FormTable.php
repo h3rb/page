@@ -389,6 +389,7 @@ class FormTable extends Unique {
     var y=row_ids_$u.length;
     var o=[];
     for ( var i=0; i<x; i++ ) for ( var j=0; j<y; j++ ) o[i,j]=$('#_'+i+'_'+j).val();
+    return o;
    }
    function rem_$u(n,a) {
     var na=Array(); var i,c=0;
@@ -474,7 +475,8 @@ class FormTable extends Unique {
   ". ( $this->settings['delete'] !== false
        ? ""
        : ''
-     );
+     )
+  );
 
   $p->JS($js);
   $p->HTML('

@@ -219,7 +219,7 @@ class FormTable extends Unique {
       if ( $i == "select" ) {
        $tag='<select '.$js.' onchange="ft_onchange_'.$u.'();" id="'.$f.'_'.$u.'_'.$n.'" name="'.$l.'">';
        foreach ( $v as $named=>$value ) {
-        $tag.='<option value="'.$value.'"'.($in[$f_counter]==$value?" selected":'').'>';
+        $tag.='<option value="'.$value.'"'.($in[$f_counter]==$value?" selected":'').'>'.$named;
        $tag.='</select>';
       }
       $tags.='<td align="'.$a.'">'.($i!="hidden"&&isset($l)?'<span class="'.$fc.'_label">'.$l."</span>":'')

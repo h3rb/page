@@ -165,7 +165,7 @@ class FormTable extends Unique {
      }
      $id=$f;
      if ( !isset($i) || (!isset($i) && (isset($r) && $r === true) )) {
-      $tag='<span class="data">'.(isset($in[$f])?$in[$f]:'').'</span>';
+      $tag='<span class="data">'.(isset($in[$f_counter])?$in[$f_counter]:'').'</span>';
       $tags.='<td align="'.$a.'">'.(isset($l)?'<span class="'.$fc.'_label">'.$l."</span>":'')
               .$tag.(isset($c)?'<span class="'.$fc.'_caption'.'">'.$c.'</span>':'').'</td>';
      }
@@ -173,7 +173,7 @@ class FormTable extends Unique {
      if ( isset($i) ) {
       if ( isset($r) && $r === true ) $r=($i=="checkbox"||$i=="button"?'disabled ':'readonly '); else $r='';
       if ( $i == "hidden" ) {
-       $tag='<input '.$js.' onchange="ft_onchange_'.$u.'();" id="'.$f.'_'.$u.'_'.$n.'" type="hidden" name="'.$l.'" '.$r.'value="'.(isset($in[$f])?$in[$f]:$e).'">';
+       $tag='<input '.$js.' onchange="ft_onchange_'.$u.'();" id="'.$f.'_'.$u.'_'.$n.'" type="hidden" name="'.$l.'" '.$r.'value="'.(isset($in[$f_counter])?$in[$f_counter]:$e).'">';
       } else
       if ( $i == "text" ) {
        $tag='<input '.$js.' onchange="ft_onchange_'.$u.'();" class="'.$fc.'_'.$i.'" type="text" width="'.(isset($w)?$w:40).'" '.$r.'value="'.(isset($in[$f_counter])?$in[$f_counter]:$e).'" '
@@ -183,34 +183,34 @@ class FormTable extends Unique {
       if ( $i == "textarea" ) {
        $tag='<textarea '.$js.' onchange="ft_onchange_'.$u.'();" class="'.$fc.'_'.$i.'" id="'.$f.'_'.$u.'_'.$n.'" '.$r
            .(isset($j)?'onblur="'.$j.'" ':'')
-           .'cols="'.(isset($w)?$w:20).'" rows="'.(isset($h)?$h:20).'">'.(isset($in[$f])?$in[$f]:'').'</textarea>';
+           .'cols="'.(isset($w)?$w:20).'" rows="'.(isset($h)?$h:20).'">'.(isset($in[$f_counter])?$in[$f_counter]:'').'</textarea>';
       } else
       if ( $i == "date" ) {
-       $tag='<input '.$js.' onchange="ft_onchange_'.$u.'();" class="'.$fc.'_'.$i.'" type="text" '.$r.'value="'.(isset($in[$f])?date('m/d/Y',strtotime((isset($in[$f])?$in[$f]:$e))):'').'" width="'.(isset($w)?$w:20).'" onBlur="javascript:validDate(this);" id="'.$f.'_'.$u.'_'.$n.'">';
+       $tag='<input '.$js.' onchange="ft_onchange_'.$u.'();" class="'.$fc.'_'.$i.'" type="text" '.$r.'value="'.(isset($in[$f_counter])?date('m/d/Y',strtotime((isset($in[$f_counter])?$in[$f_counter]:$e))):'').'" width="'.(isset($w)?$w:20).'" onBlur="javascript:validDate(this);" id="'.$f.'_'.$u.'_'.$n.'">';
        if ( $n != "###" && !(isset($in['disabled']) && $in['disabled']===true)) $p->JQ('$(function(){$("#'.$f.'_'.$u.'_'.$n.'").datepicker({changeMonth:true,changeYear:true});});');
        else $rowjs.='$("#'.$f.'_'.$u.'_'.$n.'").datepicker({changeMonth:true,changeYear:true});';
       } else
       if ( $i == "datetime" ) {
-       $tag='<input '.$js.' onchange="ft_onchange_'.$u.'();" class="'.$fc.'_'.$i.'" type="text" '.$r.'value="'.(isset($d)?date('r',strtotime((isset($in[$f])?$in[$f]:$e))):'').'" width="'.(isset($w)?$w:20).'" onBlur="javascript:validDate(this);" id="'.$f.'_'.$u.'_'.$n.'">';
+       $tag='<input '.$js.' onchange="ft_onchange_'.$u.'();" class="'.$fc.'_'.$i.'" type="text" '.$r.'value="'.(isset($d)?date('r',strtotime((isset($in[$f_counter])?$in[$f_counter]:$e))):'').'" width="'.(isset($w)?$w:20).'" onBlur="javascript:validDate(this);" id="'.$f.'_'.$u.'_'.$n.'">';
        if ( $n != "###" ) $p->JQ('$(function(){$("#'.$f.'_'.$u.'_'.$n.'").datepicker({changeMonth:true,changeYear:true});});');
        else $rowjs.='$("#'.$f.'_'.$u.'_'.$n.'").datepicker({changeMonth:true,changeYear:true});';
       } else
       if ( $i == "zip" ) {
        $tag='<input '.$js.' onchange="ft_onchange_'.$u.'();" class="'.$fc.'_'.$i.'" '
            .(isset($j)?'onblur="'.$j.'" ':'')
-           .'type="text" value="'.(isset($in[$f])?$in[$f]:$e).'" '.$r.'id="'.$f.'_'.$u.'_'.$n.'" width="'.(isset($w)?$w:5).'">';
+           .'type="text" value="'.(isset($in[$f_counter])?$in[$f_counter]:$e).'" '.$r.'id="'.$f.'_'.$u.'_'.$n.'" width="'.(isset($w)?$w:5).'">';
       } else
       if ( $i == "phone" ) {
        if ( !isset($m) && $n=="###" ) $m="(999)999-9999 ?x99999";
-       $tag='<input '.$js.' onchange="ft_onchange_'.$u.'();" id="'.$f.'_'.$u.'_'.$n.'" class="'.$fc.'_'.$i.'" type="text" value="'.(isset($in[$f])?$in[$f]:$e).'" width="'.(isset($w)?$w:15).'" maxlength="15">';
+       $tag='<input '.$js.' onchange="ft_onchange_'.$u.'();" id="'.$f.'_'.$u.'_'.$n.'" class="'.$fc.'_'.$i.'" type="text" value="'.(isset($in[$f_counter])?$in[$f_counter]:$e).'" width="'.(isset($w)?$w:15).'" maxlength="15">';
        if ( $n != "###" ) $p->JQ('$(function(){$("#'.$f.'_'.$u.'_'.$n.'").keypad({showOn:"focus",keypadOnly:false});});');
        else $rowjs.='$("#'.$f.'_'.$u.'_'.$n.'").keypad({showOn:"focus",keypadOnly:false});';
       } else
       if ( $i == "checkbox" ) {
        if ( !isset($e) || strlen($e)==0 ) $e=0;
-       $tag='<input '.$js.' onchange="ft_onchange_'.$u.'();" class="'.$fc.'_'.$i.'" type="checkbox" '.$r.'value="'.(isset($in[$f])?$in[$f]:$e).'" '
+       $tag='<input '.$js.' onchange="ft_onchange_'.$u.'();" class="'.$fc.'_'.$i.'" type="checkbox" '.$r.'value="'.(isset($in[$f_counter])?$in[$f_counter]:$e).'" '
            .(isset($j)?'oncheckbox="'.$j.'" ':'')
-           .'id="'.$f.'_'.$u.'_'.$n.'"'.(intval((isset($in[$f])?$in[$f]:$e))==1?' checked':'').'>';
+           .'id="'.$f.'_'.$u.'_'.$n.'"'.(intval((isset($in[$f_counter])?$in[$f_counter]:$e))==1?' checked':'').'>';
       }
       $tags.='<td align="'.$a.'">'.($i!="hidden"&&isset($l)?'<span class="'.$fc.'_label">'.$l."</span>":'')
               .$tag.(isset($c)?'<span class="'.$fc.'_caption'.'">'.$c.'</span>':'').'</td>';

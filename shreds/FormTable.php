@@ -80,7 +80,7 @@ class FormTable extends Unique {
  }
 
  function Set( $s ) {
-  if ( !isset($s['callback']) ) echo 'FormTable: No callback was defined for onChange.';
+  if ( !isset($s['changed']) )  $s["changed"]=''; // Makes the onchange event have no effect.
   if ( !isset($s['add'])    )    $s['add']=false;
   if ( !isset($s['debug'])  )    $s['debug']=false;
   if ( !isset($s['mode'])   )    $s['mode']='default';

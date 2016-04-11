@@ -50,7 +50,7 @@
   * Each element of the "rows" setting array can take advantage of some or all of these features:
   *
   * "i"=>"..."  (input tag type) where ... is one of the following:
-  *     "phone", "date", "datetime", "text", "textarea", "checkbox", "hidden", "zip"
+  *     "phone", "date", "datetime", "text", "textarea", "checkbox", "hidden", "zip", "select" (requires "v"=>array("named"=>value))
   *             note: you could add other ones like "slider", "numeric", etc.
   *             note: "phone" type requires jquery.ui.keypad
   *             note: "date" and "datetime" require jquery.ui.datepicker
@@ -124,6 +124,7 @@ class FormTable extends Unique {
      if ( isset($h) ) unset($h);
      if ( isset($c) ) unset($c);
      if ( isset($m) ) unset($m);
+     if ( isset($v) ) unset($v);
      $a='left';
      foreach ( $form as $name=>$value ) { 
       $n___=strtolower(substr($name,0,1));
@@ -160,6 +161,9 @@ class FormTable extends Unique {
         break;   // for captions
        case 'c':
          $c=$value;
+        break;
+       case 'v':
+         $v=$value;
         break;
       }
      }
@@ -211,6 +215,12 @@ class FormTable extends Unique {
        $tag='<input '.$js.' onchange="ft_onchange_'.$u.'();" class="'.$fc.'_'.$i.'" type="checkbox" '.$r.'value="'.(isset($in[$f_counter])?$in[$f_counter]:$e).'" '
            .(isset($j)?'oncheckbox="'.$j.'" ':'')
            .'id="'.$f.'_'.$u.'_'.$n.'"'.(intval((isset($in[$f_counter])?$in[$f_counter]:$e))==1?' checked':'').'>';
+      } else
+      if ( $i == "select" ) {
+       $tag='<select '.$js.' onchange="ft_onchange_'.$u.'();" id="'.$f.'_'.$u.'_'.$n.'" name="'.$l.'">';
+       foreach ( $v as $named=>$value ) {
+        $tag.='<option value="'.$value.'"'.($in[$f_counter]==$value?" selected":'').'>';
+       $tag.='</select>';
       }
       $tags.='<td align="'.$a.'">'.($i!="hidden"&&isset($l)?'<span class="'.$fc.'_label">'.$l."</span>":'')
               .$tag.(isset($c)?'<span class="'.$fc.'_caption'.'">'.$c.'</span>':'').'</td>';

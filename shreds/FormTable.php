@@ -391,7 +391,7 @@ class FormTable extends Unique {
    function ft_get_values_$u() {
     var x=row_fields_$u.length;
     var y=rowids_$u.length;
-    var ok= Array.apply(null, Array(x)).map(e => Array(y));
+    var ok= Array.apply(null, Array(y)).map(e => Array(x));
     for ( var j=0; j<y; j++ ) {
      for ( var i=0; i<x; i++ ) {
       ok[j][i]=$('#'+row_fields_".$u."[i]+'_".$u."_'+(j+1)).get(0).value;

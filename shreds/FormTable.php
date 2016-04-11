@@ -109,26 +109,7 @@ class FormTable extends Unique {
   $this->settings=$s;
  }
 
- function GetParams($o,$tid,&$selects) {
-  $tid=intval($tid);
-  $row=array();
-  $ps=$o->request->getParams();
-  foreach ( $ps as $n=>$v ) {
-   $n=explode('_',$n);
-   if ( $n[0] == 'ft' && intval($n[2])==$tid ) {
-    $r=intval($n[3]);
-    if ( !isset($row[$r]) ) $row[$r]=array();
-    $row[$r][$n[1]]=urldecode($v);
-   }
-  }
-  $selected=urldecode($o->request->getParams('selected_'.$tid));
-  $selected=explode(',',$selected);
-  foreach ( $selected as &$s ) $s=intval($s);
-  $selects=$selected;
-  return $row;
- }
-
- function Row( $view, $u, $n, $in, $js, &$rowjs ) {
+ function Row( &$p, $u, $n, $in, $js, &$rowjs ) {
   $rowjs='';
   $tags="";
   $fc=$this->settings['css'];
@@ -207,12 +188,12 @@ class FormTable extends Unique {
       } else
       if ( $i == "date" ) {
        $tag='<input '.$js.' class="'.$fc.'_'.$i.'" type="text" '.$r.'value="'.(isset($in[$f])?date('m/d/Y',strtotime((isset($in[$f])?$in[$f]:$e))):'').'" width="'.(isset($w)?$w:20).'" onBlur="javascript:validDate(this);" id="'.$f.'_'.$u.'_'.$n.'">';
-       if ( $n != "###" && !(isset($in['disabled']) && $in['disabled']===true)) $view->jQuery()->addonload('$(function(){$("#'.$f.'_'.$u.'_'.$n.'").datepicker({changeMonth:true,changeYear:true});});');
+       if ( $n != "###" && !(isset($in['disabled']) && $in['disabled']===true)) $p->JQ('$(function(){$("#'.$f.'_'.$u.'_'.$n.'").datepicker({changeMonth:true,changeYear:true});});');
        else $rowjs.='$("#'.$f.'_'.$u.'_'.$n.'").datepicker({changeMonth:true,changeYear:true});';
       } else
       if ( $i == "datetime" ) {
        $tag='<input '.$js.' class="'.$fc.'_'.$i.'" type="text" '.$r.'value="'.(isset($d)?date('r',strtotime((isset($in[$f])?$in[$f]:$e))):'').'" width="'.(isset($w)?$w:20).'" onBlur="javascript:validDate(this);" id="'.$f.'_'.$u.'_'.$n.'">';
-       if ( $n != "###" ) $view->jQuery()->addonload('$(function(){$("#'.$f.'_'.$u.'_'.$n.'").datepicker({changeMonth:true,changeYear:true});});');
+       if ( $n != "###" ) $p->JQ('$(function(){$("#'.$f.'_'.$u.'_'.$n.'").datepicker({changeMonth:true,changeYear:true});});');
        else $rowjs.='$("#'.$f.'_'.$u.'_'.$n.'").datepicker({changeMonth:true,changeYear:true});';
       } else
       if ( $i == "zip" ) {
@@ -223,7 +204,7 @@ class FormTable extends Unique {
       if ( $i == "phone" ) {
        if ( !isset($m) && $n=="###" ) $m="(999)999-9999 ?x99999";
        $tag='<input '.$js.' id="'.$f.'_'.$u.'_'.$n.'" class="'.$fc.'_'.$i.'" type="text" value="'.(isset($in[$f])?$in[$f]:$e).'" width="'.(isset($w)?$w:15).'" maxlength="15">';
-       if ( $n != "###" ) $view->jQuery()->addonload('$(function(){$("#'.$f.'_'.$u.'_'.$n.'").keypad({showOn:"focus",keypadOnly:false});});');
+       if ( $n != "###" ) $p->JQ('$(function(){$("#'.$f.'_'.$u.'_'.$n.'").keypad({showOn:"focus",keypadOnly:false});});');
        else $rowjs.='$("#'.$f.'_'.$u.'_'.$n.'").keypad({showOn:"focus",keypadOnly:false});';
       } else
       if ( $i == "checkbox" ) {
@@ -250,7 +231,7 @@ class FormTable extends Unique {
              ) :'');
  }
 
- public function Render( $view, &$html ) {
+ public function Render( &$p ) {
   $u=$this->id;
   $jq="";
 
@@ -306,14 +287,14 @@ class FormTable extends Unique {
    $disabled.=(isset($row['disabled'])&&$row['disabled']===true?'true':'false').($t>0?',':'');
    if ( isset($row['disabled']) && $row['disabled'] === true ) {
    $startrows.='<tr class="'.$dcss.'" id="ft_'.$u.'_'.$i.'" onclick="javascript:togsel_'.$u.'(this);">'
-  .$this->makeARow($view,$u,$i,$row,$j,$rowjs).'</tr>';
+  .$this->Row($p,$u,$i,$row,$j,$rowjs).'</tr>';
    } else {
   $startrows.='<tr class="'.$tr.'" id="ft_'.$u.'_'.$i.'" onmouseover="javascript:high_'.$u.'(this);" onmouseout="javascript:unhigh_'.$u.'(this);" onclick="javascript:togsel_'.$u.'(this);">'
-  .$this->makeARow($view,$u,$i,$row,$j,$rowjs).'</tr>';
+  .$this->Row($p,$u,$i,$row,$j,$rowjs).'</tr>';
    }
   }
 
-  $formrow=$this->makeARow($view,$u,"###",array(),$j,$rowjs);
+  $formrow=$this->Row($p,$u,"###",array(),$j,$rowjs);
 
   $js=( $this->settings['debug'] !== false
      ? "
@@ -489,7 +470,8 @@ class FormTable extends Unique {
        : ''
      );
 
-  $html='<script>'.$js.'</script>
+  $p->JS($js);
+  $p->HTML('
   <table cellpadding=0 cellspacing=0 width="100%" id="ft_'.$u.'">
    <tr class="$heading">'.$header.'</tr>
 '.$startrows.'
@@ -501,12 +483,8 @@ class FormTable extends Unique {
      ? "<input type='button' onclick='debug_$u();' value='debug ".$u."'>"
      : '' );
 
-  return '
-<!--ft_'.$u.'-->
-<script>
-'.$js.'
-</script>
-';
+  $p->HTML('<!--ft_'.$u.'-->
+');
  }
  
 }//

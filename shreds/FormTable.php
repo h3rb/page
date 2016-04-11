@@ -11,15 +11,12 @@
   * Settings:
   *  "add"    When not (false), the content of the button.
   *  "button" When (false), draws the Add and Delete buttons as links.
-  *  "url"    When "mode" is not "multiselect", specifies the url which is appended
-  *           a url value of "select=#" indicating the row clicked when visiting the url.
-  *           If set (false) or not provided, clicking a row does not have this functionality.
-  *  "ajax"   When provided, must contain the DOM id of the element to replace when in url mode.
   *  "delete" When not (false), specifies the content of the delete button and enables row deletion.
   *  "mode"   Set to "multiselect" to activate multiple selection features.
   *  "data"   Expects a list of numerically indexed results from a database query.
   *  "header" An array (required) that specifies column names, or "" for no header, corresponding to 'rows'
   *  "rows"   An array of arrays which is ordered and follows the "row object interface" specified below.
+  *  "changed" Callback called when input is changed, passed content of table.
   *
   * CSS-related settings:
   * ---> Allow specific styling options for otherwise auto-generated classes
@@ -83,6 +80,7 @@ class FormTable extends Unique {
  }
 
  function Set( $s ) {
+  if ( !isset($s['callback']) ) echo 'FormTable: No callback was defined for onChange.';
   if ( !isset($s['add'])    )    $s['add']=false;
   if ( !isset($s['debug'])  )    $s['debug']=false;
   if ( !isset($s['mode'])   )    $s['mode']='default';
@@ -174,42 +172,42 @@ class FormTable extends Unique {
      if ( isset($i) ) {
       if ( isset($r) && $r === true ) $r=($i=="checkbox"||$i=="button"?'disabled ':'readonly '); else $r='';
       if ( $i == "hidden" ) {
-       $tag='<input '.$js.' id="'.$f.'_'.$u.'_'.$n.'" type="hidden" name="'.$l.'" '.$r.'value="'.(isset($in[$f])?$in[$f]:$e).'">';
+       $tag='<input '.$js.' onchange="ft_onchange_'.$u.'();" id="'.$f.'_'.$u.'_'.$n.'" type="hidden" name="'.$l.'" '.$r.'value="'.(isset($in[$f])?$in[$f]:$e).'">';
       } else
       if ( $i == "text" ) {
-       $tag='<input '.$js.' class="'.$fc.'_'.$i.'" type="text" width="'.(isset($w)?$w:40).'" '.$r.'value="'.(isset($in[$f])?$in[$f]:$e).'" '
+       $tag='<input '.$js.' onchange="ft_onchange_'.$u.'();" class="'.$fc.'_'.$i.'" type="text" width="'.(isset($w)?$w:40).'" '.$r.'value="'.(isset($in[$f])?$in[$f]:$e).'" '
            .(isset($j)?'onblur="'.$j.'" ':'')
            .'id="'.$f.'_'.$u.'_'.$n.'">';
       } else
       if ( $i == "textarea" ) {
-       $tag='<textarea '.$js.' class="'.$fc.'_'.$i.'" id="'.$f.'_'.$u.'_'.$n.'" '.$r
+       $tag='<textarea '.$js.' onchange="ft_onchange_'.$u.'();" class="'.$fc.'_'.$i.'" id="'.$f.'_'.$u.'_'.$n.'" '.$r
            .(isset($j)?'onblur="'.$j.'" ':'')
            .'cols="'.(isset($w)?$w:20).'" rows="'.(isset($h)?$h:20).'">'.(isset($in[$f])?$in[$f]:'').'</textarea>';
       } else
       if ( $i == "date" ) {
-       $tag='<input '.$js.' class="'.$fc.'_'.$i.'" type="text" '.$r.'value="'.(isset($in[$f])?date('m/d/Y',strtotime((isset($in[$f])?$in[$f]:$e))):'').'" width="'.(isset($w)?$w:20).'" onBlur="javascript:validDate(this);" id="'.$f.'_'.$u.'_'.$n.'">';
+       $tag='<input '.$js.' onchange="ft_onchange_'.$u.'();" class="'.$fc.'_'.$i.'" type="text" '.$r.'value="'.(isset($in[$f])?date('m/d/Y',strtotime((isset($in[$f])?$in[$f]:$e))):'').'" width="'.(isset($w)?$w:20).'" onBlur="javascript:validDate(this);" id="'.$f.'_'.$u.'_'.$n.'">';
        if ( $n != "###" && !(isset($in['disabled']) && $in['disabled']===true)) $p->JQ('$(function(){$("#'.$f.'_'.$u.'_'.$n.'").datepicker({changeMonth:true,changeYear:true});});');
        else $rowjs.='$("#'.$f.'_'.$u.'_'.$n.'").datepicker({changeMonth:true,changeYear:true});';
       } else
       if ( $i == "datetime" ) {
-       $tag='<input '.$js.' class="'.$fc.'_'.$i.'" type="text" '.$r.'value="'.(isset($d)?date('r',strtotime((isset($in[$f])?$in[$f]:$e))):'').'" width="'.(isset($w)?$w:20).'" onBlur="javascript:validDate(this);" id="'.$f.'_'.$u.'_'.$n.'">';
+       $tag='<input '.$js.' onchange="ft_onchange_'.$u.'();" class="'.$fc.'_'.$i.'" type="text" '.$r.'value="'.(isset($d)?date('r',strtotime((isset($in[$f])?$in[$f]:$e))):'').'" width="'.(isset($w)?$w:20).'" onBlur="javascript:validDate(this);" id="'.$f.'_'.$u.'_'.$n.'">';
        if ( $n != "###" ) $p->JQ('$(function(){$("#'.$f.'_'.$u.'_'.$n.'").datepicker({changeMonth:true,changeYear:true});});');
        else $rowjs.='$("#'.$f.'_'.$u.'_'.$n.'").datepicker({changeMonth:true,changeYear:true});';
       } else
       if ( $i == "zip" ) {
-       $tag='<input '.$js.' class="'.$fc.'_'.$i.'" '
+       $tag='<input '.$js.' onchange="ft_onchange_'.$u.'();" class="'.$fc.'_'.$i.'" '
            .(isset($j)?'onblur="'.$j.'" ':'')
            .'type="text" value="'.(isset($in[$f])?$in[$f]:$e).'" '.$r.'id="'.$f.'_'.$u.'_'.$n.'" width="'.(isset($w)?$w:5).'">';
       } else
       if ( $i == "phone" ) {
        if ( !isset($m) && $n=="###" ) $m="(999)999-9999 ?x99999";
-       $tag='<input '.$js.' id="'.$f.'_'.$u.'_'.$n.'" class="'.$fc.'_'.$i.'" type="text" value="'.(isset($in[$f])?$in[$f]:$e).'" width="'.(isset($w)?$w:15).'" maxlength="15">';
+       $tag='<input '.$js.' onchange="ft_onchange_'.$u.'();" id="'.$f.'_'.$u.'_'.$n.'" class="'.$fc.'_'.$i.'" type="text" value="'.(isset($in[$f])?$in[$f]:$e).'" width="'.(isset($w)?$w:15).'" maxlength="15">';
        if ( $n != "###" ) $p->JQ('$(function(){$("#'.$f.'_'.$u.'_'.$n.'").keypad({showOn:"focus",keypadOnly:false});});');
        else $rowjs.='$("#'.$f.'_'.$u.'_'.$n.'").keypad({showOn:"focus",keypadOnly:false});';
       } else
       if ( $i == "checkbox" ) {
        if ( !isset($e) || strlen($e)==0 ) $e=0;
-       $tag='<input '.$js.' class="'.$fc.'_'.$i.'" type="checkbox" '.$r.'value="'.(isset($in[$f])?$in[$f]:$e).'" '
+       $tag='<input '.$js.' onchange="ft_onchange_'.$u.'();" class="'.$fc.'_'.$i.'" type="checkbox" '.$r.'value="'.(isset($in[$f])?$in[$f]:$e).'" '
            .(isset($j)?'oncheckbox="'.$j.'" ':'')
            .'id="'.$f.'_'.$u.'_'.$n.'"'.(intval((isset($in[$f])?$in[$f]:$e))==1?' checked':'').'>';
       }
@@ -385,7 +383,10 @@ class FormTable extends Unique {
       )
    )."
    }
-   function ft_get_values_$u(o) {
+   function ft_onchange_$u() {
+    ".$this->settings["callback"]."(ft_get_values_$u());
+   }
+   function ft_get_values_$u() {
     var x=row_fields_$u.length;
     var y=rowids_$u.length;
     var ok= Array.apply(null, Array(x)).map(e => Array(y));

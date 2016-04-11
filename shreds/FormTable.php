@@ -489,9 +489,8 @@ class FormTable extends Unique {
      : '' )
    .( $this->settings['debug'] !== false
      ? "<input type='button' onclick='debug_$u();' value='debug ".$u."'>"
-     : '' );
-
-  $p->HTML('<!--ft_'.$u.'-->
+     : '' )
+   . '<!--ft_'.$u.'-->
 ');
  }
  

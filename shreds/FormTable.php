@@ -111,6 +111,7 @@ class FormTable extends Unique {
   $rowjs='';
   $tags="";
   $fc=$this->settings['css'];
+  $f_counter=0;
   foreach ( $this->settings['row'] as $form ) {
      if ( isset($i) ) unset($i);
      if ( isset($f) ) unset($f);
@@ -175,7 +176,7 @@ class FormTable extends Unique {
        $tag='<input '.$js.' onchange="ft_onchange_'.$u.'();" id="'.$f.'_'.$u.'_'.$n.'" type="hidden" name="'.$l.'" '.$r.'value="'.(isset($in[$f])?$in[$f]:$e).'">';
       } else
       if ( $i == "text" ) {
-       $tag='<input '.$js.' onchange="ft_onchange_'.$u.'();" class="'.$fc.'_'.$i.'" type="text" width="'.(isset($w)?$w:40).'" '.$r.'value="'.(isset($in[$f])?$in[$f]:$e).'" '
+       $tag='<input '.$js.' onchange="ft_onchange_'.$u.'();" class="'.$fc.'_'.$i.'" type="text" width="'.(isset($w)?$w:40).'" '.$r.'value="'.(isset($in[$f_counter])?$in[$f_counter]:$e).'" '
            .(isset($j)?'onblur="'.$j.'" ':'')
            .'id="'.$f.'_'.$u.'_'.$n.'">';
       } else
@@ -217,6 +218,7 @@ class FormTable extends Unique {
        if ( isset($m) && $m!== false ) $rowjs.='$("#'.$f.'_'.$u.'_'.$n.'").mask("'.$m.'",{placeholder:" "});';
       }
      }
+   $f_counter++;
   }
   return $tags
            .($this->settings['delete']!==false ?

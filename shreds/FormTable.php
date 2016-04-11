@@ -296,7 +296,8 @@ class FormTable extends Unique {
 
   $formrow=$this->Row($p,$u,"###",array(),$j,$rowjs);
 
-  $js=( $this->settings['debug'] !== false
+  $p->JS( 
+   ( $this->settings['debug'] !== false
      ? "
      function debug_$u() {
       var t = document.getElementById('ft_$u');

@@ -386,7 +386,7 @@ class FormTable extends Unique {
    }
    function get_values_$u(o) {
     var x=row_fields_$u.length;
-    var y=row_ids_$u.length;
+    var y=rowids_$u.length;
     var o=[];
     for ( var i=0; i<x; i++ ) for ( var j=0; j<y; j++ ) o[i,j]=$('#_'+i+'_'+j).val();
     return o;

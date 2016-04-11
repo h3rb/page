@@ -391,7 +391,7 @@ class FormTable extends Unique {
     var ok= Array.apply(null, Array(x)).map(e => Array(y));
     for ( var i=0; i<x; i++ ) {
      for ( var j=0; j<y; j++ ) {
-      ok[i][j]=$('#_'+i+'_'+j).get(0).value;
+      ok[i][j]=$('#'+row_fields_".$u."[i]+'_".$u."_'+j).get(0).value;
      }
     }
     return ok;

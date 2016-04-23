@@ -730,7 +730,8 @@
    $this->JS('spectrum.js');
   }
 
-  public function Tips( $icon, $title, $arr_content ) {
+
+  public function Tips( $icon, $title, $arr_content, $return_html=FALSE ) {
    $content='<div><b>'.$title.'</b></div>';
    foreach ($arr_content as $named=>$crisis ) {
     if ( is_integer($named) ) {
@@ -753,7 +754,8 @@
      }
     });
    ');
-   $this->HTML('<span id="'.$id.'" class="tooltipstericon">'.$icon.'</span>');
+   if ( $return_html ) return '<span id="'.$id.'" class="tooltipstericon">'.$icon.'</span>';
+   else $this->HTML('<span id="'.$id.'" class="tooltipstericon">'.$icon.'</span>');
   }
 
   public function BindColorRGB( $id, $table, $field, $value, $allowempty=FALSE ) {

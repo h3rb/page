@@ -208,9 +208,10 @@ class Model {
   return $this->db->Fields($this->table, $filter);
  }
 
- public function Duplicate( $ID ) {
+ public function Duplicate( $ID, $prev_field=NULL ) {
   $source=$this->Get($ID);
   if ( false_or_null($source) ) return FALSE;
+  if ( !false_or_null($prev_field) ) $source[$prev_field]=$ID;
   unset($source['ID']);
   return $this->Insert($source);
  }

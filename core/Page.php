@@ -660,17 +660,22 @@
     ( !is_integer($cols) || $cols > 0 ? ' cols="'.$cols.'"' : '' ).
     '>'.$value.'</textarea>'
    );
+   $this->JS('var SavingTimeoutBindText_'.$fun_name.'=null;');
    $this->JQ('$("#'.$fun_name.'").on("change keypress paste input click focusin focusout focus", function() {
-    var evalue=$("#'.$fun_name.'").get(0).value;
-    $.ajaxSetup({ cache: false });
-    $.ajax({
-     cache:false,
-     type: "POST",
-     dataType: "JSON",
-     url:"ajax.bound",
-     data: { V:evalue, T:"'.$table.'", F:"'.$field.'", I:'.$id.' }
-    }).done(function (e) {
-    });
+    if ( SavingTimeoutBindText_'.$fun_name.'!=null ) window.clearTimeout(SavingTimeout_'.$fun_name.');
+    SavingTimeoutBindText_'.$fun_name.'=setTimeout( function() {
+     var evalue=$("#'.$fun_name.'").get(0).value;
+     $.ajaxSetup({ cache: false });
+     $.ajax({
+      cache:false,
+      type: "POST",
+      dataType: "JSON",
+      url:"ajax.bound",
+      data: { V:evalue, T:"'.$table.'", F:"'.$field.'", I:'.$id.' }
+     }).done(function (e) {
+      SavingTimeoutBindText_'.$fun_name.'=null;
+     });
+    },100);
    });');
    $_bound++;
    if ( $return_html === FALSE ) {

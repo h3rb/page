@@ -52,54 +52,9 @@
  global $session;       $session=NULL;
  global $user;          $user=NULL;
 
- plog("Attaching to Deployment DB");
- global $pm_deployment;
- $pm_deployment=new Database(
-  RDS_PM_DEPLOYMENT_DSN,
-  RDS_PM_DEPLOYMENT_USER,
-  RDS_PM_DEPLOYMENT_PASS
- );
-
- plog("Attaching to Catalog DB");
- global $pm_catalog;
- $pm_catalog=new Database(
-  RDS_PM_CATALOG_DSN,
-  RDS_PM_CATALOG_USER,
-  RDS_PM_CATALOG_PASS
- );
-
- plog("Attaching to Sales DB");
- global $pm_sales;
- $pm_sales=new Database(
-  RDS_PM_SALES_DSN,
-  RDS_PM_SALES_USER,
-  RDS_PM_SALES_PASS
- );
-
- plog("Attaching to Usage DB");
- global $pm_usage;
- $pm_usage=new Database(
-  RDS_PM_USAGE_DSN,
-  RDS_PM_USAGE_USER,
-  RDS_PM_USAGE_PASS
- );
-
- plog("Attaching to Metrics DB");
- global $pm_metrics;
- $pm_metrics=new Database(
-  RDS_PM_METRICS_DSN,
-  RDS_PM_METRICS_USER,
-  RDS_PM_METRICS_PASS
- );
-
- global $database;
- plog("Attaching to Analytics DB");
- $database=new Database(
-  RDS_PM_ANALYTICS_DSN,
-  RDS_PM_ANALYTICS_USER,
-  RDS_PM_ANALYTICS_PASS
- );
-
+ global $database; // change to something else if you want a common auth
+ $database=$auth_database; 
+ 
  global $db;
  $db=$database;
 

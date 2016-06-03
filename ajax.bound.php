@@ -21,8 +21,8 @@
    if ( AutoLockCheck( $Table, $ID ) === TRUE ) { echo '{"result":"locked"}'; die; }
    // Update the db, but only when a valid model is provided
    if ( class_exists($Table) && matches(get_parent_class($Table),'Model') ) {
-    global $pm_sales;
-    $model=new $Table($pm_sales);
+    global $database;
+    $model=new $Table($database);
     $model->Update( array( $Field=>$Value ), array ( 'ID'=>$ID ) ) ;
     Modified( array( "D"=>array($Table=>array("F"=>$Field,"I"=>$ID))) );
     echo '{"result":"success"}';

@@ -8,5 +8,6 @@ define('AUTH_DB_PASS','yourpass');
 
 // Add your application database below,
 // and in core/Auth.php:
+// and in core/automation.php
 // modify to connect to it after connecting to auth db
 

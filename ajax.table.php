@@ -36,7 +36,7 @@
  $output='';
  $report_name=CSVReportType::name($report);
 
- global $database,$pm_catalog,$pm_deployment,$pm_sales,$pm_usage,$pm_metrics;
+ global $database;
 
 
  echo $csv;

@@ -3,7 +3,7 @@
  function RemoveOldModifications() {
   global $database;
   $m=new Modification($database);
-  $m->Delete('Timestamp < '.strtotime("-6 months"));
+  $m->Delete('Timestamp < '.strtotime("-7 days"));
  }
 
  // $what should come in the form of:

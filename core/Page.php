@@ -251,7 +251,7 @@
    $this->ajax=Page::isAJAXed();
   }
 
-  public function isAJAXed() {
+  static public function isAJAXed() {
    return ( isset($_POST['ajax']) || isset($_GET['ajax']) ) ? TRUE : FALSE;
   }
 
@@ -581,17 +581,25 @@
     '>'
    );
    $this->JQ('$("#'.$fun_name.'").on("change keypress paste input", function() {
-    var evalue=$("#'.$fun_name.'").get(0).value;
-    $.ajaxSetup({ cache: false });
-    $.ajax({
-     cache:false,
-     type: "POST",
-     dataType: "JSON",
-     url:"ajax.bound",
-     data: { V:evalue, T:"'.$table.'", F:"'.$field.'", I:'.$id.' }
-    }).done(function (e) {
-    });
+    TryToSave_'.$fun_name.'();
    });');
+   $this->JS('
+    var SavingTimeout_'.$fun_name.'=null;
+    function TryToSave_'.$fun_name.'() {
+     if ( SavingTimeout_'.$fun_name.'!=null ) window.clearTimeout(SavingTimeout_'.$fun_name.');
+     SavingTimeout_'.$fun_name.'=setTimeout(function(){
+      var evalue=$("#'.$fun_name.'").get(0).value;
+      $.ajaxSetup({ cache: false });
+      $.ajax({
+       cache:false,
+       type: "POST",
+       dataType: "JSON",
+       url:"ajax.bound",
+       data: { V:evalue, T:"'.$table.'", F:"'.$field.'", I:'.$id.' }
+      });
+      SavingTimeout_'.$fun_name.'=null;
+     },100);
+    }');
    $_bound++;
    if ( $return_html === FALSE ) {
     $this->HTML($html);

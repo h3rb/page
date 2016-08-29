@@ -2,17 +2,17 @@
 
   var config = window.NotifierjsConfig = {
     defaultTimeOut: 5000,
-    position: ["top", "right"],
+    position: ["top", "left"],
     notificationStyles: {
       padding: "12px 18px",
       margin: "0 0 6px 0",
-      backgroundColor: "#000",
-      opacity: 0.8,
+      backgroundColor: "#33F",
+      opacity: 0.9,
       color: "#fff",
       font: "normal 13px 'Droid Sans', sans-serif",
-      borderRadius: "3px",
-      boxShadow: "#999 0 0 12px",
-      width: "300px"
+      borderRadius: "13px",
+      boxShadow: "inset #999 0 0 12px",
+      width: "300px",
     },
     notificationStylesHover: {
       opacity: 1,
@@ -23,9 +23,9 @@
 
   $(document).ready(function() {
     config.container.css("position", "absolute");
-    config.container.css("z-index", 9999);
-    config.container.css(config.position[0], "12px");
-    config.container.css(config.position[1], "12px");
+    config.container.css("z-index", 9999999);
+    config.container.css(config.position[0], "52px");
+    config.container.css(config.position[1], "302px");
     $("body").append(config.container);
   });
 

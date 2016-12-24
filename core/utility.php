@@ -1501,6 +1501,14 @@ if ( !function_exists('special_decode') ) {
  }
 }
 
+if ( !function_exists('str_replace_array') ) {
+ function str_replace_array($mappings,$haystack) {
+  $out=$haystack;
+  foreach ( $mappings as $search=>$replace ) $out=str_replace($search,$replace,$haystack);
+  return $out;
+ }
+}
+
 if ( !function_exists('seconds_old')) {
  function seconds_old( $filename ) {
   if ( !file_exists($filename) ) return FALSE;

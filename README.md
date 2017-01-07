@@ -18,7 +18,9 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 
 ---
 
-Page framework is super easy but has very little docs.  Just read index.php and dig in from there to see how logins work.  Signup page is not yet made.
+Page framework is super easy but has very little docs.  Just read index.php and dig in from there to see how logins work.  Signup page is not yet made, but login is available for the default admin account.
+
+From this point you can do anything.  Page is specifically good for developing minimal PHP->PDO based web applications.  All you need to install page is to put it into a folder and double check its .htaccess and one path setting, and you're golden. Multiple Page deployments can share the same authentication database.  Why use some gargantuan framework after all?  Everything you need is right here to start building collaborative tools for teams, or public webservices like blogs, custom social media sites, whatever!
 
 Uses:
 

@@ -151,7 +151,7 @@ Page has been used to edit database data -- as a database front-end for a corpor
 
 All of these widgets are tied to ajax.*.php files and have a couple of minor drawbacks.  They are written to work, but at the expense of network (it doesn't cache or delay outgoing messages).  Also, if you quickly leave the page after changing something, the request may not complete.  So, if you are going to leave the page wait at least 1-2 seconds depending on your current network latency.
 
-Also, you need to use ACLs to secure your database users from editing things they aren't allowed.  They use ACLs by either table- or field-level of granularity, in the form of edit-TableName or edit-TableName-FieldName.  ACL class is defined in shreds/ACL.php and these ACL "tags" are checked in some of the ajax.*.php files.  They must be stored on the user's profile.  The special ACLs "admin" and "su" let you bypass this security!  Be careful out there.
+Also, you need to use ACLs to secure your database users from editing things they aren't allowed.  You may use ACLs by either table- or field-level of granularity, in the form of edit-TableName or edit-TableName-FieldName.  ACL class is defined in shreds/ACL.php and these ACL "tags" are checked in some of the ajax.*.php files.  They must be stored on the user's profile.  The special ACLs "admin" and "su" let you bypass this security!  Be careful out there.
 
 You must use jQuery and the support plug-ins they require, and you must activate these features using $page->Bind_LoadPlugins();
 

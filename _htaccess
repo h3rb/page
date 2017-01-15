@@ -1,0 +1,12 @@
+Options -Indexes
+DirectoryIndex index.php
+
+#Using defaulttype hack you dont name the files .php
+#DefaultType application/x-httpd-php
+
+#or you can avoid this, by using mod rewrite:
+RewriteEngine  on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule (.*) $1.php [L]

@@ -23,6 +23,10 @@
 
  plog('$auth_database: '.vars($auth_database));
 
+// You can split the AuthDB off here, setting $database = to a different Database()
+global $database;
+$database=$auth_database;
+
  global $auth_model;    $auth_model=new Auth($auth_database);
  global $session_model; $session_model=new Session($auth_database);
  global $profile_model; $profile_model=new Profile($auth_database);

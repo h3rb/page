@@ -7,10 +7,7 @@
  *  \ \_____\_____\_____\ \_\  \ \_\ \_\_____\ \_\ \_\ \_\_____\_\\"\_\_\ \_\_____\ \_\      *
  *   \/_____/_____/_____/\/_/   \/_/\/_/_____/\/_/\/_/\/_/_____/_/ \/_/_/\/_/_____/\/_/      *
  *    --------------------------------------------------------------------------------       *
- *     Page Framework (c) 2007-2016 H. Elwood Gilliland III                                  *
- *********************************************************************************************
- * This software is copyrighted software.  Use of this code is given only with permission to *
- * parties who have been granted such permission by its author, Herbert Elwood Gilliland III *
+ *     Page Framework (c) 2007-2016 H. Elwood Gilliland III - MIT Licensed Open Source       *
  *********************************************************************************************/
 
 // global $plog_level; $plog_level=1;

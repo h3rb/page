@@ -4,7 +4,7 @@ A super simple starting place for a PHP-under-the-hood website
 
 Page, the ultra-simplistic PHP MVC framework
 
-Copyright (c) 2015, H. Elwood Gilliland III All rights reserved.
+Copyright (c) 2015-2017, H. Elwood Gilliland III All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 

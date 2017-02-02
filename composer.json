@@ -1,0 +1,7 @@
+{
+    "name": "page/page",
+    "description": "Page: the ultra-minimalist PHP framework http://github.com/h3rb/page",
+    "require": {
+        "php": "^5.3.3 || ^7.0",
+    }
+}

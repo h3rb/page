@@ -98,6 +98,32 @@
    if ( stripos($url,"ajax.") === FALSE ) $this->Set( $session['ID'], array( 'last_url'=>current_page_url() ) );
    return ($is_logged_in=true);
   }
+  
+    // Tests if there is a current session, called when you don't have a cookie to depend on (mobile client)
+  public function isActive( $id, $refresh=TRUE ) {
+   global $session_model,$auth_model,$profile_model;
+   global $is_logged_in;
+   global $session;
+   global $user;
+   global $auth;
+   $session=$this->Get( $id );
+   if ( !is_array($session) || !isset($session['r_Auth']) ) return ($is_logged_in=false);
+   if ( $this->LoggedOut($session) ) return ($is_logged_in=false);
+   $auth=$auth_model->Get( $session['r_Auth'] );
+   if ( !is_array($auth) || !isset($auth['r_Profile']) ) return ($is_logged_in=false);
+   else $user=$profile_model->Get( $auth['r_Profile'] );
+   if ( !is_array($user) ) return ($is_logged_in=false);
+   if ( $auth_model->ACL('locked') ) {
+    plog('Account is locked, logging user '.$auth['ID'].' off.');
+    $this->Logout();
+    return ($is_logged_in=false);
+   }
+   $this->Refresh($session);
+   $url=current_page_url();
+   // Ignore any ajaxy stuff
+   if ( stripos($url,"ajax.") === FALSE ) $this->Set( $session['ID'], array( 'last_url'=>current_page$
+   return ($is_logged_in=true);
+  }
 
   static function logged_in() { global $is_logged_in; return $is_logged_in; }
 

@@ -220,7 +220,7 @@
 
  class Page {
 
-  var $name,$title,$viewport,$eol_source,$eol_html,$doctype,$header,$head,$body,$view,$kv,$stack,$ui,$jq,$jq_loaded;
+  var $name,$title,$viewport,$eol_source,$eol_html,$doctype,$header,$head,$body,$view,$kv,$stack,$ui,$jq,$jq_loaded,$angular_loaded;
   var $ua,$ajax;
 
   // $doctype parameter provides a way to override default HTML5 style document.
@@ -245,6 +245,7 @@
    $this->viewport="device-width";
    $this->jq=array();
    $this->jq_loaded=FALSE;
+   $this->angular_loaded=FALSE;
    $this->ajax=Page::isAJAXed();
   }
 
@@ -466,6 +467,13 @@
     $this->jq_loaded=TRUE;
    }
   }
+  
+  public function Angular() {
+   if ( $this->angular_loaded === FALSE ) {
+    $this->JS( CDN_ANGULAR_LATEST );
+    $this->angular_loaded=TRUE;
+   }
+  }  
 
   public function isDesktop() {
    return $this->isMobile() ? FALSE : TRUE;

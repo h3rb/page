@@ -2,6 +2,8 @@
 
  // Need more? http://www.jsdelivr.com/ http://microjs.com http://jster.net http://pingdom.com
 
+ define('CDN_ANGULAR_LATEST','https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js');
+ define('CDN_ANGULAR_1_5_6','https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js');
  define('CDN_ANGULAR','https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js');
  define('CDN_ANGULAR_CHARTS','//cdn.jsdelivr.net/angular.charts/0.1.3/angular-charts.min.js');
  define('CDN_ANGULAR_GRID_CSS','//cdn.jsdelivr.net/angular.ui-grid/2.0.2/ui-grid.min.cs');

@@ -22,7 +22,9 @@ Page framework is super easy but has very little docs.  Just read index.php and 
 
 From this point you can do anything.  Page is specifically good for developing minimal PHP->PDO based web applications.  All you need to install page is to put it into a folder and double check its .htaccess and one path setting, and you're golden. Multiple Page deployments can share the same authentication database.  Why use some gargantuan framework after all?  Everything you need is right here to start building collaborative tools for teams, or public webservices like blogs, custom social media sites, whatever!
 
-Please note that all you really need appears in the "core" folder, everything else is just implementation on top of that core.  All core provides is the Page object, PDO wrapper and some really fundamentally useful features, everything else is implemented in the main folder or one of the other sub-folders.  If you understand everything in /core/, everything else can be removed (except maybe the cache folder).
+Please note that all you really need appears in the "core" folder, everything else is just implementation on top of that core.  All core provides is the Page object, PDO wrapper and some really fundamentally useful features, everything else is implemented in the main folder or one of the other sub-folders.  If you understand everything in /core/, everything else can be removed (except maybe the cache folder).  To get back to the minimum, simply cut "core" out with a cookie cutter.
+
+Please note, this was written for PHP5 but works just fine in PHP7 since it uses a minimal set of PHP language features.
 
 Uses:
 

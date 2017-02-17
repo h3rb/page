@@ -468,10 +468,13 @@
    }
   }
   
-  public function Angular() {
+  public function Angular( $suppress_ngapp_in_html=FALSE ) {
    if ( $this->angular_loaded === FALSE ) {
     $this->JS( CDN_ANGULAR_LATEST );
     $this->angular_loaded=TRUE;
+    if ( $suppress_ngapp_in_html !== FALSE ) {
+     $this->html_start='<HTML ng-app>';
+    }
    }
   }  
 

@@ -24,7 +24,7 @@ From this point you can do anything.  Page is specifically good for developing m
 
 Please note that all you really need appears in the "core" folder, everything else is just implementation on top of that core.  All core provides is the Page object, PDO wrapper and some really fundamentally useful features, everything else is implemented in the main folder or one of the other sub-folders.  If you understand everything in /core/, everything else can be removed (except maybe the cache folder).  To get back to the minimum, simply cut "core" out with a cookie cutter.
 
-Page was written for PHP5 but works just fine in PHP7 since it uses a minimal set of PHP language features.
+Page was written for PHP5 but works just fine in PHP7 since it uses a minimal set of PHP language features.  The one thing you will have to watch out for is the use of the ampersand (&) since some shreds and demo pages may use it in the form of &$p but you can simply replace it with $p.
 
 Uses:
 

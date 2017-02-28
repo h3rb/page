@@ -917,10 +917,11 @@ if ( !function_exists('cook') ) {
   $domain = str_replace( "http:/", "", current_page_url() );
   $domain=explode("/", $domain);
   $domain=str_replace("www.", "", $domain[1]);
-  setcookie( $v, $s, time()+$t, '/', $domain, isset($_SERVER["HTTPS"]), false );
+  $dt=time()+$t;
+  setcookie( $v, $s, $dt, '/', $domain, isset($_SERVER["HTTPS"]), false );
   $_SESSION[$v]=$s;
   $domain='.'.$domain;
-  setcookie( $v, $s, time()+$t, '/', $domain, isset($_SERVER["HTTPS"]), false );
+  setcookie( $v, $s, $dt, '/', $domain, isset($_SERVER["HTTPS"]), false );
  }
 }
 
@@ -930,15 +931,16 @@ if ( !function_exists('uncook') ) {
   $domain = str_replace( "http:/", "", curPageURL() );
   $domain=explode("/", $domain);
   $domain=str_replace( "www.", "", $domain[1] );
-  $res=setcookie($v, "", time() - 3600, '/', $domain, isset($_SERVER["HTTPS"]), false );
+  $dt=time()-3600;
+  $res=setcookie($v, "", $dt, '/', $domain, isset($_SERVER["HTTPS"]), false );
   $res=setcookie($v, "NOT VALID", mktime(12,0,0,1, 1, 1970), '/', $domain, isset($_SERVER["HTTPS"]), false );
   $res=setcookie($v, "", mktime(12,0,0,1, 1, 1970), '/', $domain, isset($_SERVER["HTTPS"]), false );
-  setcookie($v,FALSE, time()-3600 );
+  setcookie($v,FALSE, $dt );
   $domain='.'.$domain;
-  $res=setcookie($v, "", time() - 3600, '/', $domain, false, false );
+  $res=setcookie($v, "", $dt, '/', $domain, false, false );
   $res=setcookie($v, "NOT VALID", mktime(12,0,0,1, 1, 1970), '/', $domain, isset($_SERVER["HTTPS"]), false );
   $res=setcookie($v, "", mktime(12,0,0,1, 1, 1970), '/', $domain, isset($_SERVER["HTTPS"]), false );
-  setcookie($v,FALSE, time()-3600 );
+  setcookie($v,FALSE, $dt );
  }
 }
 

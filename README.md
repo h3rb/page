@@ -261,3 +261,10 @@ Your images!  These are all referenced in the .html files for instance.  Or you 
 docs/
 
 Documentation you want to make available on your site or to other people.
+
+
+Setup Notes:
+
+Fatal error: Call to a member function Select() on a non-object in /var/www/core/PDO/model.php on line 104
+
+This means your database isn't set up properly.  Either it doesn't exist, or it is simply not available.

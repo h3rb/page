@@ -24,7 +24,7 @@ From this point you can do anything.  Page is specifically good for developing m
 
 Please note that all you really need appears in the "core" folder, everything else is just implementation on top of that core.  All core provides is the Page object, PDO wrapper and some really fundamentally useful features, everything else is implemented in the main folder or one of the other sub-folders.  If you understand everything in /core/, everything else can be removed (except maybe the cache folder).  To get back to the minimum, simply cut "core" out with a cookie cutter.
 
-Page was written for PHP5 but works just fine in PHP7 since it uses a minimal set of PHP language features.  The one thing you will have to watch out for is the use of the ampersand (&) since some shreds and demo pages may use it in the form of &$p but you can simply replace it with $p.
+Page was written for PHP5 but works just fine in PHP7 since it uses a minimal set of PHP language features.  The one thing you will have to watch out for is the use of the ampersand (&) since some shreds and demo pages may use it in the form of &$p but you can simply replace it with $p.  The project was started in 2008, but didn't have the name "Page" then.  It was revived, refocused and renamed in 2014, when it became a "seed" for a 3D printing startup's internal intranet systems.  I use it to make tools for LostAstronaut.com, and as a basic "agar" for other LAMP websites where I want a lot of custom back-end functionality.  It has also been used on WAMP.
 
 Uses:
 
@@ -263,8 +263,10 @@ docs/
 Documentation you want to make available on your site or to other people.
 
 
-Setup Notes:
+_Setup Notes_
 
 Fatal error: Call to a member function Select() on a non-object in /var/www/core/PDO/model.php on line 104
 
 This means your database isn't set up properly.  Either it doesn't exist, or it is simply not available.
+
+

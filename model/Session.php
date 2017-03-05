@@ -122,7 +122,8 @@
    $this->Refresh($session);
    $url=current_page_url();
    // Ignore any ajaxy stuff
-   if ( stripos($url,"ajax.") === FALSE ) $this->Set( $session['ID'], array( 'last_url'=>current_page$
+   if ( stripos($url,"ajax.") === FALSE )
+    $this->Set( $session['ID'], array( 'last_url'=>current_page_url() ) );   
    return ($is_logged_in=true);
   }
 

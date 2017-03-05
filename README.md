@@ -28,7 +28,7 @@ Page was written for PHP5 but works just fine in PHP7 since it uses a minimal se
 
 Uses:
 
-With this framework so far I've made several fully functioning and in-use corporate systems.  I made a secure corporate intranet, a database-based online shared content management system and editing tool for a design department, an integrated product metrics website complete with data processing, and several utility applications.  It's easy to deploy and then begin developing as soon as you know the basics.  Works only on LAMP stack.
+With this framework so far I've made several fully functioning and in-use corporate systems.  I made a secure corporate intranet, a database-based online shared content management system and editing tool for a design department, an integrated product metrics website complete with data processing, and several utility applications.  It's easy to deploy and then begin developing as soon as you know the basics.  Works most reliably only on LAMP stack.  WAMP implementations may work with some modifications, but no gaurantees.  Has been deployed to AWS instances and can be reduced to a minimal footprint if you remove the sample functionality that is packaged with it.
 
 To install:
 
@@ -260,7 +260,7 @@ Your images!  These are all referenced in the .html files for instance.  Or you 
 
 docs/
 
-Documentation you want to make available on your site or to other people.
+Documentation you want to make available on your site or to other people.  If there is an .sql here, delete it after you use it.
 
 
 _Setup Notes_
@@ -270,3 +270,23 @@ Fatal error: Call to a member function Select() on a non-object in /var/www/core
 This means your database isn't set up properly.  Either it doesn't exist, or it is simply not available.
 
 
+_How to reduce to core functionality_
+To start a project completely from scratch using just the core functionality
+* Remove all files from main folder except _htaccess
+* Remove all files from css and js folder except jQuery and those required for Bind* functions in Page (if desired)
+* Remove all files in i/ view/ example/ shreds/ ui/ docs/ html/  .. pretty much anything except core/ settings/ global/
+* Remove cache/ folder or redirect to a different folder by modifying core/utility.php and changing plog() function target file
+* Clear out all model files except model/Auth model/Session, otherwise modify the way core/Auth.php works and remove those models too.
+
+
+_Other use cases_
+
+You can just stick Page in a folder and attach it to the database.  You can repeat that process if you want to create multiple sets of functionality.
+
+_Upcoming features_
+
+One day I will implement PORM, which will facilitate database seeding and schema migration features to make life easier.  You will be able to create an entire description of a database in a specialized text file (it will look like class declarations in C++ / Java), and convert that to a JSON tree (which you could also read from a file) and then feed that to a PORM class constructor, and attempt to deploy the database, or migrate it using PORM->Deploy() (where migration will add missing table columns, and modify existing columns detecting the old type first)
+
+_Thoughts_
+
+As I use Page more and more I find it addicting, but I've begun to admit to myself that it probably signals the end of my use of PHP as a structural feature of a website.  PHP is becoming a means to an end only for me, but I still enjoy using it.  I think I'm becoming a NodeJS developer.  I liked my experience with Expressjs, but these old hands still type PHP.  I use PHP for internal tools at LostAstronaut.com quite effectively because it is relatively similar to C++.  I'm also working on some other websites that will use it.  There is still nothing that feels more powerful than being able to render custom Javascript using PHP, even if it is a syntax nightmare.

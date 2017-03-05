@@ -263,14 +263,15 @@ docs/
 Documentation you want to make available on your site or to other people.  If there is an .sql here, delete it after you use it.
 
 
-_Setup Notes_
+__Setup Notes__
 
 Fatal error: Call to a member function Select() on a non-object in /var/www/core/PDO/model.php on line 104
 
 This means your database isn't set up properly.  Either it doesn't exist, or it is simply not available.
 
 
-_How to reduce to core functionality_
+__How to reduce to core functionality__
+
 To start a project completely from scratch using just the core functionality
 * Remove all files from main folder except _htaccess
 * Remove all files from css and js folder except jQuery and those required for Bind* functions in Page (if desired)
@@ -279,11 +280,11 @@ To start a project completely from scratch using just the core functionality
 * Clear out all model files except model/Auth model/Session, otherwise modify the way core/Auth.php works and remove those models too.
 
 
-_Other use cases_
+__Other use cases__
 
 You can just stick Page in a folder and attach it to the database.  You can repeat that process if you want to create multiple sets of functionality.
 
-_Upcoming features_
+__Upcoming features__
 
 One day I will implement PORM, which will facilitate database seeding and schema migration features to make life easier.  You will be able to create an entire description of a database in a specialized text file (it will look like class declarations in C++ / Java), and convert that to a JSON tree (which you could also read from a file) and then feed that to a PORM class constructor, and attempt to deploy the database, or migrate it using PORM->Deploy() (where migration will add missing table columns, and modify existing columns detecting the old type first)
 

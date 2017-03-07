@@ -440,7 +440,7 @@
    print $this->Source();
   }
 
-  public function Redirect( $uri=FALSE, $force_js=FALSE ) {
+  static public function Redirect( $uri=FALSE, $force_js=FALSE ) {
    if ( $force_js === FALSE && Page::isAJAXed() ) $force_js=true;
    if ( $uri === FALSE ) $uri = $_SERVER['HTTP_REFERER'];
    plog( "page->Redirect: ".$uri );

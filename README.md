@@ -279,6 +279,21 @@ To start a project completely from scratch using just the core functionality
 * Remove cache/ folder or redirect to a different folder by modifying core/utility.php and changing plog() function target file
 * Clear out all model files except model/Auth model/Session, otherwise modify the way core/Auth.php works and remove those models too.
 
+__How to increase security__
+
+Page relies on apache2's .htacess file feature to set special permissions and parameters of each web folder and its subfolders.  This is done to allow Page to be inserted into other projects, or for it to be placed in multiple places on the same webserver.  By default, Page can be placed in a folder and almost all of the files will be hidden except in the main folder.  Even new subfolders you make will not be publicly accessible unless you create an .htaccess file that permits it.
+
+However, some people seem to think that this is a bad idea.  As long as you are careful what kind of code you add to page, you should be able to make a secure website.  In the past, this was done for PHP by testing at the top of each included file whether or not the resource was being loaded by a remote browser, or being included in a file (CodeIgniter, Zend, for example).  Page doesn't do this, because the entire folder is inaccessible.  Regardless, some people seem to believe that hackers can somehow fool apache2 into ignoring .htaccess files.  Page, and its upload capabilities, do not permit this.  Also, Page doesn't require eval() to be used for anything, because it doesn't use the same methods to implement MVC as other frameworks (CodeIgniter, Zend, for example).
+
+If you believe the rationale that putting code into an exposed but non-publicly accessible folder is a bad idea, then for you Page can be made more secure by moving it to an offline folder, and exposing only php public endpoints (files you want people to browse to) in your web server folder.  I personally don't see the benefit, except that it makes it impossible for you to mess up and not have the .htaccess files in place that you need.
+
+To keep Page out-of-scope and in an offline web folder:
+
+# Move your Page site to an offline folder
+# Move your endpoints to a folder on the web
+# Create a folder in your web folder called 'core' 
+# Create a file in it called Page.php and add one line:
+include_once '/path/to/page/folder/core/Page.php';
 
 __Other use cases__
 

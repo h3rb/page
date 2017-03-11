@@ -288,12 +288,11 @@ However, some people seem to think that this is a bad idea.  As long as you are 
 If you believe the rationale that putting code into an exposed but non-publicly accessible folder is a bad idea, then for you Page can be made more secure by moving it to an offline folder, and exposing only php public endpoints (files you want people to browse to) in your web server folder.  I personally don't see the benefit, except that it makes it impossible for you to mess up and not have the .htaccess files in place that you need.
 
 To keep Page out-of-scope and in an offline web folder:
-
-# Move your Page site to an offline folder
-# Move your endpoints to a folder on the web
-# Create a folder in your web folder called 'core' 
-# Create a file in it called Page.php and add one line:
-include_once '/path/to/page/folder/core/Page.php';
+ 1. Move your Page site to an offline folder
+ 2. Move your endpoints to a folder on the web
+ 3. Create a folder in your web folder called 'core' 
+ 4. Create a file in it called Page.php and add one line:
+    include_once '/path/to/page/folder/core/Page.php';
 
 __Other use cases__
 

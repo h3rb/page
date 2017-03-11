@@ -285,7 +285,7 @@ Page relies on apache2's .htaccess file feature (or general configuration specif
 
 However, some people seem to think that this is a bad idea.  As long as you are careful what kind of code you add to page, you should be able to make a secure website.  In the past, this was done for PHP by testing at the top of each included file whether or not the resource was being loaded by a remote browser, or being included in a file (CodeIgniter, Zend, for example).  Page doesn't do this, because the entire folder is inaccessible.  Regardless, some people seem to believe that hackers can somehow fool apache2 into ignoring .htaccess files.  Page, and its upload capabilities, do not permit this.  Also, Page doesn't require eval() to be used for anything, because it doesn't use the same methods to implement MVC as other frameworks (CodeIgniter, Zend, for example).
 
-If you believe the rationale that putting code into an exposed but non-publicly accessible folder is a bad idea, then for you Page can be made more secure by moving it to an offline folder, and exposing only php public endpoints (files you want people to browse to) in your web server folder.  I personally don't see the benefit, except that it makes it impossible for you to mess up and not have the .htaccess files in place that you need.
+If you believe the rationale that putting code into an exposed but non-publicly accessible folder is a bad idea, then for you Page can be made more secure by moving it to an offline folder, and exposing only php public endpoints (files you want people to browse to) in your web server folder.  I personally don't see the benefit, except that it makes it impossible for you to mess up and not have the .htaccess files in place that you need.  One side-effect of doing this is that if you have multiple sites built on Page, and want to maintain a single core, you can use this same method to do so.
 
 To keep Page out-of-scope and in an offline web folder:
  1. Move your Page site to an offline folder
@@ -293,6 +293,8 @@ To keep Page out-of-scope and in an offline web folder:
  3. Create a folder in your web folder called 'core' 
  4. Create a file in it called Page.php and add one line:
     include_once '/path/to/page/folder/core/Page.php';
+
+You may have to adjust the first few lines of your actual core/Page.php to reflect this path difference, where you see include_all and include_once related to the core, but it should be fine since at this point it is relative to the included core/Page.php file.
 
 __Other use cases__
 

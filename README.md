@@ -63,14 +63,16 @@ Provides the basics:
 
 Philosophy:
 
- 1. Models are good for handling data acquisition and processing tasks.
- 2. Controllers and views are really the same thing most of the time.
- 3. You need a templating language sometimes.
- 4. You want the freedom to add support for jQuery and Bootstrap (and angular) and you need some helper functions.
- 5. You want a nice class-based PHP framework.
- 6. You know what you are doing with the whole toolchain.
- 7. You want to break conventions whenever needed to avoid wrangling gangly interfaces or scouring crufty docs.
- 8. You're planning on using FontAwesome and Foundation Icons.
+ 1. Simple and unencumbered.
+ 2. Models are good for handling data acquisition and processing tasks.
+ 3. Controllers and views are really the same thing most of the time.
+ 4. You need a simple server-side templating language sometimes.
+ 5. You want the freedom to add support for jQuery and Bootstrap (and angular) and you need some helper functions.
+ 6. You want a nice class-based PHP framework that uses PDO and password_hash.
+ 7. You know what you are doing with the whole toolchain.
+ 8. You want to break conventions whenever needed to avoid wrangling gangly interfaces or scouring crufty docs.
+ 9. You're planning on using FontAwesome and Foundation Icons.
+ 10. All of the best web properties do it custom, and so will you.
 
 Example of a typical "Page" controller-view php file:
 
@@ -150,6 +152,8 @@ $page->jq_loaded=TRUE;
 
 
 __Built-in "Live Editing" Common Data Widgetry__
+
+(Methods in Page core class, but part of the non-core functionality)
 
 Page has been used to edit database data -- as a database front-end for a corporate intranet -- and lets you and others edit data on the fly.  You can even use built-in features like Auto-Locking and Row-Locking to protect data from edit sniping.  Row locking support is in shreds/AutoLocks.php
 

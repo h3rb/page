@@ -276,6 +276,8 @@ This means your database isn't set up properly.  Either it doesn't exist, or it 
 
 __How to reduce to core functionality__
 
+You should never allow $plog_level=1 settings on a production server.
+
 To start a project completely from scratch using just the core functionality
 * Remove all files from main folder except _htaccess
 * Remove all files from css and js folder except jQuery and those required for Bind* functions in Page (if desired)

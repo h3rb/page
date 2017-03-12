@@ -24,20 +24,29 @@
    if ( is_array($result) && count($result) == 1 ) return $result[0];
    return NULL;
   }
+  
+  function PasswordIsExpired( $auth ) {
+   return ( strtotime('now') >= $auth['password_expiry'] );
+  }
 
   function ExpirePassword( $auth ) {
    if ( !false_or_null($auth) ) {
-    $this->Set( $auth['ID'], array( $auth['password_expiry']=>strtotime('now') ) );
+    $this->Set( $auth['ID'], array( 'password_expiry'=>strtotime('now') ) );
     return true;
    } else return false;
   }
 
-  function PasswordEncrypt( $a ) {
-   return ourcrypt($a);
-  }
-
-  function PasswordMatches( $a, $b ) {
-   return matches($a,$b,TRUE);
+  function CheckPassword( $input, $auth ) {
+   $hash = $auth['password'];
+   if ( strlen(trim($hash)) === 0 ) return TRUE;
+   if ( password_verify( $input, $hash ) ) {
+    if (password_needs_rehash($hash, PASSWORD_DEFAULT, $options)) {
+     $hash = password_hash($input, PASSWORD_DEFAULT, $options);
+     $this->Set( $auth['ID'], array( 'password' => $newHash );
+    }
+    return TRUE;
+   }
+   return FALSE;
   }
 
   static function ACL( $required ) {

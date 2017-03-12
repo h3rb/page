@@ -9,8 +9,7 @@ $auth=$auth_model->byUsername($getpost['username']);
 plog('$getpost: '.vars($getpost));
 plog('$auth: '.vars($auth));
 if ( !is_array($auth) ) Page::Redirect("login?m=2");
-if ( strlen($auth['password']) == 0
-  || matchcrypt($getpost['password'],$auth['password']) ) {
+if ( $auth_model->CheckPassword($auth) ) {
  plog('Password matched!  User has authenticated.');
  if ( Auth::ACL('locked') ) {
   plog('Account is locked, logging user '.$auth['ID'].' off.');

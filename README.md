@@ -293,12 +293,14 @@ If you believe the rationale that putting code into an exposed but non-publicly 
 
 To keep Page out-of-scope and in an offline web folder:
  1. Move your Page site to an offline folder
- 2. Move your endpoints to a folder on the web
+ 2. Move your public endpoints to a folder on the web, including the i/ css/ js/ folders
  3. Create a folder in your web folder called 'core' 
  4. Create a file in it called Page.php and add one line:
     include_once '/path/to/page/folder/core/Page.php';
 
 You may have to adjust the first few lines of your actual core/Page.php to reflect this path difference, where you see include_all and include_once related to the core, but it should be fine since at this point it is relative to the included core/Page.php file.
+
+If you've manually included any modules, you'll have to add /path/to/page/folder/ or create a define in your core/Page.php short-form file (step 4) that defines this path:  define('pagepath','/path/to/page/folder/');
 
 __Other use cases__
 

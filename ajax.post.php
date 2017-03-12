@@ -38,11 +38,7 @@
       || Auth::PasswordMatches(ourcrypt($old),$auth['password']) ) {
      if ( matches($change,$repeat,TRUE) ) {
       global $auth_model;
-      $auth_model->Update( array(
-         'password' => ourcrypt($change),
-         'password_expiry' => strtotime('+1 year')
-        ),
-        array( 'ID'=>$auth['ID'] ) );
+      $auth_model->SetPassword( $change );
       echo js( 'Notifier.success("Password changed!");' );
       die;
      } else {

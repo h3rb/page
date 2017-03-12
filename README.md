@@ -276,8 +276,6 @@ This means your database isn't set up properly.  Either it doesn't exist, or it 
 
 __How to reduce to core functionality__
 
-You should never allow $plog_level=1 settings on a production server.
-
 To start a project completely from scratch using just the core functionality
 * Remove all files from main folder except _htaccess
 * Remove all files from css and js folder except jQuery and those required for Bind* functions in Page (if desired)
@@ -286,6 +284,8 @@ To start a project completely from scratch using just the core functionality
 * Clear out all model files except model/Auth model/Session, otherwise modify the way core/Auth.php works and remove those models too.
 
 __How to increase security__
+
+You should never allow $plog_level=1 settings on a production server.
 
 Page relies on apache2's .htaccess file feature (or general configuration specificity inside vhost or httpd or ports or whichever .conf you are using) to set special permissions and parameters of each web folder and its subfolders.  This is done to allow Page to be inserted into other projects, or for it to be placed in multiple places on the same webserver.  Out-of-the-box, Page can be placed in a folder and almost all of the files will be hidden except in the main folder.  Even new subfolders you make will not be publicly accessible unless you create an .htaccess file that permits it.
 

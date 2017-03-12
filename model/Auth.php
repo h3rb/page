@@ -35,6 +35,11 @@
     return true;
    } else return false;
   }
+  
+  function SetPassword( $input, $auth ) {
+   $hash = password_hash($input, PASSWORD_DEFAULT, $options);
+   $this->Set( $auth['ID'], array( 'password' => $hash );
+  }
 
   function CheckPassword( $input, $auth ) {
    $hash = $auth['password'];
@@ -42,7 +47,7 @@
    if ( password_verify( $input, $hash ) ) {
     if (password_needs_rehash($hash, PASSWORD_DEFAULT, $options)) {
      $hash = password_hash($input, PASSWORD_DEFAULT, $options);
-     $this->Set( $auth['ID'], array( 'password' => $newHash );
+     $this->Set( $auth['ID'], array( 'password' => $hash );
     }
     return TRUE;
    }

@@ -23,7 +23,6 @@
 
  // Basic (minimal) bootstrapping.
  include_once SITE_ROOT.'/settings/config.php';
- include_once SITE_ROOT.'/settings/config.crypt.php';
  include_once SITE_ROOT.'/settings/config.flags.php';
  include_once SITE_ROOT.'/settings/config.enums.php';
  include_once SITE_ROOT.'/settings/config.global.php';

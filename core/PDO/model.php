@@ -159,7 +159,7 @@ class Model {
  }
 
  public function Set( $ID, $data ) {
-  return $this->Update($data, "ID = '$ID'");
+  return $this->Update($data, array('ID'=>$ID));
  }
 
  // Must Get() first

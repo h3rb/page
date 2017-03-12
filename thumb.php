@@ -4,7 +4,7 @@
   $im->setBackgroundColor(new ImagickPixel('transparent'));
   $im->readImage(realpath($imagePath));
   $dim=$im->getImageGeometry();
-  if ( !isset($_GET['wh']) ) $wh=100; $wh=intval($_GET['wh']);
+  if ( !isset($_GET['wh']) ) $wh=100; else $wh=intval($_GET['wh']);
   if ( $wh <= 0 ) $wh=100;
 //  $aspect=floatval($dim['width'])/floatval($dim['height']);
 //  $inverse_aspect=floatval($dim['height'])/floatval($dim['width']);

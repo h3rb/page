@@ -285,9 +285,15 @@ To start a project completely from scratch using just the core functionality
 
 __How to increase security__
 
+___Performance and logging___
+
 You should never allow $plog_level=1 settings on a production server.
 
+___Ownership over data___
+
 Note that you must vet all database-related requests for ownership and viewability.  Eventually, once I have time to implement the core module PORM, Page will handle some of this for you regarding ownership over data, but it's up to you to perform the necessary hardening and validation of data to be retrieved and stored from the database.  Knowing this, many of the ajax.?.php may not check for ownership over data because Page was originally written for a transparent, internally-used tool.  You should implement your own database ownership system (group and individual, public and private permissions).
+
+___Hiding private source code___
 
 Page relies on apache2's .htaccess file feature (or general configuration specificity inside vhost or httpd or ports or whichever .conf you are using) to set special permissions and parameters of each web folder and its subfolders.  This is done to allow Page to be inserted into other projects, or for it to be placed in multiple places on the same webserver.  Out-of-the-box, Page can be placed in a folder and almost all of the files will be hidden except in the main folder.  Even new subfolders you make will not be publicly accessible unless you create an .htaccess file that permits it.
 

@@ -30,24 +30,6 @@ Uses:
 
 With this framework so far I've made several fully functioning and in-use corporate systems.  I made a secure corporate intranet, a database-based online shared content management system and editing tool for a design department, an integrated product metrics website complete with data processing, and several utility applications.  It's easy to deploy and then begin developing as soon as you know the basics.  Works most reliably only on LAMP stack.  WAMP implementations may work with some modifications, but no gaurantees.  Has been deployed to AWS instances and can be reduced to a minimal footprint if you remove the sample functionality that is packaged with it.
 
-To install:
----
-
- 1. Place in a folder
- 2. chmod 644 all necessary .htaccess files, use .htaccess_alternate if .htaccess doesn't work to create the rewrite conditions.
- 3. chmod +x clear, plog and last scripts located in root folder
- 4. Modify contents of core/path.php to reflect site root.
- 5. Create a database using docs/Page_AuthDB.sql
- 6. Modify (if needed) contents of core/Auth.php to add other database globals. For instance, if you want to start with your own application-specific database, you don't need to modify the contents of your Page_AuthDB, instead you can just start adding tables for your application to another database.  In core/Auth.php, add some lines after the $auth_database to connect your application database and assign the global of $database to the DB object.
- 7. Modify files found in settings/config*.php
- 8. Read the source code to understand how everything works, and see the example below.
-
-You will need to <i>a2enmod expires include rewrite mcrypt php5</i> and possibly some others.
-
-Default admin username: admin
-Password for admin: A single space ' '
-(Change once you log in)
-
 Provides the basics:
 
  * Authentication using a single cookie and a database table.
@@ -267,6 +249,25 @@ Your images!  These are all referenced in the .html files for instance.  Or you 
 docs/
 
 Documentation you want to make available on your site or to other people.  If there is an .sql here, delete it after you use it.
+
+
+To install:
+---
+
+ 1. Place in a folder
+ 2. chmod 644 all necessary .htaccess files, use .htaccess_alternate if .htaccess doesn't work to create the rewrite conditions.
+ 3. chmod +x clear, plog and last scripts located in root folder
+ 4. Modify contents of core/path.php to reflect site root.
+ 5. Create a database using docs/Page_AuthDB.sql
+ 6. Modify (if needed) contents of core/Auth.php to add other database globals. For instance, if you want to start with your own application-specific database, you don't need to modify the contents of your Page_AuthDB, instead you can just start adding tables for your application to another database.  In core/Auth.php, add some lines after the $auth_database to connect your application database and assign the global of $database to the DB object.
+ 7. Modify files found in settings/config*.php
+ 8. Read the source code to understand how everything works, and see the example below.
+
+You will need to <i>a2enmod expires include rewrite mcrypt php5</i> and possibly some others.
+
+Default admin username: admin
+Password for admin: A single space ' '
+(Change once you log in)
 
 
 Setup Notes

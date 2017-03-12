@@ -31,6 +31,7 @@ Uses:
 With this framework so far I've made several fully functioning and in-use corporate systems.  I made a secure corporate intranet, a database-based online shared content management system and editing tool for a design department, an integrated product metrics website complete with data processing, and several utility applications.  It's easy to deploy and then begin developing as soon as you know the basics.  Works most reliably only on LAMP stack.  WAMP implementations may work with some modifications, but no gaurantees.  Has been deployed to AWS instances and can be reduced to a minimal footprint if you remove the sample functionality that is packaged with it.
 
 To install:
+---
 
  1. Place in a folder
  2. chmod 644 all necessary .htaccess files, use .htaccess_alternate if .htaccess doesn't work to create the rewrite conditions.
@@ -172,7 +173,8 @@ Once activated, you use the $page->Bind* options to modify your primary global $
  $p->BindString(...);
 </pre>
 
-__Run-down of what's in each folder:__
+Run-down of what's in each folder:
+---
 
 view/
 
@@ -267,14 +269,16 @@ docs/
 Documentation you want to make available on your site or to other people.  If there is an .sql here, delete it after you use it.
 
 
-__Setup Notes__
+Setup Notes
+---
 
 Fatal error: Call to a member function Select() on a non-object in /var/www/core/PDO/model.php on line 104
 
 This means your database isn't set up properly.  Either it doesn't exist, or it is simply not available.
 
 
-__How to reduce to core functionality__
+How to reduce to core functionality
+---
 
 To start a project completely from scratch using just the core functionality
 * Remove all files from main folder except _htaccess
@@ -283,7 +287,8 @@ To start a project completely from scratch using just the core functionality
 * Remove cache/ folder or redirect to a different folder by modifying core/utility.php and changing plog() function target file
 * Clear out all model files except model/Auth model/Session, otherwise modify the way core/Auth.php works and remove those models too.
 
-__How to increase security__
+How to increase security
+---
 
 ___Performance and logging___
 

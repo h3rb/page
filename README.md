@@ -26,11 +26,13 @@ Please note that all you really need appears in the "core" folder, everything el
 
 Page was written for PHP5 but works just fine in PHP7 since it uses a minimal set of PHP language features.  The one thing you will have to watch out for is the use of the ampersand (&) since some shreds and demo pages may use it in the form of &$p but you can simply replace it with $p.  The project was started in 2008, but didn't have the name "Page" then.  It was revived, refocused and renamed in 2014, when it became a "seed" for a 3D printing startup's internal intranet systems.  I use it to make tools for LostAstronaut.com, and as a basic "agar" for other LAMP websites where I want a lot of custom back-end functionality.  It has also been used on WAMP.
 
-Uses:
+__Uses:__
 
 With this framework so far I've made several fully functioning and in-use corporate systems.  I made a secure corporate intranet, a database-based online shared content management system and editing tool for a design department, an integrated product metrics website complete with data processing, and several utility applications.  It's easy to deploy and then begin developing as soon as you know the basics.  Works most reliably only on LAMP stack.  WAMP implementations may work with some modifications, but no gaurantees.  Has been deployed to AWS instances and can be reduced to a minimal footprint if you remove the sample functionality that is packaged with it.
 
-Provides the basics:
+You can just stick Page in a folder and attach it to the database.  You can repeat that process if you want to create multiple sets of functionality.
+
+__Provides the basics:__
 
  * Authentication using a single cookie and a database table.
  * Keeps the basic structure of PHP without sandboxing your development.
@@ -44,7 +46,7 @@ Provides the basics:
  * ACL support for limiting who can edit and what they can edit.
  * Granular edit logs when desired (see Modifications feature).
 
-Philosophy:
+__Philosophy:__
 
  1. Simple and unencumbered.
  2. Models are good for handling data acquisition and processing tasks.
@@ -57,7 +59,7 @@ Philosophy:
  9. You're planning on using FontAwesome and Foundation Icons.
  10. All of the best web properties do it custom, and so will you.
 
-Example of a typical "Page" controller-view php file:
+__Example of a typical "Page" controller-view php file:__
 
 <pre>
 include "core/Page.php";
@@ -74,7 +76,7 @@ $p->Render(); // Puts page to screen.
 
 </pre>
 
-Example of a typical "automated PHP from a script" php file:
+__Example of a typical "automated PHP from a script" php file:__
 
 <pre>
 include "core/automation.php";   // Does everything Page does except create the Page class.. no Auth either.
@@ -82,14 +84,14 @@ include "core/automation.php";   // Does everything Page does except create the 
 //... load models and do stuff to db ...
 </pre>
 
-To set up full granular logging (stored in cache/logs/last-log.txt):
+__To set up full granular logging (stored in cache/logs/last-log.txt):__
 
 <pre>
 global $plog_level; $plog_level=1; // must appear before Page.php is included
 include 'core/Page.php';
 </pre>
 
-Example of how to make a new model:
+__Example of how to make a new model:__
 
  1. Create a table in your database. For example, one called <b>tableName</b>
  2. Add a column that is PRIMARY KEY AUTO INCREMENT as an UNSIGNED INT NOT NULL named 'ID'
@@ -97,7 +99,7 @@ Example of how to make a new model:
  4. Extend the model class with an empty boilerplate: class tableName extends Model {}
  5. Put to use.  Add custom data acquisition / processing features as public functions.
 
-How to attach to a database's table using a model:
+__How to attach to a database's table using a model:__
 
 <pre>
 
@@ -158,30 +160,30 @@ Once activated, you use the $page->Bind* options to modify your primary global $
 Run-down of what's in each folder:
 ---
 
-view/
+**view/**
 
 Contains anything you want to expressly call a "view" -- not included automatically, invoke with:
 include "view/myview.php"
 
-automation/
+**automation/**
 
 Contains anything you don't mind having in the web folder (otherwise, use a folder called /offline) usually in the form of bash and/or PHP scripts that use the core/automation.php entry point.
 
-cache/
+**cache/**
 
 Contains log files (from the plog function) and caching for any plugins you might be using, or anything else you want to cache.
 
 Make sure this is writeable and all of its sub-folders...
 
-core/
+**core/**
 
 Contains the core of the Page Framework.  core/Page.php is the one you want to include all the time.  core/automation.php is for offline scripts that need to access your models.  core/utility.php is where I keep all of the useful helper functions.
 
-core/PDO/
+**core/PDO/**
 
 Contains the PDO-related functionality.  The one you need to extend is Model.  You should read them to get a feel for the options and the interface.
 
-css/
+**css/**
 
 Contains your main.css and other css files for plugins or special areas of your site.  You can include these files like this:
 
@@ -190,63 +192,63 @@ Contains your main.css and other css files for plugins or special areas of your 
  $p->CSS('myplugin/plugin.css');  // Includes css/myplugin/plugin.css. 
 </pre>
 
-engines/
+**engines/**
 
 This folder contains anything that is more "engine-like", and the files are automatically included so they should, with the exception of .htaccess, end in .php and be valid code (no syntax errors).
 
-forms/
+**forms/**
 
 Contains specialized files for the DataForm class, usually named like form_name.txt, used to directly map a classic web form to fields in a database for data entry and editing.
 
-examples/
+**examples/**
 
 Contains some examples and notes. 
 
-global/
+**global/**
 
 This folder contains anything that is "global-like", and the files are automatically included so they should, with the exception of .htaccess, end in .php and be valid code (no syntax errors).  Generally you are just invoking the global directive and setting up defaults, though you could make it "smarter" any way you wish.
 
-html/
+**html/**
 
 Contains html snippets that can be loaded into a page's ->HTML by file reference, example $p->HTML('myfile.html') is automatically discovered in html/
 
-js/
+**js/**
 
 Put your javascript files here.  When you $p->JS('somefile.js') it will look here, and it also recognizes CDN urls.
 
-phtml/
+**phtml/**
 
 Anything you want evaluated and includes mixed-mode HTML should be in here.  Not really a recommended feature, but I added it if you want to do this sort of thing.
 
-schemas/
+**schemas/**
 
 Whatever database schemas you used to create your site can be stored here, but it's insecure.  Delete this folder if you wish.
 
-settings/
+**settings/**
 
 Contains configuration files.  All files in this folder are loaded automatically, and should end in .php and contain valid PHP code.
 
-ui/
+**ui/**
 
 Contains UI snippet files that make use of the UI base class in core/ui.php --  I ended up making mine in shreds/ instead, but you can use this if you want. All files in this folder are loaded automatically, and should end in .php and contain valid PHP code.
 
-model/
+**model/**
 
 Contains configuration files.  All files in this folder are loaded automatically, and should end in .php and contain valid PHP code.
 
-shreds/
+**shreds/**
 
-Contains configuration files.  All files in this folder are loaded automatically, and should end in .php and contain valid PHP code.
+Contains auto-loaded modules, snippets, functions, whatever.  I use it to wrap jQuery plug-ins (or other Javascript pieces) in PHP for pre-processing when I don't want to handle it another way.  For instance I implemented Muuri.js related functionality this way, so that you can use it in an endpoint rather than in an html/ folder inclusion page fragment, or an included js file.
 
-modules/
+**modules/**
 
 Files you want to include manually.  Similar to Vendor/ folder in Cake.  include 'module/whatever.php'
 
-i/
+**i/**
 
 Your images!  These are all referenced in the .html files for instance.  Or you can reference them with i/
 
-docs/
+**docs/**
 
 Documentation you want to make available on your site or to other people.  If there is an .sql here, delete it after you use it.
 
@@ -295,6 +297,8 @@ ___Performance and logging___
 
 You should never allow $plog_level=1 settings on a production server.
 
+You should not keep your schemas in your public web folder, this includes the pre-packaged Page_AuthDB.sql, for obvious reasons.
+
 ___Ownership over data___
 
 Note that you must vet all database-related requests for ownership and viewability.  Eventually, once I have time to implement the core module PORM, Page will handle some of this for you regarding ownership over data, but it's up to you to perform the necessary hardening and validation of data to be retrieved and stored from the database.  Knowing this, many of the ajax.?.php may not check for ownership over data because Page was originally written for a transparent, internally-used tool.  You should implement your own database ownership system (group and individual, public and private permissions).
@@ -318,11 +322,8 @@ You may have to adjust the first few lines of your actual core/Page.php to refle
 
 If you've manually included any modules, you'll have to add /path/to/page/folder/ or create a define in your core/Page.php short-form file (step 4) that defines this path:  define('pagepath','/path/to/page/folder/');
 
-__Other use cases__
-
-You can just stick Page in a folder and attach it to the database.  You can repeat that process if you want to create multiple sets of functionality.
-
-__Upcoming features__
+Upcoming features
+---
 
 One day I will implement PORM, which will facilitate database seeding and schema migration features to make life easier.  You will be able to create an entire description of a database in a specialized text file (it will look like class declarations in C++ / Java), and convert that to a JSON tree (which you could also read from a file) and then feed that to a PORM class constructor, and attempt to deploy the database, or migrate it using PORM->Deploy() (where migration will add missing table columns, and modify existing columns detecting the old type first)
 

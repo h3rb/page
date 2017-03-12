@@ -38,7 +38,7 @@
   
   function SetPassword( $input, $auth ) {
    $hash = password_hash($input, PASSWORD_DEFAULT, $options);
-   $this->Set( $auth['ID'], array( 'password' => $hash );
+   $this->Set( $auth['ID'], array( 'password' => $hash ) );
   }
 
   function CheckPassword( $input, $auth ) {

@@ -26,7 +26,7 @@
   }
   
   function PasswordIsExpired( $auth ) {
-   return ( strtotime('now') >= $auth['password_expiry'] ) );
+   return ( strtotime('now') >= $auth['password_expiry'] );
   }
 
   function ExpirePassword( $auth ) {
@@ -47,7 +47,7 @@
    if ( password_verify( $input, $hash ) ) {
     if (password_needs_rehash($hash, PASSWORD_DEFAULT, $options)) {
      $hash = password_hash($input, PASSWORD_DEFAULT, $options);
-     $this->Set( $auth['ID'], array( 'password' => $hash );
+     $this->Set( $auth['ID'], array( 'password' => $hash ) );
     }
     return TRUE;
    }

@@ -26,7 +26,7 @@
   }
   
   function PasswordIsExpired( $auth ) {
-   return ( strtotime('now') >= $auth['password_expiry'] );
+   return ( strtotime('now') >= $auth['password_expiry'] ) );
   }
 
   function ExpirePassword( $auth ) {

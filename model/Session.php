@@ -79,6 +79,7 @@
    global $session;
    global $user;
    global $auth;
+   if ( !isset($_COOKIE['session']) ) Page::Redirect("login");
    $session=$this->Get( base64_decode($_COOKIE['session']) );
    if ( !is_array($session) || !isset($session['r_Auth']) ) return ($is_logged_in=false);
    if ( $this->LoggedOut($session) ) return ($is_logged_in=false);

@@ -268,13 +268,13 @@ To install:
 You will need to <i>a2enmod expires include rewrite mcrypt</i> and possibly some others.
 
 If you are installing php7.1 with FPM, on Ubuntu 16.04 LTS, you would have done this before any of the above:
-{{
+```
 $ sudo apt-get update
 $ sudo apt-get install unzip apache2sudo php7.1 php7.1-cli php7.1-common libapache2-mod-php7.1 php7.1-mysql php7.1-fpm php7.1-curl php7.1-gd php7.1-bz2 php7.1-mcrypt php7.1-json php7.1-tidy php7.1-mbstring php-redis php-memcached
 $ sudo a2enmod expires include rewrite mcrypt
 $ sudo a2enmod proxy_fcgi setenvif
 $ sudo a2enconf php7.1-fpm
-}}
+```
 
 
 Default admin username: admin

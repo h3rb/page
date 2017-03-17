@@ -80,7 +80,7 @@ if ( !function_exists('include_all') ) {
   if ( folder_exists($folder) ) {
    $includes=scandir($folder);
    foreach ( $includes as $include )
-    if ( contains($include,".php") )
+    if ( endsWith($include,".php") )
      include_once($folder.$include);
   }
  }

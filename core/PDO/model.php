@@ -131,9 +131,9 @@ class Model {
 
  public function First( $field, $value, $order_by='' ) {
   $this->result = $this->Select( array( $field => $value ), "*", '', $order_by.' LIMIT 1' );
-  if ( false_or_null($this->result) ) $this->result=array();
-  if ( is_array($this->result) && count($this->result) >= 1 ) $this->result=array_pop($this->result);
-  return $this->result;
+  if ( false_or_null($this->result) ) return NULL;
+  if ( is_array($this->result) && count($this->result) >= 1 ) return array_pop($this->result);
+  return NULL;
  }
 
  public function All($order_by_limit='') {

@@ -1545,7 +1545,7 @@ if ( !function_exists("ArrayOnlyKeys") ) {
    if ( is_array($rem) ) {
     $found=FALSE;
     foreach($rem as $v) if ( $keyed!==$v ) $found=TRUE;
-    if ( $found ) continue;
+    if ( !$found ) continue;
    } else if ( $keyed !== $rem ) continue;
    $out[$keyed]=$value;
   }

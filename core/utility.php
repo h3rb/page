@@ -1537,3 +1537,19 @@ if ( !function_exists("RemoveArrayKeys") ) {
   return $out;
  }
 }
+
+if ( !function_exists("ArrayOnlyKeys") ) {
+  function ArrayOnlyKeys( $in, $rem ) {
+  $out=array();
+  foreach ( $in as $keyed=>$value ) {
+   if ( is_array($rem) ) {
+    $found=FALSE;
+    foreach($rem as $v) if ( $keyed!==$v ) $found=TRUE;
+    if ( $found ) continue;
+   } else if ( $keyed !== $rem ) continue;
+   $out[$keyed]=$value;
+  }
+  return $out;
+ }
+}
+

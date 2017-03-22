@@ -1517,3 +1517,23 @@ if ( !function_exists('seconds_old')) {
   return strtotime('now')-filemtime($filename);
  }
 }
+
+
+if ( !function_exists("ExcelDateTime") ) {
+  function ExcelDateTime( $dt ) { return ( $dt->format('Y-m-d\Th:m:s.') . str_pad($dt->format('Z'),3,'0',STR_PAD_LEFT) . 'Z' ); }
+}
+
+if ( !function_exists("RemoveArrayKeys") ) {
+  function RemoveArrayKeys( $in, $rem ) {
+  $out=array();
+  foreach ( $in as $keyed=>$value )
+   if ( is_array($rem) ) {
+    $found=FALSE;
+    foreach($rem as $v) if ( $keyed===$v ) $found=TRUE;
+    if ( $found ) continue;
+   } else if ( $keyed === $rem ) continue;
+   $out[$keyed]=$value;
+  }
+  return $out;
+ }
+}

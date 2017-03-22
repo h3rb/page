@@ -1526,7 +1526,7 @@ if ( !function_exists("ExcelDateTime") ) {
 if ( !function_exists("RemoveArrayKeys") ) {
   function RemoveArrayKeys( $in, $rem ) {
   $out=array();
-  foreach ( $in as $keyed=>$value )
+  foreach ( $in as $keyed=>$value ) {
    if ( is_array($rem) ) {
     $found=FALSE;
     foreach($rem as $v) if ( $keyed===$v ) $found=TRUE;

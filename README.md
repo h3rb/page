@@ -294,6 +294,21 @@ Fatal error: Call to a member function Select() on a non-object in /var/www/core
 
 This means your database isn't set up properly.  Either it doesn't exist, or it is simply not available.
 
+The sample site skeleton Page comes with, including the built-in Auth, were written in a less strict version of MySQL than the one that gets installed by default.  You will see errors when writing to the database if this is the case.
+
+To turn off some of these restrictions, SSH in to your server as root and create this file:
+/etc/mysql/conf.d/disable_strict_mode.cnf
+
+Open the file and enter these two lines:
+```
+[mysqld]
+sql_mode=IGNORE_SPACE,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+Restart MySQL with this command:
+```
+Complete the operation by restarting MySQL.
+```
+sudo service mysql restart
+```
 
 How to reduce to core functionality
 ---

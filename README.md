@@ -351,7 +351,7 @@ To keep Page out-of-scope and in an offline web folder:
 
 You may have to adjust the first few lines of your actual core/Page.php to reflect this path difference, where you see include_all and include_once related to the core, but it should be fine since at this point it is relative to the included core/Page.php file.
 
-If you've manually included any modules, you'll have to add /path/to/page/folder/ or create a define in your core/Page.php short-form file (step 4) that defines this path:  define('pagepath','/path/to/page/folder/');
+If you've manually included any modules, you'll have to add /path/to/page/folder/ 
 
 Upcoming features
 ---
@@ -360,4 +360,4 @@ One day I will implement PORM, which will facilitate database seeding and schema
 
 _Thoughts_
 
-As I use Page more and more I find it addicting, but I've begun to admit to myself that it probably signals the end of my use of PHP as a structural feature of a website.  PHP is becoming a means to an end only for me, but I still enjoy using it.  I think I'm becoming a NodeJS developer.  I liked my experience with Expressjs, but these old hands still type PHP.  I use PHP for internal tools at LostAstronaut.com quite effectively because it is relatively similar to C++.  I'm also working on some other websites that will use it.  There is still nothing that feels more powerful than being able to render custom Javascript using PHP, even if it is a syntax nightmare.
+As I use Page more and more I find it addicting.  Page has an equivalent in the world of Nodejs: Expressjs.  Regardless, these old hands still type PHP much faster.  I use PHP for internal tools at LostAstronaut.com quite effectively because it is relatively similar to the C++ I've written my Windows game engine in.  I'm also working on some other websites that will use it.  There is still nothing that feels more powerful than being able to render custom Javascript using PHP, even if it is a syntax nightmare.

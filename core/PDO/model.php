@@ -130,7 +130,7 @@ class Model {
  }
 
  public function First( $field, $value=NULL, $order_by='' ) {
-  if ( value === NULL ) $this->result = $this->Select($field, "*", '', $order_by.' LIMIT 1');
+  if ( $value === NULL ) $this->result = $this->Select($field, "*", '', $order_by.' LIMIT 1');
   else $this->result = $this->Select( array( $field => $value ), "*", '', $order_by.' LIMIT 1' );
   if ( false_or_null($this->result) ) return NULL;
   if ( is_array($this->result) && count($this->result) >= 1 ) return array_pop($this->result);

@@ -9,7 +9,6 @@
    $p->CSS('muuri.css');
    $p->JS('velocity.min.js');
    $p->JS('hammer.min.js');
-   $p->HTML('<script src="js/muuri.min.js"></script>');
   }
   $_MuuriStarted++;
   $p->HTML('<div class="'.$container.'" id="'.$container.$_MuuriStarted.'"> <!--START: Muuri-->');
@@ -35,6 +34,9 @@
  function Muuri_End( &$p, $container="muuri_grid", $item="muuri_item" ) {
   global $_MuuriStarted;
   $p->HTML(' </div> <!--END: Muuri--> ');
+  if ( $_MuuriStarted === 1 ) {
+   $p->HTML('<script src="js/muuri.min.js"></script>');
+  }
   $p->HTML('
   <script>
    var muuri_grid'.$_MuuriStarted.' = new Muuri({

@@ -80,9 +80,12 @@
    global $user;
    global $auth;
    if ( !isset($_COOKIE['session']) ) {
-    if ( !endsWith(current_page_url(),"/login.php") 
-      && !endsWith(current_page_url(),"/login") ) { 
-      plog(__FILE__." Redirecting from: ".current_page_url());
+    $url=current_page_url();
+    if ( !endsWith($url,"/login.php") 
+      && !endsWith($url,"/request_login.php")
+      && !endsWith($url,"/request_login")
+      && !endsWith($url,"/login") ) { 
+      plog(__FILE__." Redirecting from: ".$url);
       Page::Redirect("login");
     } else return ($is_logged_in=false);
    }

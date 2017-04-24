@@ -79,8 +79,8 @@
    global $session;
    global $user;
    global $auth;
+   $url=current_page_url();
    if ( !isset($_COOKIE['session']) ) {
-    $url=current_page_url();
     if ( !endsWith($url,"/login.php") 
       && !endsWith($url,"/request_login.php")
       && !endsWith($url,"/request_login")
@@ -103,7 +103,6 @@
     Page::Redirect("login?m=4");
    }
    $this->Refresh($session);
-   $url=$_url();
    // Ignore any ajaxy stuff
    if ( stripos($url,"ajax.") === FALSE )
     $this->Set( $session['ID'], array( 'last_url'=>current_page_url() ) );

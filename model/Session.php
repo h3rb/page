@@ -79,10 +79,13 @@
    global $session;
    global $user;
    global $auth;
-   if ( !isset($_COOKIE['session'])
-      && !endsWith(current_page_url(),"/login.php")
-      && !endsWith(current_page_url(),"/login")
-      ) Page::Redirect("login");
+   if ( !isset($_COOKIE['session']) ) {
+    if ( !endsWith(current_page_url(),"/login.php") 
+      && !endsWith(current_page_url(),"/login") ) { 
+      plog(__FILE__." Redirecting from: ".current_page_url());
+      Page::Redirect("login");
+    } else return ($is_logged_in=false);
+   }
    $session=$this->Get( base64_decode($_COOKIE['session']) );
    if ( !is_array($session) || !isset($session['r_Auth']) ) return ($is_logged_in=false);
    if ( $this->LoggedOut($session) ) return ($is_logged_in=false);

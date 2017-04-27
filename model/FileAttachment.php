@@ -14,7 +14,7 @@ $p->JS('
  }
  function remove_attachment(id) {
   $.ajax({
-   url:"file.detach?I='.$id.'",
+   url:"file.detach?I="+id,
    responseType:"html",
    success:function(e){update_attachments();},
   });

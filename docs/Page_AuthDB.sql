@@ -112,7 +112,7 @@ CREATE TABLE `File` (
 
 CREATE TABLE IF NOT EXISTS `FileAttachment` (
   `ID` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `Table` text NOT NULL,
+  `RefTable` text NOT NULL,
   `Ref` int(10) unsigned NOT NULL,
   `FileTable` text NOT NULL,
   `FileRef` int(10) unsigned NOT NULL,

@@ -240,7 +240,7 @@
    }
    return $out;
   }
-  function asKV( $in ) { $d=new HDataStream($in); return $d->toKV(); }
+  static public function asKV( $in ) { $d=new HDataStream($in); return $d->toKV(); }
   function toKV()  {
    $out=array();
    $data=$this->toArray();

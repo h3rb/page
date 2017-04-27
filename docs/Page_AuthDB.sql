@@ -107,6 +107,21 @@ CREATE TABLE `File` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+-- Table structure for table `FileAttachment`
+--
+
+CREATE TABLE IF NOT EXISTS `FileAttachment` (
+  `ID` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `Table` text NOT NULL,
+  `Ref` int(10) unsigned NOT NULL,
+  `FileTable` text NOT NULL,
+  `FileRef` int(10) unsigned NOT NULL,
+  `Notes` text NOT NULL,
+  `Creator` int(10) unsigned NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
 -- Table structure for table `FileFLAC`
 --
 

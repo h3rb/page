@@ -1557,10 +1557,15 @@ if ( !function_exists('array_to_html') ) {
  function array_to_html( $arr ) {
   $out='<table>';
   foreach ( $arr as $named=>$v ) {
-   $out.='<tr><td>'.$named.'</td>';
-   $json=json_decode($v,true);
-   if ( is_array($json) ) $out.='<td>'.array_to_html($json).'</td></tr>';
-   else $out.='<td>'.$v.'</td></tr>';
+   $out.='<tr>';
+   $out.='<td>'.$named.'</td>';
+   if ( is_array($v) ) $out.='<td>'.array_to_html($v).'</td>';
+   else {
+    $json=json_decode($v,true);
+    if ( is_array($json) ) $out.='<td>'.array_to_html($json).'</td>';
+    else $out.='<td>'.$v.'</td>';
+   }
+   $out.='</tr>';
   }
   $out.='</table>';
   return $out;

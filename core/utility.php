@@ -1553,3 +1553,16 @@ if ( !function_exists("ArrayOnlyKeys") ) {
  }
 }
 
+if ( !function_exists('array_to_html') ) {
+ function array_to_html( $arr ) {
+  $out='<table>';
+  foreach ( $arr as $named=>$v ) {
+   $out.='<tr><td>'.$named.'</td>';
+   $json=json_decode($v,true);
+   if ( is_array($json) ) $out.='<td>'.array_to_html($json).'</td>';
+   else $out.='<td>'.$v.'</td></tr>';
+  }
+  $out.='</table>';
+  return $out;
+ }
+}

@@ -1559,7 +1559,7 @@ if ( !function_exists('array_to_html') ) {
   foreach ( $arr as $named=>$v ) {
    $out.='<tr><td>'.$named.'</td>';
    $json=json_decode($v,true);
-   if ( is_array($json) ) $out.='<td>'.array_to_html($json).'</td>';
+   if ( is_array($json) ) $out.='<td>'.array_to_html($json).'</td></tr>';
    else $out.='<td>'.$v.'</td></tr>';
   }
   $out.='</table>';

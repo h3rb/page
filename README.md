@@ -61,7 +61,7 @@ __Philosophy:__
 
 __Example of a typical "Page" controller-view php file:__
 
-<pre>
+```php
 include "core/Page.php";
 
 $p=new Page;
@@ -74,22 +74,22 @@ if ( Session::is_logged_in() ) // Checks to see if user is logged in or not...
 
 $p->Render(); // Puts page to screen.
 
-</pre>
+```
 
 __Example of a typical "automated PHP from a script" php file:__
 
-<pre>
+```php
 include "core/automation.php";   // Does everything Page does except create the Page class.. no Auth either.
 
 //... load models and do stuff to db ...
-</pre>
+```
 
 __To set up full granular logging (stored in cache/logs/last-log.txt):__
 
-<pre>
+```php
 global $plog_level; $plog_level=1; // must appear before Page.php is included
 include 'core/Page.php';
-</pre>
+```
 
 __Example of how to make a new model:__
 
@@ -101,13 +101,13 @@ __Example of how to make a new model:__
 
 __How to attach to a database's table using a model:__
 
-<pre>
+```php
 
  global $database;
 
  $my_model=new tableName($database);
 
-</pre>
+```
 
 See files in core/PDO/ to learn how everything works.
 
@@ -116,7 +116,7 @@ __Installing and using JQuery__
 
 Page supports any version of jQuery, and has some basic features that let you programmatically deploy jQuery.  Unlike other frameworks or code organizational methods, you'll want to break up your jQuery plugin into the css/ and js/ folders, placing the CSS and images in css/ and the Javascript files in js/ so that you can use $page->JS() $page->CSS() to load them.  Use $page->JQ() to stick lines in the document Ready() area and use $page->JS() to add to the page's global javascript.
 
-<pre>
+```php
  include 'core/Page.php';
  
  $p=new Page();
@@ -127,13 +127,13 @@ Page supports any version of jQuery, and has some basic features that let you pr
    $("#docisready").on("click" ... );
  ');
   $p->JS('var myGlobal=1; setInterval(function(){alert('foo');},1000);');
-</pre>
+```
 
 Also, you'll want to be aware that if you load your own custom jQuery, either modify the loading sequence in core/Page.php to the version of your choice in the location of your choice, or load it via another method and inform Page that it is already installed so as not to install it twice, by doing:
 
-<pre>
+```
 $page->jq_loaded=TRUE;
-</pre>
+```
 
 
 __Built-in "Live Editing" Common Data Widgetry__
@@ -150,12 +150,12 @@ You must use jQuery and the support plug-ins they require, and you must activate
 
 Once activated, you use the $page->Bind* options to modify your primary global $database.  You should read them in core/Page.php
 
-<pre>
+```php
  $p=new Page();
  $p->Bind_LoadPlugins(); // Automatically loads jQuery and the required jQuery plugins.
  
  $p->BindString(...);
-</pre>
+```
 
 Run-down of what's in each folder:
 ---
@@ -187,10 +187,10 @@ Contains the PDO-related functionality.  The one you need to extend is Model.  Y
 
 Contains your main.css and other css files for plugins or special areas of your site.  You can include these files like this:
 
-<pre>
+```php
  $p->CSS('main.css');  // Includes css/main.css
  $p->CSS('myplugin/plugin.css');  // Includes css/myplugin/plugin.css. 
-</pre>
+```
 
 **engines/**
 
@@ -214,7 +214,7 @@ Contains html snippets that can be loaded into a page's ->HTML by file reference
 
 **js/**
 
-Put your javascript files here.  When you $p->JS('somefile.js') it will look here, and it also recognizes CDN urls.
+Put your javascript files here.  When you `$p->JS('somefile.js')` it will look here, and it also recognizes CDN urls.
 
 **phtml/**
 
@@ -230,7 +230,7 @@ Contains configuration files.  All files in this folder are loaded automatically
 
 **ui/**
 
-Contains UI snippet files that make use of the UI base class in core/ui.php --  I ended up making mine in shreds/ instead, but you can use this if you want. All files in this folder are loaded automatically, and should end in .php and contain valid PHP code.
+Contains UI snippet files that make use of the UI base class in `core/ui.php` --  I ended up making mine in `shreds/` instead, but you can use this if you want. All files in this folder are loaded automatically, and should end in .php and contain valid PHP code.
 
 **model/**
 
@@ -242,11 +242,11 @@ Contains auto-loaded modules, snippets, functions, whatever.  I use it to wrap j
 
 **modules/**
 
-Files you want to include manually.  Similar to Vendor/ folder in Cake.  include 'module/whatever.php'
+Files you want to include manually.  Similar to Vendor/ folder in Cake.  `include 'module/whatever.php'`
 
 **i/**
 
-Your images!  These are all referenced in the .html files for instance.  Or you can reference them with i/
+Your images!  These are all referenced in the .html files for instance.  Or you can reference them with `i/`
 
 **docs/**
 
@@ -290,14 +290,14 @@ Password for admin: A single space ' '
 Setup Notes
 ---
 
-Fatal error: Call to a member function Select() on a non-object in /var/www/core/PDO/model.php on line 104
+`Fatal error: Call to a member function Select() on a non-object in /var/www/core/PDO/model.php on line 104`
 
 This means your database isn't set up properly.  Either it doesn't exist, or it is simply not available.
 
 The sample site skeleton Page comes with, including the built-in Auth, were written in a less strict version of MySQL than the one that gets installed by default.  You will see errors when writing to the database if this is the case.
 
 To turn off some of these restrictions, SSH in to your server as root and create this file:
-/etc/mysql/conf.d/disable_strict_mode.cnf
+`/etc/mysql/conf.d/disable_strict_mode.cnf`
 
 Open the file and enter these two lines:
 ```
@@ -330,17 +330,17 @@ You should not keep your schemas in your public web folder, this includes the pr
 
 ___Ownership over data___
 
-Note that you must vet all database-related requests for ownership and viewability.  Eventually, once I have time to implement the core module PORM, Page will handle some of this for you regarding ownership over data, but it's up to you to perform the necessary hardening and validation of data to be retrieved and stored from the database.  Knowing this, many of the ajax.?.php may not check for ownership over data because Page was originally written for a transparent, internally-used tool.  You should implement your own database ownership system (group and individual, public and private permissions).
+Note that you must vet all database-related requests for ownership and viewability.  Eventually, once I have time to implement the core module PORM, Page will handle some of this for you regarding ownership over data, but it's up to you to perform the necessary hardening and validation of data to be retrieved and stored from the database.  Knowing this, many of the `ajax.?.php` may not check for ownership over data because Page was originally written for a transparent, internally-used tool.  You should implement your own database ownership system (group and individual, public and private permissions).
 
 ___Hiding private source code___
 
-Page relies on apache2's .htaccess file feature (or general configuration specificity inside vhost or httpd or ports or whichever .conf you are using) to set special permissions and parameters of each web folder and its subfolders.  This is done to allow Page to be inserted into other projects, or for it to be placed in multiple places on the same webserver.  Out-of-the-box, Page can be placed in a folder and almost all of the files will be hidden except in the main folder.  Even new subfolders you make will not be publicly accessible unless you create an .htaccess file that permits it.
+Page relies on apache2's `.htaccess` file feature (or general configuration specificity inside vhost or httpd or ports or whichever .conf you are using) to set special permissions and parameters of each web folder and its subfolders.  This is done to allow Page to be inserted into other projects, or for it to be placed in multiple places on the same webserver.  Out-of-the-box, Page can be placed in a folder and almost all of the files will be hidden except in the main folder.  Even new subfolders you make will not be publicly accessible unless you create an `.htaccess` file that permits it.
 
 If you are using nginx or anything other than Apache, you can skip the next two paragraphs and follow the instructions.
 
-However, some people seem to think that this is a bad idea.  As long as you are careful what kind of code you add to Page, you should be able to make a secure website.  In the past, this was done for PHP by testing at the top of each included file whether or not the resource was being loaded by a remote browser, or being included in a file (CodeIgniter, Zend, for example).  Page doesn't do this, because the entire folder is inaccessible, and also if they did manage to run one of the "class" files, nothing would happen of any significance.  Regardless, some people seem to believe that hackers can somehow fool apache2 into ignoring .htaccess files.  Page, and its upload capabilities, do not permit this.  Also, Page doesn't require eval() to be used for anything, because it doesn't use the same methods to implement MVC as other frameworks (CodeIgniter, Zend, for example).
+However, some people seem to think that this is a bad idea.  As long as you are careful what kind of code you add to Page, you should be able to make a secure website.  In the past, this was done for PHP by testing at the top of each included file whether or not the resource was being loaded by a remote browser, or being included in a file (CodeIgniter, Zend, for example).  Page doesn't do this, because the entire folder is inaccessible, and also if they did manage to run one of the "class" files, nothing would happen of any significance.  Regardless, some people seem to believe that hackers can somehow fool apache2 into ignoring .htaccess files.  Page, and its upload capabilities, do not permit this.  Also, Page doesn't require `eval()` to be used for anything, because it doesn't use the same methods to implement MVC as other frameworks (CodeIgniter, Zend, for example).
 
-If you believe the rationale that putting code into an exposed but non-publicly accessible folder is a bad idea, then for you Page can be made more secure by moving it to an offline folder, and exposing only php public endpoints (files you want people to browse to) in your web server folder.  I personally don't see the benefit, except that it makes it impossible for you to mess up and not have the .htaccess files in place that you need.  One side-effect of doing this is that if you have multiple sites built on Page, and want to maintain a single core, you can use this same method to do so.
+If you believe the rationale that putting code into an exposed but non-publicly accessible folder is a bad idea, then for you Page can be made more secure by moving it to an offline folder, and exposing only php public endpoints (files you want people to browse to) in your web server folder.  I personally don't see the benefit, except that it makes it impossible for you to mess up and not have the `.htaccess` files in place that you need.  One side-effect of doing this is that if you have multiple sites built on Page, and want to maintain a single core, you can use this same method to do so.
 
 To keep Page out-of-scope and in an offline web folder:
  1. Move your Page site to an offline folder
@@ -349,14 +349,14 @@ To keep Page out-of-scope and in an offline web folder:
  4. Create a file in it called Page.php and add one line:
     include_once '/path/to/page/folder/core/Page.php';
 
-You may have to adjust the first few lines of your actual core/Page.php to reflect this path difference, where you see include_all and include_once related to the core, but it should be fine since at this point it is relative to the included core/Page.php file.
+You may have to adjust the first few lines of your actual core/Page.php to reflect this path difference, where you see include_all and include_once related to the core, but it should be fine since at this point it is relative to the included `core/Page.php` file.
 
-If you've manually included any modules, you'll have to add /path/to/page/folder/ 
+If you've manually included any modules, you'll have to add `/path/to/page/folder/`
 
 Upcoming features
 ---
 
-One day I will implement PORM, which will facilitate database seeding and schema migration features to make life easier.  You will be able to create an entire description of a database in a specialized text file (it will look like class declarations in C++ / Java), and convert that to a JSON tree (which you could also read from a file) and then feed that to a PORM class constructor, and attempt to deploy the database, or migrate it using PORM->Deploy() (where migration will add missing table columns, and modify existing columns detecting the old type first)
+One day I will further implement Pown, which will facilitate database seeding and schema migration features to make life easier.  You will be able to create an entire description of a database in a specialized text file (it will look like class declarations in C++ / Java), and convert that to a JSON tree (which you could also read from a file) and then feed that to a Pown class constructor, and attempt to deploy the database, or migrate it using `$orm->Deploy()` (where migration will add missing table columns, and modify existing columns detecting the old type first)
 
 _Thoughts_
 

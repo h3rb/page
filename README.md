@@ -10,12 +10,12 @@ Demonstrating the setup of a new "Page" framework application at a preconfigured
 https://asciinema.org/a/dbaYCBFxgbyH4jQmBj1vNxuMR
 
 The above demonstration shows how to:
-a) Clone this repo
-b) Setup configuration with basic paths and folder permissions
-c) Activate and investigate the "last-log" file
-d) Import the default Mysql database schema
-e) Clear logs
-f) Test login with the default administrative password
+* Clone this repo
+* Setup configuration with basic paths and folder permissions
+* Activate and investigate the "last-log" file
+* Import the default Mysql database schema
+* Clear logs
+* Test login with the default administrative password
 
 Copyright (c) 2015-2017, H. Elwood Gilliland III All rights reserved.
 

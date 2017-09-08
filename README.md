@@ -5,6 +5,8 @@ A super simple starting place for a PHP-under-the-hood website
 Page, the ultra-simplistic PHP MVC framework
 
 Demonstrating the setup of a new "Page" framework application at a preconfigured Apache2 served domain http://indiedev.space
+
+[![asciicast](https://asciinema.org/a/dbaYCBFxgbyH4jQmBj1vNxuMR.png)](https://asciinema.org/a/dbaYCBFxgbyH4jQmBj1vNxuMR)
 https://asciinema.org/a/dbaYCBFxgbyH4jQmBj1vNxuMR
 
 The above demonstration shows how to:

@@ -4,6 +4,17 @@ A super simple starting place for a PHP-under-the-hood website
 
 Page, the ultra-simplistic PHP MVC framework
 
+Demonstrating the setup of a new "Page" framework application at a preconfigured Apache2 served domain http://indiedev.space
+https://asciinema.org/a/dbaYCBFxgbyH4jQmBj1vNxuMR
+
+The above demonstration shows how to:
+a) Clone this repo
+b) Setup configuration with basic paths and folder permissions
+c) Activate and investigate the "last-log" file
+d) Import the default Mysql database schema
+e) Clear logs
+f) Test login with the default administrative password
+
 Copyright (c) 2015-2017, H. Elwood Gilliland III All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:

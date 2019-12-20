@@ -4,6 +4,8 @@ A super simple starting place for a PHP-under-the-hood website
 
 Page, the ultra-simplistic PHP MVC framework
 
+See the child projects of this project: https://github.com/h3rb/papi and https://github.com/h3rb/pagemin
+
 Demonstrating the setup of a new "Page" framework application at a preconfigured Apache2 served domain http://indiedev.space
 Click here for the demo: https://asciinema.org/a/dbaYCBFxgbyH4jQmBj1vNxuMR
 

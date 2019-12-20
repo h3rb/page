@@ -16,6 +16,7 @@ The above demonstration shows how to:
 * Import the default Mysql database schema
 * Clear logs
 * Test login with the default administrative password
+* Perhaps update versions of the Javascript libraries it uses.  (Your discretion.)
 
 Copyright (c) 2015-2017, H. Elwood Gilliland III All rights reserved.
 
